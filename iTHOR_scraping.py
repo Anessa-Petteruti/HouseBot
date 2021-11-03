@@ -11,22 +11,17 @@ def scrape(URL):
 
     # get table headers
     header_text = []
-    # headers = soup.find_all("span", {"class": "ant-table-filter-column-title"}
     headers = soup.find_all("th", class_="ant-table-cell")
     for x in range(len(headers)): 
-        # print(str.strip(headers[x].text))
         header_text.append(headers[x].text)
-    # print(header_text)
 
     # get all entries of table
     data = []
     for tr in soup.find_all('tr'):
-        # print("ROW:", row.prettify())
         tds = tr.find_all('td')
         for x in tds: 
             data.append([tds[0].text, tds[1].text, tds[2].text, tds[3].text, tds[4].text, tds[5].text])
             print(tds[1].text)
-    # print(data)
 
     return header_text, data
 

@@ -8,7 +8,7 @@ basic_url = 'http://api.conceptnet.io'
 relatedness1 = '/relatedness?node1=/c/en/'
 relatedness2 = '&node2=/c/en/'
 query_url1 = 'http://api.conceptnet.io/query?start=/c/en/'
-query_url2 = '&rel=/r/UsedFor&limit=20'
+query_url2 = '&rel=/r/CapableOf&limit=20'
 
 #Calculates probablity of using ai2thor verb by similarity between object noun and ai2thor. 
 #In terms of knowledge representation, this may be cheating because it assumes that the robot

@@ -1,0 +1,3888 @@
+{
+    "actionFloatReturn": 0.0,
+    "actionFloatsReturn": null,
+    "actionIntReturn": 0,
+    "actionReturn": {
+        "cameraFarPlane": 20.0,
+        "cameraNearPlane": 0.10000000149011612
+    },
+    "actionStringsReturn": null,
+    "actionVector3sReturn": null,
+    "agent": {
+        "cameraHorizon": -0.0,
+        "inHighFrictionArea": false,
+        "isStanding": true,
+        "name": "agent",
+        "position": {
+            "x": -1.0,
+            "y": 0.9034262895584106,
+            "z": 2.0
+        },
+        "rotation": {
+            "x": -0.0,
+            "y": 90.0,
+            "z": 0.0
+        }
+    },
+    "agentId": 0,
+    "arm": null,
+    "cameraOrthSize": 0.0,
+    "cameraPosition": {
+        "x": -1.0,
+        "y": 1.5784263610839844,
+        "z": 2.0
+    },
+    "collided": false,
+    "collidedObjects": [],
+    "colorBounds": null,
+    "colors": null,
+    "currentTime": 20.08510971069336,
+    "distances": [],
+    "errorCode": null,
+    "errorMessage": "",
+    "flatSurfacesOnGrid": [],
+    "fov": 90.0,
+    "heldObjectPose": {
+        "localPosition": {
+            "x": -0.0,
+            "y": -0.1599999964237213,
+            "z": 0.3799999952316284
+        },
+        "localRotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "position": {
+            "x": -0.6199999451637268,
+            "y": 1.418426275253296,
+            "z": 2.0
+        },
+        "rotation": {
+            "x": -0.0,
+            "y": 90.0,
+            "z": -0.0
+        }
+    },
+    "inventoryObjects": [],
+    "isOpenableGrid": [],
+    "isSceneAtRest": true,
+    "lastAction": "Initialize",
+    "lastActionSuccess": true,
+    "normals": [],
+    "objectIdsInBox": [],
+    "objects": [
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.44084230065345764,
+                    "y": 0.9900684356689453,
+                    "z": 2.9469990730285645
+                },
+                "cornerPoints": [
+                    [
+                        0.7176904678344727,
+                        1.0651761293411255,
+                        3.632596015930176
+                    ],
+                    [
+                        0.7176904678344727,
+                        1.0651761293411255,
+                        2.261402130126953
+                    ],
+                    [
+                        0.7176904678344727,
+                        0.9149607419967651,
+                        3.632596015930176
+                    ],
+                    [
+                        0.7176904678344727,
+                        0.9149607419967651,
+                        2.261402130126953
+                    ],
+                    [
+                        0.16399413347244263,
+                        1.0651761293411255,
+                        3.632596015930176
+                    ],
+                    [
+                        0.16399413347244263,
+                        1.0651761293411255,
+                        2.261402130126953
+                    ],
+                    [
+                        0.16399413347244263,
+                        0.9149607419967651,
+                        3.632596015930176
+                    ],
+                    [
+                        0.16399413347244263,
+                        0.9149607419967651,
+                        2.261402130126953
+                    ]
+                ],
+                "size": {
+                    "x": 0.55369633436203,
+                    "y": 0.15021538734436035,
+                    "z": 1.3711938858032227
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.7179197072982788,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": true,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "Sink_dd61f53a",
+            "objectId": "Sink|+00.43|+01.04|+02.95",
+            "objectOrientedBoundingBox": null,
+            "objectType": "Sink",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "CounterTop|+00.49|+01.02|+03.09"
+            ],
+            "pickupable": false,
+            "position": {
+                "x": 0.4269999861717224,
+                "y": 1.0379999876022339,
+                "z": 2.947000026702881
+            },
+            "receptacle": true,
+            "receptacleObjectIds": [
+                "Faucet|+00.66|+01.04|+03.37",
+                "Faucet|+00.66|+01.04|+02.52"
+            ],
+            "rotation": {
+                "x": -0.0,
+                "y": 270.0,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": true
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -2.551845073699951,
+                    "y": 1.6762940883636475,
+                    "z": 2.4072799682617188
+                },
+                "cornerPoints": [
+                    [
+                        -2.5024261474609375,
+                        2.3434627056121826,
+                        3.7471418380737305
+                    ],
+                    [
+                        -2.5024261474609375,
+                        2.3434627056121826,
+                        1.067418098449707
+                    ],
+                    [
+                        -2.5024261474609375,
+                        1.0091254711151123,
+                        3.7471418380737305
+                    ],
+                    [
+                        -2.5024261474609375,
+                        1.0091254711151123,
+                        1.067418098449707
+                    ],
+                    [
+                        -2.601263999938965,
+                        2.3434627056121826,
+                        3.7471418380737305
+                    ],
+                    [
+                        -2.601263999938965,
+                        2.3434627056121826,
+                        1.067418098449707
+                    ],
+                    [
+                        -2.601263999938965,
+                        1.0091254711151123,
+                        3.7471418380737305
+                    ],
+                    [
+                        -2.601263999938965,
+                        1.0091254711151123,
+                        1.067418098449707
+                    ]
+                ],
+                "size": {
+                    "x": 0.09883785247802734,
+                    "y": 1.3343372344970703,
+                    "z": 2.6797237396240234
+                }
+            },
+            "breakable": true,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.776415467262268,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "Window_c3ca1cf0",
+            "objectId": "Window|-02.55|+01.67|+02.41",
+            "objectOrientedBoundingBox": null,
+            "objectType": "Window",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": false,
+            "position": {
+                "x": -2.548267126083374,
+                "y": 1.6739721298217773,
+                "z": 2.405930757522583
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.3624696135520935,
+                    "y": 0.3432310223579407,
+                    "z": 3.361288070678711
+                },
+                "cornerPoints": [
+                    [
+                        0.6642941832542419,
+                        0.665020227432251,
+                        3.7720117568969727
+                    ],
+                    [
+                        0.6642941832542419,
+                        0.665020227432251,
+                        2.950564384460449
+                    ],
+                    [
+                        0.6642941832542419,
+                        0.02144181728363037,
+                        3.7720117568969727
+                    ],
+                    [
+                        0.6642941832542419,
+                        0.02144181728363037,
+                        2.950564384460449
+                    ],
+                    [
+                        0.06064504384994507,
+                        0.665020227432251,
+                        3.7720117568969727
+                    ],
+                    [
+                        0.06064504384994507,
+                        0.665020227432251,
+                        2.950564384460449
+                    ],
+                    [
+                        0.06064504384994507,
+                        0.02144181728363037,
+                        3.7720117568969727
+                    ],
+                    [
+                        0.06064504384994507,
+                        0.02144181728363037,
+                        2.950564384460449
+                    ]
+                ],
+                "size": {
+                    "x": 0.6036491394042969,
+                    "y": 0.6435784101486206,
+                    "z": 0.8214473724365234
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 2.1377313137054443,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": true,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "Cabinet_00317ff6",
+            "objectId": "Cabinet|+00.07|+00.37|+03.77",
+            "objectOrientedBoundingBox": null,
+            "objectType": "Cabinet",
+            "openable": true,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": false,
+            "position": {
+                "x": 0.06864529848098755,
+                "y": 0.3668936491012573,
+                "z": 3.7720117568969727
+            },
+            "receptacle": true,
+            "receptacleObjectIds": [],
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": true
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -1.252568244934082,
+                    "y": 0.4241306483745575,
+                    "z": 0.5695475339889526
+                },
+                "cornerPoints": [
+                    [
+                        0.012958049774169922,
+                        0.6941121220588684,
+                        1.1579347848892212
+                    ],
+                    [
+                        0.012958049774169922,
+                        0.6941121220588684,
+                        -0.018839716911315918
+                    ],
+                    [
+                        0.012958049774169922,
+                        0.15414917469024658,
+                        1.1579347848892212
+                    ],
+                    [
+                        0.012958049774169922,
+                        0.15414917469024658,
+                        -0.018839716911315918
+                    ],
+                    [
+                        -2.518094539642334,
+                        0.6941121220588684,
+                        1.1579347848892212
+                    ],
+                    [
+                        -2.518094539642334,
+                        0.6941121220588684,
+                        -0.018839716911315918
+                    ],
+                    [
+                        -2.518094539642334,
+                        0.15414917469024658,
+                        1.1579347848892212
+                    ],
+                    [
+                        -2.518094539642334,
+                        0.15414917469024658,
+                        -0.018839716911315918
+                    ]
+                ],
+                "size": {
+                    "x": 2.531052589416504,
+                    "y": 0.5399629473686218,
+                    "z": 1.176774501800537
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.6252244710922241,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": true,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "Bathtub_38422943",
+            "objectId": "Bathtub|-01.04|+00.16|+00.56",
+            "objectOrientedBoundingBox": null,
+            "objectType": "Bathtub",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": false,
+            "position": {
+                "x": -1.0429999828338623,
+                "y": 0.1550000011920929,
+                "z": 0.5580000281333923
+            },
+            "receptacle": true,
+            "receptacleObjectIds": [
+                "SoapBottle|-00.12|+00.70|+01.05",
+                "SoapBar|-01.95|+00.69|+00.84",
+                "Cloth|-02.00|+00.69|+00.47",
+                "Faucet|-00.21|+00.69|+00.55"
+            ],
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": true
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.40633803606033325,
+                    "y": 0.9827665090560913,
+                    "z": 2.9470009803771973
+                },
+                "cornerPoints": [
+                    [
+                        0.5975891351699829,
+                        1.049010992050171,
+                        3.570861577987671
+                    ],
+                    [
+                        0.5975891351699829,
+                        1.049010992050171,
+                        2.3231403827667236
+                    ],
+                    [
+                        0.5975891351699829,
+                        0.9165220260620117,
+                        3.570861577987671
+                    ],
+                    [
+                        0.5975891351699829,
+                        0.9165220260620117,
+                        2.3231403827667236
+                    ],
+                    [
+                        0.2150869369506836,
+                        1.049010992050171,
+                        3.570861577987671
+                    ],
+                    [
+                        0.2150869369506836,
+                        1.049010992050171,
+                        2.3231403827667236
+                    ],
+                    [
+                        0.2150869369506836,
+                        0.9165220260620117,
+                        3.570861577987671
+                    ],
+                    [
+                        0.2150869369506836,
+                        0.9165220260620117,
+                        2.3231403827667236
+                    ]
+                ],
+                "size": {
+                    "x": 0.3825021982192993,
+                    "y": 0.13248896598815918,
+                    "z": 1.2477211952209473
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.6820368766784668,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "SinkBasin_58e6f23c",
+            "objectId": "Sink|+00.43|+01.04|+02.95|SinkBasin",
+            "objectOrientedBoundingBox": null,
+            "objectType": "SinkBasin",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": false,
+            "position": {
+                "x": 0.40400001406669617,
+                "y": 0.9269999861717224,
+                "z": 2.9260001182556152
+            },
+            "receptacle": true,
+            "receptacleObjectIds": [],
+            "rotation": {
+                "x": -0.0,
+                "y": 270.0001525878906,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.8640977144241333,
+                    "y": 1.7389707565307617,
+                    "z": 3.087148666381836
+                },
+                "cornerPoints": [
+                    [
+                        0.8910362720489502,
+                        2.3006575107574463,
+                        4.0429158210754395
+                    ],
+                    [
+                        0.8910362720489502,
+                        2.3006575107574463,
+                        2.1313815116882324
+                    ],
+                    [
+                        0.8910362720489502,
+                        1.1772840023040771,
+                        4.0429158210754395
+                    ],
+                    [
+                        0.8910362720489502,
+                        1.1772840023040771,
+                        2.1313815116882324
+                    ],
+                    [
+                        0.8371591567993164,
+                        2.3006575107574463,
+                        4.0429158210754395
+                    ],
+                    [
+                        0.8371591567993164,
+                        2.3006575107574463,
+                        2.1313815116882324
+                    ],
+                    [
+                        0.8371591567993164,
+                        1.1772840023040771,
+                        4.0429158210754395
+                    ],
+                    [
+                        0.8371591567993164,
+                        1.1772840023040771,
+                        2.1313815116882324
+                    ]
+                ],
+                "size": {
+                    "x": 0.05387711524963379,
+                    "y": 1.1233735084533691,
+                    "z": 1.911534309387207
+                }
+            },
+            "breakable": true,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": true,
+            "distance": 2.3069002628326416,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "Mirror_f27da02c",
+            "objectId": "Mirror|+00.86|+01.86|+02.97",
+            "objectOrientedBoundingBox": null,
+            "objectType": "Mirror",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": false,
+            "position": {
+                "x": 0.8583499193191528,
+                "y": 1.863889217376709,
+                "z": 2.972540855407715
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -0.6632422208786011,
+                    "y": -0.1659928560256958,
+                    "z": 2.480100631713867
+                },
+                "cornerPoints": [
+                    [
+                        1.2735154628753662,
+                        0.0024272799491882324,
+                        5.059392929077148
+                    ],
+                    [
+                        1.2735154628753662,
+                        0.0024272799491882324,
+                        -0.09919166564941406
+                    ],
+                    [
+                        1.2735154628753662,
+                        -0.33441299200057983,
+                        5.059392929077148
+                    ],
+                    [
+                        1.2735154628753662,
+                        -0.33441299200057983,
+                        -0.09919166564941406
+                    ],
+                    [
+                        -2.5999999046325684,
+                        0.0024272799491882324,
+                        5.059392929077148
+                    ],
+                    [
+                        -2.5999999046325684,
+                        0.0024272799491882324,
+                        -0.09919166564941406
+                    ],
+                    [
+                        -2.5999999046325684,
+                        -0.33441299200057983,
+                        5.059392929077148
+                    ],
+                    [
+                        -2.5999999046325684,
+                        -0.33441299200057983,
+                        -0.09919166564941406
+                    ]
+                ],
+                "size": {
+                    "x": 3.8735153675079346,
+                    "y": 0.33684027194976807,
+                    "z": 5.1585845947265625
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 2.058488368988037,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 1.0,
+            "moveable": false,
+            "name": "Floor_d50b6d87",
+            "objectId": "Floor|+00.30|+00.09|+03.37",
+            "objectOrientedBoundingBox": null,
+            "objectType": "Floor",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": false,
+            "position": {
+                "x": 0.3039906919002533,
+                "y": 0.0873270183801651,
+                "z": 3.3678319454193115
+            },
+            "receptacle": true,
+            "receptacleObjectIds": [
+                "Toilet|+00.38|+00.00|+04.47",
+                "GarbageCan|-00.23|+00.00|+01.45",
+                "Candle|-02.38|+00.01|+01.32"
+            ],
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "salientMaterials": [
+                "Stone"
+            ],
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.4846378564834595,
+                    "y": 1.0362459421157837,
+                    "z": 3.0918445587158203
+                },
+                "cornerPoints": [
+                    [
+                        0.9611951112747192,
+                        1.0454857349395752,
+                        4.170595645904541
+                    ],
+                    [
+                        0.9611951112747192,
+                        1.0454857349395752,
+                        2.0130934715270996
+                    ],
+                    [
+                        0.9611951112747192,
+                        1.0270061492919922,
+                        4.170595645904541
+                    ],
+                    [
+                        0.9611951112747192,
+                        1.0270061492919922,
+                        2.0130934715270996
+                    ],
+                    [
+                        0.008080601692199707,
+                        1.0454857349395752,
+                        4.170595645904541
+                    ],
+                    [
+                        0.008080601692199707,
+                        1.0454857349395752,
+                        2.0130934715270996
+                    ],
+                    [
+                        0.008080601692199707,
+                        1.0270061492919922,
+                        4.170595645904541
+                    ],
+                    [
+                        0.008080601692199707,
+                        1.0270061492919922,
+                        2.0130934715270996
+                    ]
+                ],
+                "size": {
+                    "x": 0.9531145095825195,
+                    "y": 0.018479585647583008,
+                    "z": 2.1575021743774414
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.8475589752197266,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": true,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "CounterTop_0c9fae0d",
+            "objectId": "CounterTop|+00.49|+01.02|+03.09",
+            "objectOrientedBoundingBox": null,
+            "objectType": "CounterTop",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": false,
+            "position": {
+                "x": 0.4870259761810303,
+                "y": 1.015006184577942,
+                "z": 3.0907692909240723
+            },
+            "receptacle": true,
+            "receptacleObjectIds": [
+                "ToiletPaper|+00.75|+01.04|+04.08",
+                "Faucet|+00.66|+01.04|+03.37",
+                "Sink|+00.43|+01.04|+02.95",
+                "Faucet|+00.66|+01.04|+02.52"
+            ],
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": true
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -0.25539857149124146,
+                    "y": 0.7118666172027588,
+                    "z": 0.546999990940094
+                },
+                "cornerPoints": [
+                    [
+                        -0.15192198753356934,
+                        0.7910402417182922,
+                        0.5961715579032898
+                    ],
+                    [
+                        -0.15192198753356934,
+                        0.7910402417182922,
+                        0.4978284239768982
+                    ],
+                    [
+                        -0.15192198753356934,
+                        0.6326929926872253,
+                        0.5961715579032898
+                    ],
+                    [
+                        -0.15192198753356934,
+                        0.6326929926872253,
+                        0.4978284239768982
+                    ],
+                    [
+                        -0.3588751554489136,
+                        0.7910402417182922,
+                        0.5961715579032898
+                    ],
+                    [
+                        -0.3588751554489136,
+                        0.7910402417182922,
+                        0.4978284239768982
+                    ],
+                    [
+                        -0.3588751554489136,
+                        0.6326929926872253,
+                        0.5961715579032898
+                    ],
+                    [
+                        -0.3588751554489136,
+                        0.6326929926872253,
+                        0.4978284239768982
+                    ]
+                ],
+                "size": {
+                    "x": 0.20695316791534424,
+                    "y": 0.1583472490310669,
+                    "z": 0.0983431339263916
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": [],
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.668981909751892,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "Faucet_99875503",
+            "objectId": "Faucet|-00.21|+00.69|+00.55",
+            "objectOrientedBoundingBox": null,
+            "objectType": "Faucet",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "Bathtub|-01.04|+00.16|+00.56",
+                "Bathtub|-01.04|+00.16|+00.56|BathtubBasin"
+            ],
+            "pickupable": false,
+            "position": {
+                "x": -0.2078000009059906,
+                "y": 0.6873000264167786,
+                "z": 0.546999990940094
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": true,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.3622523844242096,
+                    "y": 0.3449915051460266,
+                    "z": 2.4501776695251465
+                },
+                "cornerPoints": [
+                    [
+                        0.6642941236495972,
+                        0.6687799096107483,
+                        2.8549485206604004
+                    ],
+                    [
+                        0.6642941236495972,
+                        0.6687799096107483,
+                        2.0454068183898926
+                    ],
+                    [
+                        0.6642941236495972,
+                        0.02120310068130493,
+                        2.8549485206604004
+                    ],
+                    [
+                        0.6642941236495972,
+                        0.02120310068130493,
+                        2.0454068183898926
+                    ],
+                    [
+                        0.060210615396499634,
+                        0.6687799096107483,
+                        2.8549485206604004
+                    ],
+                    [
+                        0.060210615396499634,
+                        0.6687799096107483,
+                        2.0454068183898926
+                    ],
+                    [
+                        0.060210615396499634,
+                        0.02120310068130493,
+                        2.8549485206604004
+                    ],
+                    [
+                        0.060210615396499634,
+                        0.02120310068130493,
+                        2.0454068183898926
+                    ]
+                ],
+                "size": {
+                    "x": 0.6040835380554199,
+                    "y": 0.6475768089294434,
+                    "z": 0.8095417022705078
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.1968241930007935,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": true,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "Cabinet_f612a52d",
+            "objectId": "Cabinet|+00.07|+00.38|+02.05",
+            "objectOrientedBoundingBox": null,
+            "objectType": "Cabinet",
+            "openable": true,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": false,
+            "position": {
+                "x": 0.07496586441993713,
+                "y": 0.37923663854599,
+                "z": 2.0454068183898926
+            },
+            "receptacle": true,
+            "receptacleObjectIds": [],
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": true
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -2.3762905597686768,
+                    "y": 0.010251468047499657,
+                    "z": 1.2411342859268188
+                },
+                "cornerPoints": [
+                    [
+                        -2.368464469909668,
+                        0.018075913190841675,
+                        1.3250597715377808
+                    ],
+                    [
+                        -2.368464469909668,
+                        0.018075913190841675,
+                        1.157208800315857
+                    ],
+                    [
+                        -2.368464469909668,
+                        0.0024270229041576385,
+                        1.3250597715377808
+                    ],
+                    [
+                        -2.368464469909668,
+                        0.0024270229041576385,
+                        1.157208800315857
+                    ],
+                    [
+                        -2.3841166496276855,
+                        0.018075913190841675,
+                        1.3250597715377808
+                    ],
+                    [
+                        -2.3841166496276855,
+                        0.018075913190841675,
+                        1.157208800315857
+                    ],
+                    [
+                        -2.3841166496276855,
+                        0.0024270229041576385,
+                        1.3250597715377808
+                    ],
+                    [
+                        -2.3841166496276855,
+                        0.0024270229041576385,
+                        1.157208800315857
+                    ]
+                ],
+                "size": {
+                    "x": 0.015652179718017578,
+                    "y": 0.015648890286684036,
+                    "z": 0.16785097122192383
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": [],
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.7775530815124512,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.20000000298023224,
+            "moveable": false,
+            "name": "Candle_48e407b2",
+            "objectId": "Candle|-02.38|+00.01|+01.32",
+            "objectOrientedBoundingBox": {
+                "cornerPoints": [
+                    [
+                        -2.3684868812561035,
+                        0.01809430494904518,
+                        1.3250600099563599
+                    ],
+                    [
+                        -2.3841354846954346,
+                        0.018056899309158325,
+                        1.3250596523284912
+                    ],
+                    [
+                        -2.3840980529785156,
+                        0.002408340573310852,
+                        1.3250596523284912
+                    ],
+                    [
+                        -2.3684494495391846,
+                        0.002445746213197708,
+                        1.3250600099563599
+                    ],
+                    [
+                        -2.368483066558838,
+                        0.018094580620527267,
+                        1.1572091579437256
+                    ],
+                    [
+                        -2.384131669998169,
+                        0.01805717870593071,
+                        1.157208800315857
+                    ],
+                    [
+                        -2.38409423828125,
+                        0.0024086041375994682,
+                        1.1572086811065674
+                    ],
+                    [
+                        -2.368445634841919,
+                        0.002446006052196026,
+                        1.157209038734436
+                    ]
+                ]
+            },
+            "objectType": "Candle",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "Floor|+00.30|+00.09|+03.37"
+            ],
+            "pickupable": true,
+            "position": {
+                "x": -2.3762922286987305,
+                "y": 0.010250593535602093,
+                "z": 1.3160762786865234
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": 270.1356201171875,
+                "y": 270.173583984375,
+                "z": 89.8257064819336
+            },
+            "salientMaterials": [
+                "Wax"
+            ],
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": true,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -1.9743824005126953,
+                    "y": 0.7028039693832397,
+                    "z": 0.4608462154865265
+                },
+                "cornerPoints": [
+                    [
+                        -1.8929493427276611,
+                        0.7120977640151978,
+                        0.5753003358840942
+                    ],
+                    [
+                        -1.8929493427276611,
+                        0.7120977640151978,
+                        0.34639209508895874
+                    ],
+                    [
+                        -1.8929493427276611,
+                        0.6935101747512817,
+                        0.5753003358840942
+                    ],
+                    [
+                        -1.8929493427276611,
+                        0.6935101747512817,
+                        0.34639209508895874
+                    ],
+                    [
+                        -2.0558154582977295,
+                        0.7120977640151978,
+                        0.5753003358840942
+                    ],
+                    [
+                        -2.0558154582977295,
+                        0.7120977640151978,
+                        0.34639209508895874
+                    ],
+                    [
+                        -2.0558154582977295,
+                        0.6935101747512817,
+                        0.5753003358840942
+                    ],
+                    [
+                        -2.0558154582977295,
+                        0.6935101747512817,
+                        0.34639209508895874
+                    ]
+                ],
+                "size": {
+                    "x": 0.16286611557006836,
+                    "y": 0.018587589263916016,
+                    "z": 0.2289082407951355
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": true,
+            "distance": 1.8356146812438965,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.04500000178813934,
+            "moveable": false,
+            "name": "Cloth_66932ba7",
+            "objectId": "Cloth|-02.00|+00.69|+00.47",
+            "objectOrientedBoundingBox": {
+                "cornerPoints": [
+                    [
+                        -1.9703487157821655,
+                        0.6934783458709717,
+                        0.61015784740448
+                    ],
+                    [
+                        -2.133517026901245,
+                        0.6940281391143799,
+                        0.4144793152809143
+                    ],
+                    [
+                        -2.0234317779541016,
+                        0.6940941214561462,
+                        0.3226839303970337
+                    ],
+                    [
+                        -1.8602635860443115,
+                        0.693544328212738,
+                        0.5183625221252441
+                    ],
+                    [
+                        -1.9703301191329956,
+                        0.7115501761436462,
+                        0.610193133354187
+                    ],
+                    [
+                        -2.133498430252075,
+                        0.7120999693870544,
+                        0.41451460123062134
+                    ],
+                    [
+                        -2.0234131813049316,
+                        0.7121659517288208,
+                        0.3227192163467407
+                    ],
+                    [
+                        -1.8602449893951416,
+                        0.7116161584854126,
+                        0.5183978080749512
+                    ]
+                ]
+            },
+            "objectType": "Cloth",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "Bathtub|-01.04|+00.16|+00.56"
+            ],
+            "pickupable": true,
+            "position": {
+                "x": -1.9973711967468262,
+                "y": 0.6934269070625305,
+                "z": 0.47335922718048096
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": 0.02553931064903736,
+                "y": 309.8235778808594,
+                "z": 359.8755187988281
+            },
+            "salientMaterials": [
+                "Fabric"
+            ],
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.39799997210502625,
+                    "y": 1.4607453346252441,
+                    "z": 2.042074203491211
+                },
+                "cornerPoints": [
+                    [
+                        0.46232175827026367,
+                        1.66318941116333,
+                        2.0613560676574707
+                    ],
+                    [
+                        0.46232175827026367,
+                        1.66318941116333,
+                        2.022792339324951
+                    ],
+                    [
+                        0.46232175827026367,
+                        1.2583012580871582,
+                        2.0613560676574707
+                    ],
+                    [
+                        0.46232175827026367,
+                        1.2583012580871582,
+                        2.022792339324951
+                    ],
+                    [
+                        0.3336781859397888,
+                        1.66318941116333,
+                        2.0613560676574707
+                    ],
+                    [
+                        0.3336781859397888,
+                        1.66318941116333,
+                        2.022792339324951
+                    ],
+                    [
+                        0.3336781859397888,
+                        1.2583012580871582,
+                        2.0613560676574707
+                    ],
+                    [
+                        0.3336781859397888,
+                        1.2583012580871582,
+                        2.022792339324951
+                    ]
+                ],
+                "size": {
+                    "x": 0.12864357233047485,
+                    "y": 0.4048881530761719,
+                    "z": 0.03856372833251953
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.5881799459457397,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": true,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.07999999821186066,
+            "moveable": false,
+            "name": "HandTowel_fa3af301",
+            "objectId": "HandTowel|+00.40|+01.66|+02.04",
+            "objectOrientedBoundingBox": {
+                "cornerPoints": [
+                    [
+                        0.3336782455444336,
+                        1.2583012580871582,
+                        2.022792339324951
+                    ],
+                    [
+                        0.46232178807258606,
+                        1.2583012580871582,
+                        2.0227925777435303
+                    ],
+                    [
+                        0.4623217284679413,
+                        1.2583012580871582,
+                        2.0613560676574707
+                    ],
+                    [
+                        0.33367815613746643,
+                        1.2583012580871582,
+                        2.0613558292388916
+                    ],
+                    [
+                        0.3336782455444336,
+                        1.66318941116333,
+                        2.022792339324951
+                    ],
+                    [
+                        0.46232178807258606,
+                        1.66318941116333,
+                        2.0227925777435303
+                    ],
+                    [
+                        0.4623217284679413,
+                        1.66318941116333,
+                        2.0613560676574707
+                    ],
+                    [
+                        0.33367815613746643,
+                        1.66318941116333,
+                        2.0613558292388916
+                    ]
+                ]
+            },
+            "objectType": "HandTowel",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "HandTowelHolder|+00.40|+01.76|+02.00"
+            ],
+            "pickupable": true,
+            "position": {
+                "x": 0.39799997210502625,
+                "y": 1.656000018119812,
+                "z": 2.039299964904785
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": -0.0,
+                "y": 179.99990844726562,
+                "z": 0.0
+            },
+            "salientMaterials": [
+                "Fabric"
+            ],
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": true
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.48051971197128296,
+                    "y": 0.2720966041088104,
+                    "z": 4.793773651123047
+                },
+                "cornerPoints": [
+                    [
+                        0.5546683073043823,
+                        0.5417658090591431,
+                        4.867776870727539
+                    ],
+                    [
+                        0.5546683073043823,
+                        0.5417658090591431,
+                        4.719770431518555
+                    ],
+                    [
+                        0.5546683073043823,
+                        0.0024273693561553955,
+                        4.867776870727539
+                    ],
+                    [
+                        0.5546683073043823,
+                        0.0024273693561553955,
+                        4.719770431518555
+                    ],
+                    [
+                        0.4063711166381836,
+                        0.5417658090591431,
+                        4.867776870727539
+                    ],
+                    [
+                        0.4063711166381836,
+                        0.5417658090591431,
+                        4.719770431518555
+                    ],
+                    [
+                        0.4063711166381836,
+                        0.0024273693561553955,
+                        4.867776870727539
+                    ],
+                    [
+                        0.4063711166381836,
+                        0.0024273693561553955,
+                        4.719770431518555
+                    ]
+                ],
+                "size": {
+                    "x": 0.14829719066619873,
+                    "y": 0.5393384695053101,
+                    "z": 0.14800643920898438
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 3.287876844406128,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 1.0,
+            "moveable": false,
+            "name": "Plunger_72bfd92e",
+            "objectId": "Plunger|+00.48|+00.00|+04.79",
+            "objectOrientedBoundingBox": {
+                "cornerPoints": [
+                    [
+                        0.5546683073043823,
+                        0.002427617786452174,
+                        4.867777347564697
+                    ],
+                    [
+                        0.4063712954521179,
+                        0.002427625237032771,
+                        4.867777347564697
+                    ],
+                    [
+                        0.4063711166381836,
+                        0.0024273591116070747,
+                        4.719770908355713
+                    ],
+                    [
+                        0.554668128490448,
+                        0.002427351661026478,
+                        4.719770908355713
+                    ],
+                    [
+                        0.5546683073043823,
+                        0.5417658090591431,
+                        4.867776393890381
+                    ],
+                    [
+                        0.4063713252544403,
+                        0.5417658090591431,
+                        4.867776393890381
+                    ],
+                    [
+                        0.406371146440506,
+                        0.541765570640564,
+                        4.7197699546813965
+                    ],
+                    [
+                        0.5546681880950928,
+                        0.541765570640564,
+                        4.7197699546813965
+                    ]
+                ]
+            },
+            "objectType": "Plunger",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": true,
+            "position": {
+                "x": 0.48052042722702026,
+                "y": 0.0019643157720565796,
+                "z": 4.7938432693481445
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": -0.0011689249658957124,
+                "y": 0.0004670079506468028,
+                "z": 0.0007839606259949505
+            },
+            "salientMaterials": [
+                "Rubber",
+                "Wood"
+            ],
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -2.390284299850464,
+                    "y": 1.1947643756866455,
+                    "z": 0.5965117812156677
+                },
+                "cornerPoints": [
+                    [
+                        -2.368889570236206,
+                        1.4907605648040771,
+                        0.8004969954490662
+                    ],
+                    [
+                        -2.368889570236206,
+                        1.4907605648040771,
+                        0.3925265669822693
+                    ],
+                    [
+                        -2.368889570236206,
+                        0.8987681865692139,
+                        0.8004969954490662
+                    ],
+                    [
+                        -2.368889570236206,
+                        0.8987681865692139,
+                        0.3925265669822693
+                    ],
+                    [
+                        -2.4116790294647217,
+                        1.4907605648040771,
+                        0.8004969954490662
+                    ],
+                    [
+                        -2.4116790294647217,
+                        1.4907605648040771,
+                        0.3925265669822693
+                    ],
+                    [
+                        -2.4116790294647217,
+                        0.8987681865692139,
+                        0.8004969954490662
+                    ],
+                    [
+                        -2.4116790294647217,
+                        0.8987681865692139,
+                        0.3925265669822693
+                    ]
+                ],
+                "size": {
+                    "x": 0.042789459228515625,
+                    "y": 0.5919923782348633,
+                    "z": 0.4079704284667969
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 2.070570468902588,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.5699999928474426,
+            "moveable": false,
+            "name": "Towel_07bc1fe4",
+            "objectId": "Towel|-02.39|+01.48|+00.58",
+            "objectOrientedBoundingBox": {
+                "cornerPoints": [
+                    [
+                        -2.368889808654785,
+                        0.8987681865692139,
+                        0.39252662658691406
+                    ],
+                    [
+                        -2.3688910007476807,
+                        0.8987681865692139,
+                        0.8004969358444214
+                    ],
+                    [
+                        -2.4116790294647217,
+                        0.8987681865692139,
+                        0.8004968166351318
+                    ],
+                    [
+                        -2.411677837371826,
+                        0.8987681865692139,
+                        0.3925265073776245
+                    ],
+                    [
+                        -2.368889808654785,
+                        1.4907605648040771,
+                        0.39252662658691406
+                    ],
+                    [
+                        -2.3688910007476807,
+                        1.4907605648040771,
+                        0.8004969358444214
+                    ],
+                    [
+                        -2.4116790294647217,
+                        1.4907605648040771,
+                        0.8004968166351318
+                    ],
+                    [
+                        -2.411677837371826,
+                        1.4907605648040771,
+                        0.3925265073776245
+                    ]
+                ]
+            },
+            "objectType": "Towel",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "TowelHolder|-02.50|+01.46|+00.58"
+            ],
+            "pickupable": true,
+            "position": {
+                "x": -2.3931000232696533,
+                "y": 1.4780000448226929,
+                "z": 0.5800002813339233
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": -0.0,
+                "y": 89.99983215332031,
+                "z": -0.0
+            },
+            "salientMaterials": [
+                "Fabric"
+            ],
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -2.443814754486084,
+                    "y": 1.464041829109192,
+                    "z": 0.5801940560340881
+                },
+                "cornerPoints": [
+                    [
+                        -2.387758731842041,
+                        1.4848538637161255,
+                        0.9094691276550293
+                    ],
+                    [
+                        -2.387758731842041,
+                        1.4848538637161255,
+                        0.250918984413147
+                    ],
+                    [
+                        -2.387758731842041,
+                        1.4432297945022583,
+                        0.9094691276550293
+                    ],
+                    [
+                        -2.387758731842041,
+                        1.4432297945022583,
+                        0.250918984413147
+                    ],
+                    [
+                        -2.499870777130127,
+                        1.4848538637161255,
+                        0.9094691276550293
+                    ],
+                    [
+                        -2.499870777130127,
+                        1.4848538637161255,
+                        0.250918984413147
+                    ],
+                    [
+                        -2.499870777130127,
+                        1.4432297945022583,
+                        0.9094691276550293
+                    ],
+                    [
+                        -2.499870777130127,
+                        1.4432297945022583,
+                        0.250918984413147
+                    ]
+                ],
+                "size": {
+                    "x": 0.11211204528808594,
+                    "y": 0.04162406921386719,
+                    "z": 0.6585501432418823
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 2.1402437686920166,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "TowelHolder_fdb15588",
+            "objectId": "TowelHolder|-02.50|+01.46|+00.58",
+            "objectOrientedBoundingBox": null,
+            "objectType": "TowelHolder",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": false,
+            "position": {
+                "x": -2.5,
+                "y": 1.4639999866485596,
+                "z": 0.5799999833106995
+            },
+            "receptacle": true,
+            "receptacleObjectIds": [
+                "Towel|-02.39|+01.48|+00.58"
+            ],
+            "rotation": {
+                "x": -0.0,
+                "y": 89.99983215332031,
+                "z": -0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -0.003103300929069519,
+                    "y": 0.9713000059127808,
+                    "z": 4.949580669403076
+                },
+                "cornerPoints": [
+                    [
+                        0.1137787401676178,
+                        1.0102850198745728,
+                        5.0
+                    ],
+                    [
+                        0.1137787401676178,
+                        1.0102850198745728,
+                        4.899161338806152
+                    ],
+                    [
+                        0.1137787401676178,
+                        0.9323149919509888,
+                        5.0
+                    ],
+                    [
+                        0.1137787401676178,
+                        0.9323149919509888,
+                        4.899161338806152
+                    ],
+                    [
+                        -0.11998534202575684,
+                        1.0102850198745728,
+                        5.0
+                    ],
+                    [
+                        -0.11998534202575684,
+                        1.0102850198745728,
+                        4.899161338806152
+                    ],
+                    [
+                        -0.11998534202575684,
+                        0.9323149919509888,
+                        5.0
+                    ],
+                    [
+                        -0.11998534202575684,
+                        0.9323149919509888,
+                        4.899161338806152
+                    ]
+                ],
+                "size": {
+                    "x": 0.23376408219337463,
+                    "y": 0.07797002792358398,
+                    "z": 0.10083866119384766
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 3.138338327407837,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "ToiletPaperHanger_a3ebad7e",
+            "objectId": "ToiletPaperHanger|-00.08|+00.97|+05.00",
+            "objectOrientedBoundingBox": null,
+            "objectType": "ToiletPaperHanger",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": false,
+            "position": {
+                "x": -0.08100000023841858,
+                "y": 0.9713000059127808,
+                "z": 5.0
+            },
+            "receptacle": true,
+            "receptacleObjectIds": [],
+            "rotation": {
+                "x": -0.0,
+                "y": 180.00003051757812,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -1.9520000219345093,
+                    "y": 0.7061359286308289,
+                    "z": 0.8400261998176575
+                },
+                "cornerPoints": [
+                    [
+                        -1.9119229316711426,
+                        0.7184725999832153,
+                        0.8919489979743958
+                    ],
+                    [
+                        -1.9119229316711426,
+                        0.7184725999832153,
+                        0.7881034016609192
+                    ],
+                    [
+                        -1.9119229316711426,
+                        0.6937992572784424,
+                        0.8919489979743958
+                    ],
+                    [
+                        -1.9119229316711426,
+                        0.6937992572784424,
+                        0.7881034016609192
+                    ],
+                    [
+                        -1.992077112197876,
+                        0.7184725999832153,
+                        0.8919489979743958
+                    ],
+                    [
+                        -1.992077112197876,
+                        0.7184725999832153,
+                        0.7881034016609192
+                    ],
+                    [
+                        -1.992077112197876,
+                        0.6937992572784424,
+                        0.8919489979743958
+                    ],
+                    [
+                        -1.992077112197876,
+                        0.6937992572784424,
+                        0.7881034016609192
+                    ]
+                ],
+                "size": {
+                    "x": 0.0801541805267334,
+                    "y": 0.02467334270477295,
+                    "z": 0.10384559631347656
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.5151610374450684,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.10999999940395355,
+            "moveable": false,
+            "name": "SoapBar_95886919",
+            "objectId": "SoapBar|-01.95|+00.69|+00.84",
+            "objectOrientedBoundingBox": {
+                "cornerPoints": [
+                    [
+                        -1.9119229316711426,
+                        0.6938051581382751,
+                        0.8750820755958557
+                    ],
+                    [
+                        -1.9638259410858154,
+                        0.6937992572784424,
+                        0.8919404149055481
+                    ],
+                    [
+                        -1.992077112197876,
+                        0.693829357624054,
+                        0.8049617409706116
+                    ],
+                    [
+                        -1.9401741027832031,
+                        0.6938352584838867,
+                        0.7881034016609192
+                    ],
+                    [
+                        -1.9119230508804321,
+                        0.7184424996376038,
+                        0.8750905990600586
+                    ],
+                    [
+                        -1.963826060295105,
+                        0.718436598777771,
+                        0.891948938369751
+                    ],
+                    [
+                        -1.992077112197876,
+                        0.7184666395187378,
+                        0.8049702644348145
+                    ],
+                    [
+                        -1.9401741027832031,
+                        0.7184725999832153,
+                        0.7881119251251221
+                    ]
+                ]
+            },
+            "objectType": "SoapBar",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "Bathtub|-01.04|+00.16|+00.56"
+            ],
+            "pickupable": true,
+            "position": {
+                "x": -1.9520000219345093,
+                "y": 0.6939983367919922,
+                "z": 0.8400219678878784
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": 0.018886661157011986,
+                "y": 17.99399185180664,
+                "z": 0.006261727772653103
+            },
+            "salientMaterials": [
+                "Soap"
+            ],
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.7191770076751709,
+                    "y": 1.0977942943572998,
+                    "z": 4.626534938812256
+                },
+                "cornerPoints": [
+                    [
+                        0.7713378667831421,
+                        1.1570968627929688,
+                        4.678722858428955
+                    ],
+                    [
+                        0.7713378667831421,
+                        1.1570968627929688,
+                        4.574347019195557
+                    ],
+                    [
+                        0.7713378667831421,
+                        1.0384917259216309,
+                        4.678722858428955
+                    ],
+                    [
+                        0.7713378667831421,
+                        1.0384917259216309,
+                        4.574347019195557
+                    ],
+                    [
+                        0.6670161485671997,
+                        1.1570968627929688,
+                        4.678722858428955
+                    ],
+                    [
+                        0.6670161485671997,
+                        1.1570968627929688,
+                        4.574347019195557
+                    ],
+                    [
+                        0.6670161485671997,
+                        1.0384917259216309,
+                        4.678722858428955
+                    ],
+                    [
+                        0.6670161485671997,
+                        1.0384917259216309,
+                        4.574347019195557
+                    ]
+                ],
+                "size": {
+                    "x": 0.10432171821594238,
+                    "y": 0.11860513687133789,
+                    "z": 0.10437583923339844
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 3.141366481781006,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.20000000298023224,
+            "moveable": false,
+            "name": "ToiletPaper_b63af742",
+            "objectId": "ToiletPaper|+00.72|+01.04|+04.63",
+            "objectOrientedBoundingBox": {
+                "cornerPoints": [
+                    [
+                        0.7713261246681213,
+                        1.0382660627365112,
+                        4.678447246551514
+                    ],
+                    [
+                        0.6670072674751282,
+                        1.0382881164550781,
+                        4.6784515380859375
+                    ],
+                    [
+                        0.6670029759407043,
+                        1.0387184619903564,
+                        4.57413387298584
+                    ],
+                    [
+                        0.7713218331336975,
+                        1.038696527481079,
+                        4.574129104614258
+                    ],
+                    [
+                        0.7713510990142822,
+                        1.156803011894226,
+                        4.678936004638672
+                    ],
+                    [
+                        0.6670323014259338,
+                        1.156825065612793,
+                        4.678940773010254
+                    ],
+                    [
+                        0.6670279502868652,
+                        1.1572554111480713,
+                        4.574622631072998
+                    ],
+                    [
+                        0.7713468074798584,
+                        1.157233476638794,
+                        4.574618339538574
+                    ]
+                ]
+            },
+            "objectType": "ToiletPaper",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "Toilet|+00.38|+00.00|+04.47"
+            ],
+            "pickupable": true,
+            "position": {
+                "x": 0.718466579914093,
+                "y": 1.0364985466003418,
+                "z": 4.626280307769775
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": 0.2989506721496582,
+                "y": 0.002491445280611515,
+                "z": 0.05828389897942543
+            },
+            "salientMaterials": [
+                "Paper"
+            ],
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -1.1210001707077026,
+                    "y": 1.3341596126556396,
+                    "z": 4.9886298179626465
+                },
+                "cornerPoints": [
+                    [
+                        -1.064014196395874,
+                        1.3960546255111694,
+                        5.000472068786621
+                    ],
+                    [
+                        -1.064014196395874,
+                        1.3960546255111694,
+                        4.976787567138672
+                    ],
+                    [
+                        -1.064014196395874,
+                        1.2722645998001099,
+                        5.000472068786621
+                    ],
+                    [
+                        -1.064014196395874,
+                        1.2722645998001099,
+                        4.976787567138672
+                    ],
+                    [
+                        -1.1779861450195312,
+                        1.3960546255111694,
+                        5.000472068786621
+                    ],
+                    [
+                        -1.1779861450195312,
+                        1.3960546255111694,
+                        4.976787567138672
+                    ],
+                    [
+                        -1.1779861450195312,
+                        1.2722645998001099,
+                        5.000472068786621
+                    ],
+                    [
+                        -1.1779861450195312,
+                        1.2722645998001099,
+                        4.976787567138672
+                    ]
+                ],
+                "size": {
+                    "x": 0.11397194862365723,
+                    "y": 0.12379002571105957,
+                    "z": 0.02368450164794922
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": [],
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 3.0336222648620605,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": true,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "LightSwitch_4b7861d9",
+            "objectId": "LightSwitch|-01.12|+01.33|+05.00",
+            "objectOrientedBoundingBox": null,
+            "objectType": "LightSwitch",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": false,
+            "position": {
+                "x": -1.121000051498413,
+                "y": 1.3339999914169312,
+                "z": 5.000471591949463
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": -0.0,
+                "y": 180.0003204345703,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": true,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -1.0325840711593628,
+                    "y": 0.39328843355178833,
+                    "z": 0.5569692850112915
+                },
+                "cornerPoints": [
+                    [
+                        -0.3116840124130249,
+                        0.6309276819229126,
+                        0.9233077168464661
+                    ],
+                    [
+                        -0.3116840124130249,
+                        0.6309276819229126,
+                        0.19063085317611694
+                    ],
+                    [
+                        -0.3116840124130249,
+                        0.15564918518066406,
+                        0.9233077168464661
+                    ],
+                    [
+                        -0.3116840124130249,
+                        0.15564918518066406,
+                        0.19063085317611694
+                    ],
+                    [
+                        -1.7534841299057007,
+                        0.6309276819229126,
+                        0.9233077168464661
+                    ],
+                    [
+                        -1.7534841299057007,
+                        0.6309276819229126,
+                        0.19063085317611694
+                    ],
+                    [
+                        -1.7534841299057007,
+                        0.15564918518066406,
+                        0.9233077168464661
+                    ],
+                    [
+                        -1.7534841299057007,
+                        0.15564918518066406,
+                        0.19063085317611694
+                    ]
+                ],
+                "size": {
+                    "x": 1.4418001174926758,
+                    "y": 0.47527849674224854,
+                    "z": 0.7326768636703491
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.6280723810195923,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "BathtubBasin_4ed7f433",
+            "objectId": "Bathtub|-01.04|+00.16|+00.56|BathtubBasin",
+            "objectOrientedBoundingBox": null,
+            "objectType": "BathtubBasin",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": false,
+            "position": {
+                "x": -1.062000036239624,
+                "y": 0.15399999916553497,
+                "z": 0.5560000538825989
+            },
+            "receptacle": true,
+            "receptacleObjectIds": [
+                "Faucet|-00.21|+00.69|+00.55"
+            ],
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.3998998999595642,
+                    "y": 1.6974413394927979,
+                    "z": 2.025313377380371
+                },
+                "cornerPoints": [
+                    [
+                        0.48530489206314087,
+                        1.8025875091552734,
+                        2.0496270656585693
+                    ],
+                    [
+                        0.48530489206314087,
+                        1.8025875091552734,
+                        2.000999689102173
+                    ],
+                    [
+                        0.48530489206314087,
+                        1.5922951698303223,
+                        2.0496270656585693
+                    ],
+                    [
+                        0.48530489206314087,
+                        1.5922951698303223,
+                        2.000999689102173
+                    ],
+                    [
+                        0.31449490785598755,
+                        1.8025875091552734,
+                        2.0496270656585693
+                    ],
+                    [
+                        0.31449490785598755,
+                        1.8025875091552734,
+                        2.000999689102173
+                    ],
+                    [
+                        0.31449490785598755,
+                        1.5922951698303223,
+                        2.0496270656585693
+                    ],
+                    [
+                        0.31449490785598755,
+                        1.5922951698303223,
+                        2.000999689102173
+                    ]
+                ],
+                "size": {
+                    "x": 0.17080998420715332,
+                    "y": 0.21029233932495117,
+                    "z": 0.048627376556396484
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.6385058164596558,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": true,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "HandTowelHolder_02aabc63",
+            "objectId": "HandTowelHolder|+00.40|+01.76|+02.00",
+            "objectOrientedBoundingBox": null,
+            "objectType": "HandTowelHolder",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": false,
+            "position": {
+                "x": 0.39800000190734863,
+                "y": 1.7580000162124634,
+                "z": 2.000999927520752
+            },
+            "receptacle": true,
+            "receptacleObjectIds": [
+                "HandTowel|+00.40|+01.66|+02.04"
+            ],
+            "rotation": {
+                "x": -0.0,
+                "y": 269.99993896484375,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": true
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.7490943670272827,
+                    "y": 1.1043064594268799,
+                    "z": 4.0832014083862305
+                },
+                "cornerPoints": [
+                    [
+                        0.7683649063110352,
+                        1.1653470993041992,
+                        4.102475643157959
+                    ],
+                    [
+                        0.7683649063110352,
+                        1.1653470993041992,
+                        4.063927173614502
+                    ],
+                    [
+                        0.7683649063110352,
+                        1.0432658195495605,
+                        4.102475643157959
+                    ],
+                    [
+                        0.7683649063110352,
+                        1.0432658195495605,
+                        4.063927173614502
+                    ],
+                    [
+                        0.7298238277435303,
+                        1.1653470993041992,
+                        4.102475643157959
+                    ],
+                    [
+                        0.7298238277435303,
+                        1.1653470993041992,
+                        4.063927173614502
+                    ],
+                    [
+                        0.7298238277435303,
+                        1.0432658195495605,
+                        4.102475643157959
+                    ],
+                    [
+                        0.7298238277435303,
+                        1.0432658195495605,
+                        4.063927173614502
+                    ]
+                ],
+                "size": {
+                    "x": 0.03854107856750488,
+                    "y": 0.12208127975463867,
+                    "z": 0.03854846954345703
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 2.723701000213623,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.20000000298023224,
+            "moveable": false,
+            "name": "ToiletPaper_7d5b3887",
+            "objectId": "ToiletPaper|+00.75|+01.04|+04.08",
+            "objectOrientedBoundingBox": {
+                "cornerPoints": [
+                    [
+                        0.768345057964325,
+                        1.0432729721069336,
+                        4.102484703063965
+                    ],
+                    [
+                        0.7298166751861572,
+                        1.0432789325714111,
+                        4.102476119995117
+                    ],
+                    [
+                        0.7298248410224915,
+                        1.0432695150375366,
+                        4.063947677612305
+                    ],
+                    [
+                        0.7683532238006592,
+                        1.043263554573059,
+                        4.063955783843994
+                    ],
+                    [
+                        0.768363893032074,
+                        1.1653434038162231,
+                        4.102454662322998
+                    ],
+                    [
+                        0.7298355102539062,
+                        1.1653493642807007,
+                        4.102446556091309
+                    ],
+                    [
+                        0.7298437356948853,
+                        1.1653399467468262,
+                        4.063918113708496
+                    ],
+                    [
+                        0.768372118473053,
+                        1.1653339862823486,
+                        4.0639262199401855
+                    ]
+                ]
+            },
+            "objectType": "ToiletPaper",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "CounterTop|+00.49|+01.02|+03.09"
+            ],
+            "pickupable": true,
+            "position": {
+                "x": 0.7490831613540649,
+                "y": 1.0429595708847046,
+                "z": 4.083215236663818
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": 359.8644714355469,
+                "y": 359.9715270996094,
+                "z": 359.9467468261719
+            },
+            "salientMaterials": [
+                "Paper"
+            ],
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -0.12156026810407639,
+                    "y": 0.8244381546974182,
+                    "z": 1.0512113571166992
+                },
+                "cornerPoints": [
+                    [
+                        -0.05803166329860687,
+                        0.9558432102203369,
+                        1.1147944927215576
+                    ],
+                    [
+                        -0.05803166329860687,
+                        0.9558432102203369,
+                        0.9876282215118408
+                    ],
+                    [
+                        -0.05803166329860687,
+                        0.6930330991744995,
+                        1.1147944927215576
+                    ],
+                    [
+                        -0.05803166329860687,
+                        0.6930330991744995,
+                        0.9876282215118408
+                    ],
+                    [
+                        -0.1850888729095459,
+                        0.9558432102203369,
+                        1.1147944927215576
+                    ],
+                    [
+                        -0.1850888729095459,
+                        0.9558432102203369,
+                        0.9876282215118408
+                    ],
+                    [
+                        -0.1850888729095459,
+                        0.6930330991744995,
+                        1.1147944927215576
+                    ],
+                    [
+                        -0.1850888729095459,
+                        0.6930330991744995,
+                        0.9876282215118408
+                    ]
+                ],
+                "size": {
+                    "x": 0.12705720961093903,
+                    "y": 0.2628101110458374,
+                    "z": 0.1271662712097168
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.3094538450241089,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": true,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.4000000059604645,
+            "moveable": false,
+            "name": "SoapBottle_e1de6c67",
+            "objectId": "SoapBottle|-00.12|+00.70|+01.05",
+            "objectOrientedBoundingBox": {
+                "cornerPoints": [
+                    [
+                        -0.10748536884784698,
+                        0.6940258741378784,
+                        1.1361812353134155
+                    ],
+                    [
+                        -0.20514458417892456,
+                        0.6928481459617615,
+                        1.03848397731781
+                    ],
+                    [
+                        -0.13852709531784058,
+                        0.6927045583724976,
+                        0.9718942046165466
+                    ],
+                    [
+                        -0.0408678874373436,
+                        0.6938823461532593,
+                        1.0695914030075073
+                    ],
+                    [
+                        -0.10878361761569977,
+                        0.9563329219818115,
+                        1.1343169212341309
+                    ],
+                    [
+                        -0.20644283294677734,
+                        0.9551551342010498,
+                        1.0366196632385254
+                    ],
+                    [
+                        -0.13982534408569336,
+                        0.9550116062164307,
+                        0.9700298309326172
+                    ],
+                    [
+                        -0.042166128754615784,
+                        0.9561892747879028,
+                        1.0677270889282227
+                    ]
+                ]
+            },
+            "objectType": "SoapBottle",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "Bathtub|-01.04|+00.16|+00.56"
+            ],
+            "pickupable": true,
+            "position": {
+                "x": -0.12098605185747147,
+                "y": 0.6953666806221008,
+                "z": 1.0519942045211792
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": 359.91265869140625,
+                "y": 314.98809814453125,
+                "z": 0.4884812533855438
+            },
+            "salientMaterials": [
+                "Plastic"
+            ],
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": true
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.727694034576416,
+                    "y": 1.160810112953186,
+                    "z": 4.408829689025879
+                },
+                "cornerPoints": [
+                    [
+                        0.7841230630874634,
+                        1.2837421894073486,
+                        4.4254150390625
+                    ],
+                    [
+                        0.7841230630874634,
+                        1.2837421894073486,
+                        4.392244338989258
+                    ],
+                    [
+                        0.7841230630874634,
+                        1.0378780364990234,
+                        4.4254150390625
+                    ],
+                    [
+                        0.7841230630874634,
+                        1.0378780364990234,
+                        4.392244338989258
+                    ],
+                    [
+                        0.6712650060653687,
+                        1.2837421894073486,
+                        4.4254150390625
+                    ],
+                    [
+                        0.6712650060653687,
+                        1.2837421894073486,
+                        4.392244338989258
+                    ],
+                    [
+                        0.6712650060653687,
+                        1.0378780364990234,
+                        4.4254150390625
+                    ],
+                    [
+                        0.6712650060653687,
+                        1.0378780364990234,
+                        4.392244338989258
+                    ]
+                ],
+                "size": {
+                    "x": 0.11285805702209473,
+                    "y": 0.2458641529083252,
+                    "z": 0.03317070007324219
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 2.9653513431549072,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.10999999940395355,
+            "moveable": false,
+            "name": "SprayBottle_cf897eef",
+            "objectId": "SprayBottle|+00.72|+01.04|+04.41",
+            "objectOrientedBoundingBox": {
+                "cornerPoints": [
+                    [
+                        0.784123420715332,
+                        1.0383116006851196,
+                        4.42540979385376
+                    ],
+                    [
+                        0.671657919883728,
+                        1.037929654121399,
+                        4.425415515899658
+                    ],
+                    [
+                        0.6716564297676086,
+                        1.0378780364990234,
+                        4.392560958862305
+                    ],
+                    [
+                        0.7841219305992126,
+                        1.0382599830627441,
+                        4.392555236816406
+                    ],
+                    [
+                        0.7832896709442139,
+                        1.2838081121444702,
+                        4.425024032592773
+                    ],
+                    [
+                        0.6708241701126099,
+                        1.2834261655807495,
+                        4.425029754638672
+                    ],
+                    [
+                        0.6708226203918457,
+                        1.283374547958374,
+                        4.392175197601318
+                    ],
+                    [
+                        0.7832881212234497,
+                        1.2837564945220947,
+                        4.39216947555542
+                    ]
+                ]
+            },
+            "objectType": "SprayBottle",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "Toilet|+00.38|+00.00|+04.47"
+            ],
+            "pickupable": true,
+            "position": {
+                "x": 0.7240060567855835,
+                "y": 1.0376112461090088,
+                "z": 4.408963680267334
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": 359.7544860839844,
+                "y": 0.006602463312447071,
+                "z": 0.17989401519298553
+            },
+            "salientMaterials": [
+                "Plastic"
+            ],
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.6879996657371521,
+                    "y": 0.2406219094991684,
+                    "z": 4.867000579833984
+                },
+                "cornerPoints": [
+                    [
+                        0.7541502714157104,
+                        0.4788167476654053,
+                        4.933929443359375
+                    ],
+                    [
+                        0.7541502714157104,
+                        0.4788167476654053,
+                        4.800071716308594
+                    ],
+                    [
+                        0.7541502714157104,
+                        0.0024270713329315186,
+                        4.933929443359375
+                    ],
+                    [
+                        0.7541502714157104,
+                        0.0024270713329315186,
+                        4.800071716308594
+                    ],
+                    [
+                        0.6218490600585938,
+                        0.4788167476654053,
+                        4.933929443359375
+                    ],
+                    [
+                        0.6218490600585938,
+                        0.4788167476654053,
+                        4.800071716308594
+                    ],
+                    [
+                        0.6218490600585938,
+                        0.0024270713329315186,
+                        4.933929443359375
+                    ],
+                    [
+                        0.6218490600585938,
+                        0.0024270713329315186,
+                        4.800071716308594
+                    ]
+                ],
+                "size": {
+                    "x": 0.1323012113571167,
+                    "y": 0.47638967633247375,
+                    "z": 0.13385772705078125
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 3.4468581676483154,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.1899999976158142,
+            "moveable": false,
+            "name": "ScrubBrush_e784c717",
+            "objectId": "ScrubBrush|+00.69|+00.00|+04.87",
+            "objectOrientedBoundingBox": {
+                "cornerPoints": [
+                    [
+                        0.7541502118110657,
+                        0.0024274936877191067,
+                        4.9339280128479
+                    ],
+                    [
+                        0.6218495965003967,
+                        0.0024270815774798393,
+                        4.933928489685059
+                    ],
+                    [
+                        0.6218493580818176,
+                        0.0024279155768454075,
+                        4.800072193145752
+                    ],
+                    [
+                        0.7541499733924866,
+                        0.002428327687084675,
+                        4.800071716308594
+                    ],
+                    [
+                        0.7541487216949463,
+                        0.4788164496421814,
+                        4.933931350708008
+                    ],
+                    [
+                        0.6218481063842773,
+                        0.47881603240966797,
+                        4.933931350708008
+                    ],
+                    [
+                        0.6218478679656982,
+                        0.4788168668746948,
+                        4.800075054168701
+                    ],
+                    [
+                        0.7541484832763672,
+                        0.47881728410720825,
+                        4.800074577331543
+                    ]
+                ]
+            },
+            "objectType": "ScrubBrush",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": null,
+            "pickupable": true,
+            "position": {
+                "x": 0.6879996657371521,
+                "y": 0.0024272948503494263,
+                "z": 4.867000102996826
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": 8.896398503566161e-05,
+                "y": 7.0530193625018e-05,
+                "z": 0.00017991931235883385
+            },
+            "salientMaterials": [
+                "Plastic"
+            ],
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": -0.23108422756195068,
+                    "y": 0.275517076253891,
+                    "z": 1.447134256362915
+                },
+                "cornerPoints": [
+                    [
+                        -0.07301172614097595,
+                        0.5486088991165161,
+                        1.6642341613769531
+                    ],
+                    [
+                        -0.07301172614097595,
+                        0.5486088991165161,
+                        1.230034351348877
+                    ],
+                    [
+                        -0.07301172614097595,
+                        0.002425283193588257,
+                        1.6642341613769531
+                    ],
+                    [
+                        -0.07301172614097595,
+                        0.002425283193588257,
+                        1.230034351348877
+                    ],
+                    [
+                        -0.3891567289829254,
+                        0.5486088991165161,
+                        1.6642341613769531
+                    ],
+                    [
+                        -0.3891567289829254,
+                        0.5486088991165161,
+                        1.230034351348877
+                    ],
+                    [
+                        -0.3891567289829254,
+                        0.002425283193588257,
+                        1.6642341613769531
+                    ],
+                    [
+                        -0.3891567289829254,
+                        0.002425283193588257,
+                        1.230034351348877
+                    ]
+                ],
+                "size": {
+                    "x": 0.31614500284194946,
+                    "y": 0.5461835861206055,
+                    "z": 0.43419981002807617
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.308815360069275,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.699999988079071,
+            "moveable": true,
+            "name": "GarbageCan_aa866367",
+            "objectId": "GarbageCan|-00.23|+00.00|+01.45",
+            "objectOrientedBoundingBox": {
+                "cornerPoints": [
+                    [
+                        -0.38915395736694336,
+                        0.002427160507068038,
+                        1.6642327308654785
+                    ],
+                    [
+                        -0.3891543447971344,
+                        0.0024269199930131435,
+                        1.2300370931625366
+                    ],
+                    [
+                        -0.07301503419876099,
+                        0.0024272198788821697,
+                        1.230036735534668
+                    ],
+                    [
+                        -0.07301464676856995,
+                        0.002427460392937064,
+                        1.6642324924468994
+                    ],
+                    [
+                        -0.38915449380874634,
+                        0.5486037731170654,
+                        1.6642324924468994
+                    ],
+                    [
+                        -0.389154851436615,
+                        0.5486035346984863,
+                        1.230036735534668
+                    ],
+                    [
+                        -0.07301555573940277,
+                        0.5486038327217102,
+                        1.2300364971160889
+                    ],
+                    [
+                        -0.07301516830921173,
+                        0.5486040711402893,
+                        1.6642322540283203
+                    ]
+                ]
+            },
+            "objectType": "GarbageCan",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "Floor|+00.30|+00.09|+03.37"
+            ],
+            "pickupable": false,
+            "position": {
+                "x": -0.23000027239322662,
+                "y": 0.0016600042581558228,
+                "z": 1.4460004568099976
+            },
+            "receptacle": true,
+            "receptacleObjectIds": [],
+            "rotation": {
+                "x": 0.00018168866517953575,
+                "y": 270.0002746582031,
+                "z": 0.00014529534382745624
+            },
+            "salientMaterials": [
+                "Plastic"
+            ],
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "Toilet1",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.362335741519928,
+                    "y": 0.5196150541305542,
+                    "z": 4.47058629989624
+                },
+                "cornerPoints": [
+                    [
+                        0.8487690687179565,
+                        1.0385714769363403,
+                        4.735328197479248
+                    ],
+                    [
+                        0.8487690687179565,
+                        1.0385714769363403,
+                        4.205844402313232
+                    ],
+                    [
+                        0.8487690687179565,
+                        0.0006586313247680664,
+                        4.735328197479248
+                    ],
+                    [
+                        0.8487690687179565,
+                        0.0006586313247680664,
+                        4.205844402313232
+                    ],
+                    [
+                        -0.12409758567810059,
+                        1.0385714769363403,
+                        4.735328197479248
+                    ],
+                    [
+                        -0.12409758567810059,
+                        1.0385714769363403,
+                        4.205844402313232
+                    ],
+                    [
+                        -0.12409758567810059,
+                        0.0006586313247680664,
+                        4.735328197479248
+                    ],
+                    [
+                        -0.12409758567810059,
+                        0.0006586313247680664,
+                        4.205844402313232
+                    ]
+                ],
+                "size": {
+                    "x": 0.9728666543960571,
+                    "y": 1.0379128456115723,
+                    "z": 0.5294837951660156
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": null,
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 2.968003988265991,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "Toilet_b8aba79b",
+            "objectId": "Toilet|+00.38|+00.00|+04.47",
+            "objectOrientedBoundingBox": null,
+            "objectType": "Toilet",
+            "openable": true,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "Floor|+00.30|+00.09|+03.37"
+            ],
+            "pickupable": false,
+            "position": {
+                "x": 0.37631022930145264,
+                "y": 0.002427291125059128,
+                "z": 4.470428943634033
+            },
+            "receptacle": true,
+            "receptacleObjectIds": [
+                "ToiletPaper|+00.72|+01.04|+04.63",
+                "SprayBottle|+00.72|+01.04|+04.41"
+            ],
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": false,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.5878990888595581,
+                    "y": 1.1417078971862793,
+                    "z": 3.37335205078125
+                },
+                "cornerPoints": [
+                    [
+                        0.7165985107421875,
+                        1.240950345993042,
+                        3.665219783782959
+                    ],
+                    [
+                        0.7165985107421875,
+                        1.240950345993042,
+                        3.081484317779541
+                    ],
+                    [
+                        0.7165985107421875,
+                        1.0424654483795166,
+                        3.665219783782959
+                    ],
+                    [
+                        0.7165985107421875,
+                        1.0424654483795166,
+                        3.081484317779541
+                    ],
+                    [
+                        0.4591996669769287,
+                        1.240950345993042,
+                        3.665219783782959
+                    ],
+                    [
+                        0.4591996669769287,
+                        1.240950345993042,
+                        3.081484317779541
+                    ],
+                    [
+                        0.4591996669769287,
+                        1.0424654483795166,
+                        3.665219783782959
+                    ],
+                    [
+                        0.4591996669769287,
+                        1.0424654483795166,
+                        3.081484317779541
+                    ]
+                ],
+                "size": {
+                    "x": 0.2573988437652588,
+                    "y": 0.1984848976135254,
+                    "z": 0.583735466003418
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": [],
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 2.1593825817108154,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "Faucet_a53d6be9",
+            "objectId": "Faucet|+00.66|+01.04|+03.37",
+            "objectOrientedBoundingBox": null,
+            "objectType": "Faucet",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "Sink|+00.43|+01.04|+02.95",
+                "CounterTop|+00.49|+01.02|+03.09"
+            ],
+            "pickupable": false,
+            "position": {
+                "x": 0.6615999937057495,
+                "y": 1.0435502529144287,
+                "z": 3.371999979019165
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": 0.0,
+                "y": 269.99981689453125,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": true,
+            "visible": false
+        },
+        {
+            "assetId": "",
+            "axisAlignedBoundingBox": {
+                "center": {
+                    "x": 0.5878990888595581,
+                    "y": 1.1417078971862793,
+                    "z": 2.5221519470214844
+                },
+                "cornerPoints": [
+                    [
+                        0.7165985107421875,
+                        1.240950345993042,
+                        2.8140196800231934
+                    ],
+                    [
+                        0.7165985107421875,
+                        1.240950345993042,
+                        2.2302842140197754
+                    ],
+                    [
+                        0.7165985107421875,
+                        1.0424654483795166,
+                        2.8140196800231934
+                    ],
+                    [
+                        0.7165985107421875,
+                        1.0424654483795166,
+                        2.2302842140197754
+                    ],
+                    [
+                        0.4591996669769287,
+                        1.240950345993042,
+                        2.8140196800231934
+                    ],
+                    [
+                        0.4591996669769287,
+                        1.240950345993042,
+                        2.2302842140197754
+                    ],
+                    [
+                        0.4591996669769287,
+                        1.0424654483795166,
+                        2.8140196800231934
+                    ],
+                    [
+                        0.4591996669769287,
+                        1.0424654483795166,
+                        2.2302842140197754
+                    ]
+                ],
+                "size": {
+                    "x": 0.2573988437652588,
+                    "y": 0.1984848976135254,
+                    "z": 0.583735466003418
+                }
+            },
+            "breakable": false,
+            "canBeUsedUp": false,
+            "canFillWithLiquid": false,
+            "controlledObjects": [],
+            "cookable": false,
+            "dirtyable": false,
+            "distance": 1.7469350099563599,
+            "fillLiquid": null,
+            "isBroken": false,
+            "isColdSource": false,
+            "isCooked": false,
+            "isDirty": false,
+            "isFilledWithLiquid": false,
+            "isHeatSource": false,
+            "isInteractable": false,
+            "isMoving": false,
+            "isOpen": false,
+            "isPickedUp": false,
+            "isSliced": false,
+            "isToggled": false,
+            "isUsedUp": false,
+            "mass": 0.0,
+            "moveable": false,
+            "name": "Faucet_c2fff817",
+            "objectId": "Faucet|+00.66|+01.04|+02.52",
+            "objectOrientedBoundingBox": null,
+            "objectType": "Faucet",
+            "openable": false,
+            "openness": 0.0,
+            "parentReceptacles": [
+                "Sink|+00.43|+01.04|+02.95",
+                "CounterTop|+00.49|+01.02|+03.09"
+            ],
+            "pickupable": false,
+            "position": {
+                "x": 0.6615999937057495,
+                "y": 1.0435502529144287,
+                "z": 2.5208001136779785
+            },
+            "receptacle": false,
+            "receptacleObjectIds": null,
+            "rotation": {
+                "x": 0.0,
+                "y": 269.99981689453125,
+                "z": 0.0
+            },
+            "salientMaterials": null,
+            "sliceable": false,
+            "temperature": "RoomTemp",
+            "toggleable": true,
+            "visible": false
+        }
+    ],
+    "sceneBounds": {
+        "center": {
+            "x": -0.8113799095153809,
+            "y": 1.1963862180709839,
+            "z": 2.4798471927642822
+        },
+        "cornerPoints": [
+            [
+                0.9772405624389648,
+                2.5143282413482666,
+                5.059694290161133
+            ],
+            [
+                0.9772405624389648,
+                2.5143282413482666,
+                -0.09999990463256836
+            ],
+            [
+                0.9772405624389648,
+                -0.12155580520629883,
+                5.059694290161133
+            ],
+            [
+                0.9772405624389648,
+                -0.12155580520629883,
+                -0.09999990463256836
+            ],
+            [
+                -2.6000003814697266,
+                2.5143282413482666,
+                5.059694290161133
+            ],
+            [
+                -2.6000003814697266,
+                2.5143282413482666,
+                -0.09999990463256836
+            ],
+            [
+                -2.6000003814697266,
+                -0.12155580520629883,
+                5.059694290161133
+            ],
+            [
+                -2.6000003814697266,
+                -0.12155580520629883,
+                -0.09999990463256836
+            ]
+        ],
+        "size": {
+            "x": 3.5772409439086914,
+            "y": 2.6358840465545654,
+            "z": 5.159694194793701
+        }
+    },
+    "sceneName": "FloorPlan406_physics",
+    "screenHeight": 300,
+    "screenWidth": 300,
+    "segmentedObjectIds": [],
+    "thirdPartyCameras": [],
+    "visibleRange": null
+}

@@ -1,6 +1,7 @@
 from os import path
 from ai2thor.controller import Controller
 from PIL import Image
+import json
 
 def collect_images():
 
@@ -15,12 +16,13 @@ def collect_images():
     controller = Controller()
 
     # iterate through iTHOR scenes and save each image in folder '/images'
-    image_no = 0
     for scene in scenes:
         controller.reset(scene)
         event = controller.step(dict(action='Initialize', gridSize=0.25))
-        Image.fromarray(event.frame).save('/Users/naomilee/iTHOR/images/' + str(image_no) + '.png')
-        image_no += 1
+        # uncomment lines below to gather metadata in a json for each scene
+        # with open('/Users/naomilee/iTHOR/images/'+ str(scene) + '.json', 'w') as f:
+        #     json.dump(event.metadata, f, indent=4, sort_keys=True)
+        Image.fromarray(event.frame).save('/Users/naomilee/iTHOR/images/' + str(scene) + '.png')
 
 def main():
     collect_images()

@@ -1,7 +1,12 @@
 import os
 import numpy as np
 import pandas as pd
+from sklearn.metrics import average_precision_score, f1_score
+from conceptnet import calculateProbBySimilarVerbs, calculateProbBySimilarity
 #import ConceptNet
+
+threshold = .05
+aithor_verbs = ["Toggleable","Breakable","Fillable","Dirtable","UsedUp","Cookable","Heatable","Coldable","Sliceable","Openable","Pickupable","Moveable"]
 
 def process_object_labels():
     """
@@ -27,21 +32,45 @@ def test():
     """
     pass
 
-def f1_score():
+def f1_score_us(true,score):
     """
     Evaluation metric that takes both precision and recall into account.
     """
-    pass
+    return f1_score(true,score)
 
-def mean_avg_prec():
+def mean_avg_prec_us(true,score):
     """
     Calculates Mean Average Precision (MAP), the mean precision across each result.
     """
-    pass
+    return average_precision_score(true,score)
+
+def getTrueLabels(object):
+    df = pd.read_csv('ithor.csv')
+    actions = df.loc[df['Object Type'] == object, 'Actionable Properties'].iloc[0]
+    actions = actions.replace(" (Some)","")
+    actions = actions.split(", ")
+    return [verb in actions for verb in aithor_verbs]
+
+    
+    
+
+def sample_test(object):
+    probs = calculateProbBySimilarity(object)
+    labels = [num > threshold for num in probs]
+    trueLabels = getTrueLabels(object)
+    print(object)
+    print(aithor_verbs)
+    print("Predicted Labels: ", labels)
+    print("True Labels: ", labels)
+    print("F1 Score: ", f1_score_us(trueLabels,labels))
+    print("MAP Score: ", mean_avg_prec_us(trueLabels,labels))
 
 def main():
     # Will need to pass things in to these functions here...
-    process_object_labels()
+    #process_object_labels()
+
+    sample_test('Oven')
+
 
 
 if __name__ == "__main__":

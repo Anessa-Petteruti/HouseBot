@@ -43,16 +43,16 @@ def collect_images():
             scene_objects = event.metadata["objects"]
             for object in scene_objects:
                 if object["visible"] == True:
-                    print("YAY!!!!!")
+                    # print("YAY!!!!!")
                     object_strings.append(object["objectType"])
                     # json.dump(object, f, indent=4, sort_keys=True)
             # object strings
             object_strings = list(OrderedDict.fromkeys(object_strings))
-            print(object_strings)
+            # print(object_strings)
             # print(scene_objects, "TYPE:", type(scene_objects))
             # return 0
             json.dump(object_strings, f, indent=4, sort_keys=True)
-        # Image.fromarray(event.frame).save('/Users/naomilee/iTHOR/images/' + str(scene) + '.png')
+        Image.fromarray(event.frame).save('/Users/naomilee/iTHOR/images/' + str(scene) + '.png')
 
 def main():
     collect_images()

@@ -8,7 +8,7 @@ basic_url = 'http://api.conceptnet.io'
 relatedness1 = '/relatedness?node1=/c/en/'
 relatedness2 = '&node2=/c/en/'
 query_url1 = 'http://api.conceptnet.io/query?start=/c/en/'
-query_url2 = '&rel=/r/CapableOf&limit=20'
+query_url2 = '&rel=/r/UsedFor&limit=20'
 
 #Calculates probablity of using ai2thor verb by similarity between object noun and ai2thor. 
 #In terms of knowledge representation, this may be cheating because it assumes that the robot
@@ -18,8 +18,8 @@ def calculateProbBySimilarity(word):
     for verb in ai2thor_verbs:
         relatedness = requests.get(basic_url + relatedness1 + word + relatedness2 + verb).json()
         similarity.append(relatedness['value'])
-    similarity = normalizeBetween01(similarity)
-    similarity = [num/sum(similarity) for num in similarity]
+    #similarity = normalizeBetween01(similarity)
+    #similarity = [num/sum(similarity) for num in similarity]
     return similarity
 
 
@@ -36,11 +36,12 @@ def calculateProbBySimilarVerbs(word):
             verb1 = ai2thor_verbs[i]
             #print(verb1,verb2)
             #TODO: Add error checking for if this request does not exist
-            relatedness = requests.get(basic_url + relatedness1 + verb2 + relatedness2 + verb1).json()
-            similarity[i] += relatedness['value']
+            relatedness = requests.get(basic_url + relatedness1 + verb2 + relatedness2 + verb1)
+            if relatedness:
+                similarity[i] += relatedness.json()['value']
     similarity = [num/len(verbs) for num in similarity]
-    similarity = normalizeBetween01(similarity)
-    similarity = [num/sum(similarity) for num in similarity]
+    #similarity = normalizeBetween01(similarity)
+    #similarity = [num/sum(similarity) for num in similarity]
     return similarity
 
 def normalizeBetween01(verbList):
@@ -52,9 +53,12 @@ def normalizeBetween01(verbList):
 def formatCorrectly(verbs):
     return [verb.replace(" ","_") for verb in verbs]
 
-sim = calculateProbBySimilarVerbs("oven")
-for i in range(len(sim)):
-    print(ai2thor_verbs[i] + ": " + str(sim[i]))
+# sim = calculateProbBySimilarity("curtain")
+# for i in range(len(sim)):
+#     print(ai2thor_verbs[i] + ": " + str(sim[i]) + str(sim[i]>0.001))
+# sim = calculateProbBySimilarVerbs("curtain")
+# for i in range(len(sim)):
+#     print(ai2thor_verbs[i] + ": " + str(sim[i]) + str(sim[i]>0.001))
 
 '''
 potato UseFor relation:

@@ -31,27 +31,22 @@ def collect_images():
     # Image.fromarray(event.frame).save('/Users/naomilee/iTHOR/images/' + str(controller.scene) + 'high_res.png')
 
 
-    # iterate through iTHOR scenes and save each image in folder '/images'
+    # iterate through all possible iTHOR scenes
     for scene in scenes:
+        # create empty array to store all visible objects to robot in a given scene
         object_strings = []
+        # peep visibility problem
         controller = Controller(agentMode="default", visibilityDistance=0.0, scene=scene, width=800, height=800)
         event = controller.step(dict(action='Initialize', gridSize=0.25))
-        # print(event.metadata["objects"])
-        # uncomment lines below to gather metadata in a json for each scene
+        # write metadata to json and save to folder 'jsons'
         with open('/Users/naomilee/iTHOR/jsons/'+ str(scene) + '.json', 'w') as f:
-            # json.dump(event.metadata, f, indent=4, sort_keys=True)
             scene_objects = event.metadata["objects"]
             for object in scene_objects:
                 if object["visible"] == True:
-                    # print("YAY!!!!!")
                     object_strings.append(object["objectType"])
-                    # json.dump(object, f, indent=4, sort_keys=True)
-            # object strings
             object_strings = list(OrderedDict.fromkeys(object_strings))
-            # print(object_strings)
-            # print(scene_objects, "TYPE:", type(scene_objects))
-            # return 0
             json.dump(object_strings, f, indent=4, sort_keys=True)
+        # save image to folder 'images'
         Image.fromarray(event.frame).save('/Users/naomilee/iTHOR/images/' + str(scene) + '.png')
 
 def main():

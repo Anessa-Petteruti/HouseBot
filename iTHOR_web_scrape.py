@@ -29,12 +29,12 @@ def make_df(header_text, data):
 
     df = pd.DataFrame(data, columns=header_text)
     df = df.drop_duplicates()
-    # reset index after removing duplicates
-    df.reset_index(drop=True, inplace=True)
     # drop empty row after headers
     df = df.drop(labels=0, axis=0)
     # drop rows containing astericked entries
     df = df[~df["Object Type"].str.contains('\*')]
+    # reset index after removing duplicates
+    df.reset_index(drop=True, inplace=True)
     df.to_csv('ithor.csv', sep=',', quoting=csv.QUOTE_NONNUMERIC)
     print(df) 
 

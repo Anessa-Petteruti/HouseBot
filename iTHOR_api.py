@@ -25,7 +25,6 @@ def collect_images():
     # scene_objects = event.metadata["objects"]
     # for object in scene_objects:
     #     if object["visible"] == True:
-    #         print("YAY!!!!!")
     #         object_strings.append(object["objectType"])
     # print(object_strings)
     # Image.fromarray(event.frame).save('/Users/naomilee/iTHOR/images/' + str(controller.scene) + 'high_res.png')
@@ -41,10 +40,9 @@ def collect_images():
         # write metadata to json and save to folder 'jsons'
         with open('/Users/naomilee/iTHOR/jsons/'+ str(scene) + '.json', 'w') as f:
             scene_objects = event.metadata["objects"]
-            for object in scene_objects:
-                if object["visible"] == True:
-                    object_strings.append(object["objectType"])
+            [object_strings.append(object["objectType"]) for object in scene_objects if object["visible"] == True]
             object_strings = list(OrderedDict.fromkeys(object_strings))
+            print(object_strings)
             json.dump(object_strings, f, indent=4, sort_keys=True)
         # save image to folder 'images'
         Image.fromarray(event.frame).save('/Users/naomilee/iTHOR/images/' + str(scene) + '.png')

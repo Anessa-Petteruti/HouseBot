@@ -2,13 +2,15 @@ import requests
 import numpy as np
 
 #TODO: refine these verbs here
-ai2thor_verbs = ["toggle","break","fill_with_liquid","dirty","use_up","cook","heat_up","make_cold","slice","open","pick_up","move"]
+#ai2thor_verbs = ["toggle","break","fill_with_liquid","dirty","use_up","cook","heat_up","make_cold","slice","open","pick_up","move"]
+ai2thor_verbs = ["toggle","break","fill_with_liquid","dirty","use_up","cook","slice","open","pick_up","move"]
+
 
 basic_url = 'http://api.conceptnet.io'
 relatedness1 = '/relatedness?node1=/c/en/'
 relatedness2 = '&node2=/c/en/'
 query_url1 = 'http://api.conceptnet.io/query?start=/c/en/'
-query_url2 = '&rel=/r/UsedFor&limit=20'
+query_url2 = '&rel=/r/CapableOf&limit=20'
 
 #Calculates probablity of using ai2thor verb by similarity between object noun and ai2thor. 
 #In terms of knowledge representation, this may be cheating because it assumes that the robot
@@ -24,11 +26,15 @@ def calculateProbBySimilarity(word):
 
 
 def calculateProbBySimilarVerbs(word):
+    #creates an array of ai2thor_verbs to store the final similarity
+    similarity = [0]*len(ai2thor_verbs)
     relatedVerbs = requests.get(query_url1 + word + query_url2).json()
     verbs = []
     for edge in relatedVerbs['edges']:
         verbs.append(edge['end']['label'])
-    similarity = [0]*len(ai2thor_verbs)
+    if len(verbs) == 0:
+        print("NO CONCEPTNET VERBS")
+        return [-1 for num in similarity]
     verbs = formatCorrectly(verbs)
     print(verbs)
     for i in range(len(ai2thor_verbs)):
@@ -39,6 +45,7 @@ def calculateProbBySimilarVerbs(word):
             relatedness = requests.get(basic_url + relatedness1 + verb2 + relatedness2 + verb1)
             if relatedness:
                 similarity[i] += relatedness.json()['value']
+    
     similarity = [num/len(verbs) for num in similarity]
     #similarity = normalizeBetween01(similarity)
     #similarity = [num/sum(similarity) for num in similarity]

@@ -6,7 +6,8 @@ from conceptnet import calculateProbBySimilarVerbs, calculateProbBySimilarity
 #import ConceptNet
 
 threshold = .001
-aithor_verbs = ["Toggleable","Breakable","Fillable","Dirtable","UsedUp","Cookable","Heatable","Coldable","Sliceable","Openable","Pickupable","Moveable"]
+#aithor_verbs = ["Toggleable","Breakable","Fillable","Dirtable","UsedUp","Cookable","Heatable","Coldable","Sliceable","Openable","Pickupable","Moveable"]
+aithor_verbs = ["Toggleable","Breakable","Fillable","Dirtable","UsedUp","Cookable","Sliceable","Openable","Pickupable","Moveable"]
 
 def process_object_labels():
     """
@@ -47,18 +48,20 @@ def mean_avg_prec_us(true,score):
 def getTrueLabels(object):
     df = pd.read_csv('ithor.csv')
     actions = df.loc[df['Object Type'] == object, 'Actionable Properties'].iloc[0]
+    if pd.isna(actions):
+        return -1
     actions = actions.replace(" (Some)","")
     actions = actions.split(", ")
     print(actions)
     return [verb in actions for verb in aithor_verbs]
 
-    
-    
-
 def sample_test(object):
+    trueLabels = getTrueLabels(object)
+    if trueLabels == -1:
+        print("This object, ", object, "has no ai2thor verbs. Skipping...")
+        return
     probs = calculateProbBySimilarVerbs(object.lower())
     labels = [num > threshold for num in probs]
-    trueLabels = getTrueLabels(object)
     print(object)
     print(aithor_verbs)
     print("Predicted Labels: ", labels)
@@ -70,7 +73,7 @@ def main():
     # Will need to pass things in to these functions here...
     #process_object_labels()
 
-    sample_test('Bed')
+    sample_test('Cup')
 
 #RECEPTABCLE HEAT AND COLD NEED OT BE ADDED
 

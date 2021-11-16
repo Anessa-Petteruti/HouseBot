@@ -47,6 +47,8 @@ def mean_avg_prec_us(true,score):
 
 def getTrueLabels(object):
     df = pd.read_csv('ithor.csv')
+    aiword = df.loc[df['Object Type'] == object, 'Actionable Properties']
+    print(aiword)
     actions = df.loc[df['Object Type'] == object, 'Actionable Properties'].iloc[0]
     if pd.isna(actions):
         return -1
@@ -73,7 +75,7 @@ def main():
     # Will need to pass things in to these functions here...
     #process_object_labels()
 
-    sample_test('Cup')
+    sample_test('Mug')
 
 #RECEPTABCLE HEAT AND COLD NEED OT BE ADDED
 

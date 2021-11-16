@@ -2,6 +2,7 @@ import os
 import numpy as np
 import pandas as pd
 from sklearn.utils import shuffle
+from conceptnet import calculateProbBySimilarVerbs
 
 aithor_verbs = ["Toggleable","Breakable","Fillable","Dirtable","UsedUp","Cookable","Sliceable","Openable","Pickupable","Moveable"]
 
@@ -30,16 +31,9 @@ def splitData(data, labels):
 
 def main():
     data, labels = getData()
-    print(data)
-    print(labels)
     train_data, train_labels, test_data, test_labels = splitData(data, labels)
-    print(train_data)
-    print(test_data)
     #train on train data
-    #test on test daya
-
-
-#RECEPTABCLE HEAT AND COLD NEED OT BE ADDED
+    #test on test data
 
 if __name__ == "__main__":
     main()

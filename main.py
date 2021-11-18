@@ -8,6 +8,13 @@ from conceptnet import calculateProbBySimilarVerbs, calculateProbBySimilarity
 threshold = .001
 #aithor_verbs = ["Toggleable","Breakable","Fillable","Dirtable","UsedUp","Cookable","Heatable","Coldable","Sliceable","Openable","Pickupable","Moveable"]
 aithor_verbs = ["Toggleable","Breakable","Fillable","Dirtyable","UsedUp","Cookable","Sliceable","Openable","Pickupable","Moveable"]
+#Dictionary mapping detectron verbs to ai2thor verbs (currently only ones with very similar aithor words included):
+nounDict = {"sports ball": "BasketBall", "baseball bat": "BaseballBat", "tennis racket": "TennisRacket", "bottle": "Bottle",
+"wine glass": "WineBottle", "cup": "Cup", "fork" : "Fork", "knife": "Knife", "spoon": "Spoon", "bowl": "Bowl",
+"apple": "Apple", "chair": "Chair", "couch": "Sofa", "potted plant": "HousePlant", "bed": "Bed", "dining table" : "DiningTable",
+"toilet": "Toilet", "tv": "Television", "laptop": "Laptop", "remote": "RemoteControl", "cell phone": "CellPhone",
+"microwave": "Microwave", "toaster": "Toaster", "sink": "Sink", "refrigerator": "fridge", "book": "Book", "clock": "AlarmClock",
+"vase": "Vase", "teddy bear": "Teddy Bear"}
 
 def process_object_labels():
     """

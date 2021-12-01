@@ -1,0 +1,57 @@
+,Object,RelatedVerbs
+0,person,"['help', 'loving', 'work_for_you', 'caring_about', 'start_a_fight', 'do_a_job', 'a_friend', 'being_nice_to', 'have_sex', 'labor', 'talking_to', 'talk_to', 'social_interaction', 'ride_around_on', 'holding']"
+1,bicycle,"['transportation', 'riding', 'Racing', 'ride', 'rush', 'travelling_on', 'personal_transport', 'welding', 'go_places', 'entertainment', 'Getting_fit', 'get_somewhere_fast', 'getting_around_town', 'get_faster_to_the_mall', 'dismantling', 'excersize', 'traveling', 'travel_short_distances', 'ride_to_town']"
+2,car,"['fun', 'drive', 'transport', 'getting_to_work', 'pull_a_wagon', 'having_fun', 'go_to_work', 'getting_to_school', 'drive_to_the_park', 'travelling_around', 'people', 'drive_on_a_road', 'somtimes_status', 'racing', 'getting_from_one_place_to_another', 'mobility', 'drive_around_town', 'go_for_a_spin', 'travel_to_the_shops', 'carrying_groceries']"
+3,motorcycle,"['ride', 'rush', 'transportation']"
+4,airplane,"['traveling', 'fly', 'flight', 'air_transportation', 'transport', 'going_from_oneplace_to_another', 'cargo', 'flying', 'crashing_into_buildings', 'transport_people', 'imitating_birds', 'warfare', 'transportation', 'traversing_the_skies', 'visit_England', 'travel']"
+5,bus,"['transportation', 'travel', 'transport', 'transport', 'mass_transportaion', 'taking_children_to_school', 'getting_there_quicker', 'carry_people', 'not_spending_money_on_a_cab', 'get_around_town', 'commute_to_work', 'enjoying_the_scenery', 'mass_transportation', 'traveling', 'transporting_students_to_school', 'transport_a_collection_of_objects', 'get_to_work', 'trip', 'kill_someone', 'go_to_work']"
+6,train,['riding']
+7,truck,['hauling_things']
+8,boat,"['travel_on_the_water', 'fishing', 'floating_on_the_water', 'sailing', 'travel', 'rowing', 'cross_water', 'capsize', 'watersports', 'transport', 'water_skiing', 'travel_across_seas', 'speeding_on_water', 'traveling_on_the_water', 'enjoying_oneself_on_the_water', 'sailing_away', 'going_in_the_water', 'rowing_on_a_lake', 'transportation_at_sea', 'travel_across_water']"
+9,traffic_light,[]
+10,fire_hydrant,[]
+11,stop_sign,"['stopping', 'controlling_traffic']"
+12,parking_meter,[]
+13,bench,"['seat', 'resting', 'sleeping', 'using_as_a_flat_surface', 'growing_plants', 'lying_down', 'catching_your_breath', 'sit_and_talk', 'legislating', 'sit_upon', 'observing_others', 'sit_and_rest', 'sit_down_on']"
+14,bird,"['watching', 'laying_eggs', 'keeping_in_a_zoo', 'entertain_yourself', 'maintaining_a_balanced_ecosystem', 'a_subject_for_zoologists_to_study', 'send_a_letter', 'turkey_soup', 'keep_as_a_pet', 'testing_air_in_a_mine', 'having_for_a_pet']"
+15,cat,"['companionship', 'catch_mice', 'a_pet', 'have_a_pet', 'petting', 'play_with_and_make_you_laugh', 'a_companion_to_humans', 'killing_mice', 'hunt_mice', 'a_small_dictator', 'find_comfort', 'dust_the_ceiling', 'keep_your_feet_warm', 'delight_a_child', 'keep_the_mice_away', 'being_a_household_pet']"
+16,dog,"['companionship', 'guarding_property', 'a_pet', 'keeping_you_company', 'keep_you_company', 'guard_a_house', 'company', 'providing_friendship', 'tracking_an_animal', 'playing', 'safty', 'helping_a_blind_person_to_navigate', 'give_you_comfort', 'guarding_a_piece_of_property', 'scare_away_a_bad_guy', 'tracking_a_criminal', 'sniffing_out_drugs', 'guarding_a_home', 'chasing_cats', 'fetching_sticks']"
+17,horse,"['riding', 'ride_around_the_ranch', 'pulling_a_carriage', 'spread_the_alarm', ""making_fermented_mare's_milk"", 'form_part_of_a_work_team', 'horsemeat', 'breeding', 'ride_through_the_night', 'companionship', 'pull_a_wagon', 'win_a_race', 'ride_through_the_water', 'riding_and_farming', 'riding_on_it', 'drag_a_plow', 'doing_farm_work', 'herd_cattle', 'travel_faster_than_on_foot', 'riding_to_go_places']"
+18,sheep,['shearing']
+19,cow,"['milk_and_meat', 'Milking']"
+20,elephant,[]
+21,bear,[]
+22,zebra,[]
+23,giraffe,[]
+24,backpack,[]
+25,umbrella,"['protection_from_the_rain', 'keeping_you_dry', 'shelter_from_rain', 'keeping_the_sun_off_you', 'stay_dry_in_the_rain', 'keep_yourself_dry', 'help_keep_dry', 'provide_shelter', 'rain_storms', 'protection_from_the_sun', 'keeping_your_golf_clubs_dry', 'staying_dry', 'rainy_days', 'opening_indoors_or_outdoors', 'keep_yurself_dry', 'shading_the_user', 'bad_weather', 'stay_dry', 'protect_against_rain']"
+26,handbag,"['carrying_makeup', 'carry_makeup', 'carry_money', 'holding_personal_things', 'carrying_things_around', 'carrying_things', 'carying_small_objects_with_you', 'keep_things_in', 'carrying_a_mirror', 'hide_personal_items', 'storing_things', 'carrying_your_drivers_license', 'carrying_money', 'put_your_stuff', 'personal_effects', 'carry_stuff_in', 'personal_items']"
+27,tie,[]
+28,suitcase,"['carrying_clothes', 'packing_clothes_for_a_trip', 'living_out_of', 'packing', 'carying_clothes', 'storing_clothes', 'casing_suits', 'hiding_bombs', 'making_a_fashion_statement', 'bellboys_to_carry', 'carry_your_clothes', 'carrying_things_for_a_trip', 'lugging_around_airports', 'throwing_at_people', 'carrying_documents', 'carry_clothing', 'carrying_your_clothing', 'pack_clothes_for_a_trip', 'carrying_clothes_when_traveling', 'storing_toiletries']"
+29,frisbee,"['playing_catch', 'having_fun', 'catching', 'ultimate_frisbee', 'catch_and_throw_back', 'playing_frisbee_golf', 'play_with_your_dog', 'the_park', 'keep_flies_out_of_the_lemonade', 'play', 'have_fun', 'recreation', 'play_catch', 'throwing', 'the_beach', 'entertain_a_dog']"
+30,skis,[]
+31,snowboard,[]
+32,sports_ball,"['playing_a_game', 'practice_sports', 'playing_sports', 'playing_basketball', 'kick', 'play_a_game', 'make_points', 'play_ball', 'playing_games', 'smach', 'play_a_team_sport', 'playing_sports_with', 'playing_baseball', 'playing_sports_games', 'playing_soccer', 'strengthen_a_chest', 'hit', 'fun', 'playing_football']"
+33,kite,"['flying', 'fun', 'play_games', 'a_hobby', 'entertaining_yourself_on_a_windy_day', 'entertainment', 'flying_and_having_fun', 'Playing']"
+34,baseball_glove,[]
+35,skateboard,['paint_baseboards']
+36,surfboard,[]
+37,wine_glass,[]
+38,banana,['eating']
+39,sandwich,[]
+40,orange,['warning_signs']
+41,broccoli,[]
+42,carrot,[]
+43,hot_dog,[]
+44,pizza,[]
+45,donut,[]
+46,cake,"['eating', 'dessert', 'celebrate', 'decorating', 'a_gift', 'a_birthday', 'a_wedding', 'special_occasions', 'gain_weight', 'bring_to_a_potluck', 'cooking', 'a_special_event', 'surprising_a_friend', 'a_celebration', 'jumping_out_of', 'serving', 'saying_goodbye', 'a_party', 'celebrating_someones_special_event', 'show_emotions']"
+47,couch,"['furnish_your_home', 'sleeping', 'relaxing', 'lying_on_it', 'furnishing', 'sex', 'taking_a_nap', 'house_guests', 'furniture', 'watching_TV', 'sleeping_on', 'seating_alot_of_people', 'sit_and_read', 'comfort', 'rest_or_relax', 'making_sweat_sweat_love', 'relaxing_on', 'get_psychoanalyzed']"
+48,potted_plant,[]
+49,mouse,"['surfing', 'computer_input', 'operate', 'move', 'control_a_computer', 'interface_with_the_computer']"
+50,keyboard,"['typing', 'playing_music', 'type_a_letter', 'communicating', 'entering_text', 'coding', 'controlling_a_computer', 'entering_data', 'converting_movement_into_concepts', 'play_fur_elise', 'enter_data_to_computer', 'work', 'input_data', 'writing_text', 'type_on', 'play_music', 'storing_keys', 'type', 'data_entry', 'communicate_with_someone_in_a_chatroom']"
+51,oven,"['cooking', 'bake_cookies', 'baking_food', 'bake_a_cake', 'roasting', 'cood_food', 'reheat_food', 'burn', 'bake_things,_like_food_or_ceramics', 'baking,_broiling,_and_heating_food', 'roast_a_turkey', 'baking', 'get_rid_of_story_witches', 'preparing_food', 'grill_vegetables']"
+52,clock,"['measure_time', 'keeping_time', 'set_an_alarm', 'timing_something', 'setting_alarm', 'clock_time', 'people', 'clock', 'keeping_track_of_time', 'indicate_the_time', 'indicating_time', 'waking_someone_up', 'add_to_the_decor', 'time_an_event', 'get_to_events_on_time', 'measuring_the_passage_of_time', 'chime_in_when_you_need_it', 'check_the_time', 'know_the_time', 'inaccurate_timekeeper']"
+53,scissors,"['cut', 'cut_a_string', ""cut_someone's_hair"", 'cut_your_sisters_pigtail_off', 'cut_leather', 'cut_paper_or_cloth', 'cut_paper_snowflakes', 'cut_textiles', 'cutting', 'cut_ribbons', 'ribbon', 'construction_paper']"
+54,hair_drier,[]
+55,tooth_brush,['cleaning_teeth']

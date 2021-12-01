@@ -1,0 +1,57 @@
+,Object,RelatedVerbs
+0,person,"['cross_a_street', 'thank_another_person', 'wind_clock', 'voice_an_opinion', 'laugh_at_a_joke', 'board_a_plane', 'water_a_plant', 'reply_to_an_e-mail', 'catch_a_cold', 'iron_shirt', 'wave_to_a_friend', 'smoke_a_cigar', 'plant_a_tree', 'shoulder_a_burden', 'leave_his_house', 'taste_food', 'captain_a_ship', 'deal_drugs', 'thank_God', 'promise_to_do_something']"
+1,bicycle,"['go_over_40mph', 'stop_with_its_brakes', 'travel_on_a_road', 'corner_sharply', 'stop_short']"
+2,car,"['go_fast', 'crash', 'roll_over', 'slow_down', 'cost_a_lot_of_money', 'enter_that_garage', 'pass_another_car', 'be_heading_north', 'rush_through_traffic', 'come_up_the_drive', 'move_a_person', 'head_north', 'move_quickly', 'cost_money', 'pass_a_bus', 'need_petrol', 'pass_other_car', 'roll_downhill', 'carry_few_persons', 'slow_near_schools']"
+3,motorcycle,['jump_a_ravine']
+4,airplane,"['arrive_at_the_airport', 'circle_an_airport', 'travel_through_many_time_zones', 'bank_quickly', 'travel_faster_than_a_car', 'carry_immigrants', 'circle_an_airfield', 'cross_the_ocean', 'travel_across_the_world', 'land_at_the_airstrip', 'circle_the_airport_before_landing', 'seat_passengers', 'lift_a_person', 'land_in_the_field', 'land_on_a_landing_strip', 'reach_its_destination', 'crash_if_something_goes_wrong', 'circle_around_the_airport', 'fly_upwards', 'roll_down_the_runway']"
+5,bus,"['transport_people', 'drive_to_the_city', 'go_into_town', 'near_a_terminal', 'stop_at_the_corner', 'take_you_across_the_country', 'drive_down_the_street', 'transport_many_people_at_once', 'carry_passengers', 'seat_its_capacity']"
+6,train,"['arrive_late', 'near_its_destination', 'run_on_railroad_tracks', 'arrive_on_schedule', 'be_arriving_at_a_station', 'near_the_station', 'arrive_at_a_city', 'jump_its_tracks', 'arrive_early', 'arrive_at_a_station', 'transport_mail', 'shunt_from_one_track_to_another', 'arrive_on_time', 'be_passing_slowly', 'slow_down']"
+7,truck,"['pull_a_trailer', 'carry_cargo', 'drive_down_the_street', 'travel_on_a_road', 'use_deisal_fuel', 'box_in_a_car', 'carry_cows', 'stock_a_warehouse', 'supply_a_power_plant_with_coal', 'salt_a_street']"
+8,boat,"['ship_cargo', 'go_on_the_water', 'bus_refugees', 'settle_lower', 'get_to_a_floating_football', 'cross_a_river', 'be_sailing_against_the_wind', 'take_you_to_an_island', 'be_neaped_at_high_tide', 'list_to_one_side', 'bottom_out', 'sail_through_the_sea', 'bottom_out_on_a_sand_bar', 'swim_on_water', 'sail_on_a_pond', 'near_the_dock', 'weather_a_storm_on_the_sea', 'bottom_out_in_shallow_water', 'go_sailing_on_a_lake']"
+9,traffic_light,['stop_cars']
+10,fire_hydrant,[]
+11,stop_sign,[]
+12,parking_meter,[]
+13,bench,[]
+14,bird,"['sing', 'spread_the_wings', 'chirp', 'sing_a_song', 'be_a_pet', 'build_a_nest', 'fly', 'fly_high', 'head_south', 'learn_to_fly', 'land_on_a_branch', 'prepare_a_nest', 'sing_to_other_birds', 'be_resting_on_a_telephone_wire', ""injur_it's_wing_if_it_falls"", 'travel_across_the_world', 'grow_to_a_larger_size', 'attempt_to_fly', 'sing_some_notes', 'eye_a_fish']"
+15,cat,"['hunt_mice', 'drink_water', 'catch_a_mouse', 'climb_up_a_tree', 'corner_a_mouse', 'look_at_a_king', 'kill_birds', 'mother_her_kittens', 'scratch', 'drink_milk', 'catch_a_bird', 'scratch_furniture', 'wash_its_paws', 'cleaning_itself', 'sleep', 'meow', 'eye_a_mouse', 'eat_cat_food', 'sun_itself', 'see_in_the_dark']"
+16,dog,"['bark', 'guard_your_house', 'be_a_pet', 'run', 'guide_a_blind_person', 'sense_danger', 'drink_water', 'guard_property', 'hear_whistling', 'smell_drugs', 'mark_its_territory', 'learn_to_do_tricks', 'dig_up_bones', 'chasing_a_ball', 'fight_a_cat', 'corner_a_cat', 'dig_up_his_bone', 'mother_a_puppy', 'guide_the_blind', 'walk_on_a_leash']"
+17,horse,"['pull_a_cart', 'run_in_a_pasture', 'jump_a_fence', 'run_quickly', 'jump_a_barrier', 'carry_a_person', 'drink_water', 'place_second', 'step_high', 'go_away', 'haul_a_cart', 'pull_large_logs_to_a_pile', 'carry_a_man_to_water', 'jump_across_a_fence', 'remember_that_someone_helped_it', 'be_passing_the_field', 'pull_a_wagon', 'go_into_a_stall', 'pull_a_buggy_to_a_picnic', 'pull_a_buggy']"
+18,sheep,"['graze', 'live_in_a_field', 'group_together']"
+19,cow,"['produce_methane_gas', 'jump_over_the_moon', 'low_for_her_calf', 'low_BY_MOOING', 'blow_his_horn', 'be_a_pet', 'supply_humans_with_milk', 'low_for_her_breakfast', 'low_at_milking_time', 'feed_Calf', 'lie_under_a_tree']"
+20,elephant,"['carry_a_trunk', 'forget_to_go_on_the_paper', 'weigh_up_to_14000_pounds', 'to_lift_the_tree', 'remember_water_sources', 'visit_the_grocery_store', 'weight_1000_kilos', 'lift_logs_from_the_ground']"
+21,bear,"['hunt_a_rabbit', 'fish_for_salmon', 'winter_over_in_his_den', ""fish_with_it's_paws"", 'swim', 'eat_a_salmon', 'climb_a_tree', 'mother_a_cub', 'mother_her_cubs', 'fish_with_his_bare_paws', 'travel_40_miles_per_day', 'winter_in_a_cave', 'winter_through_winter', 'sleep_all_winter_long']"
+22,zebra,[]
+23,giraffe,['drink_water']
+24,backpack,"['free_your_hands_while_walking', 'carry_a_load']"
+25,umbrella,"['shade_people_from_the_sun', 'shade_a_table', 'shade_bathers', 'shade_you_from_the_sun', 'be_any_color', 'shield_one_from_rain_or_sun', 'break_in_high_wind']"
+26,handbag,[]
+27,tie,[]
+28,suitcase,[]
+29,frisbee,"['descend_slowly_by_hovering', 'fly']"
+30,skis,[]
+31,snowboard,[]
+32,sports_ball,"['bounce', 'roll_down_hill', 'roll', 'roll_under_a_table', 'break_a_window', 'bounces', 'hit_the_wall', 'roll_down_stairs', 'be_rolling_downhill', 'roll_very_well', 'strike_a_windows', 'play_with', 'happen_to_roll', 'be_a_toy']"
+33,kite,"['fly', 'catch_the_wind']"
+34,baseball_glove,[]
+35,skateboard,['be_streaming_down_a_sidewalk']
+36,surfboard,[]
+37,wine_glass,['bell_out']
+38,banana,[]
+39,sandwich,[]
+40,orange,"['taste_sour', 'mean_a_fruit_or_a_color']"
+41,broccoli,[]
+42,carrot,[]
+43,hot_dog,[]
+44,pizza,[]
+45,donut,[]
+46,cake,"['dry_out', 'rise_thanks_to_the_yeast', 'look_good_enough_to_eat', 'finish_soon']"
+47,couch,"['be_in_the_living_room', 'seat_many_people']"
+48,potted_plant,[]
+49,mouse,"['spring_a_trap', 'hear_a_cat', 'bell_a_cat', 'enter_a_mousehole', 'ring_a_bell', 'to_eat_rice', 'enter_the_trap', 'eat_grain', 'be_a_pet']"
+50,keyboard,[]
+51,oven,"['brown_chicken', 'warm_a_meal', 'roast', 'cool_its_temperature', 'warm_a_pie', 'heat_a_meal', 'bake']"
+52,clock,"['continue_to_tick', 'time_a_race', 'continue_ticking', 'fail_to_work', 'wind_down', 'be_working_correctly', 'time_an_event', 'tell_time', 'stop_working', 'face_the_doorway']"
+53,scissors,"['cut_that_paper', 'cut_cardboard', 'tear_cloth', 'part_paper', 'become_blunt', 'tear_paper']"
+54,hair_drier,[]
+55,tooth_brush,['rest_upon_a_desk_top']

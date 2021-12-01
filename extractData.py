@@ -96,10 +96,10 @@ def saveDictOfVerbs():
 def formatCorrectly(verbs):
     return [verb.replace(" ","_") for verb in verbs]
 
-rows = [55]
+rows = [116]
 
 def getSimilarityForVerbsGraph():
-    df = pd.read_csv('detectronnouns_capableof.csv')
+    df = pd.read_csv('aithornouns_capableof.csv')
     overall = []
     for i,j in df.iterrows():
         if (i in rows):

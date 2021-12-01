@@ -1,0 +1,81 @@
+,ObjectType,Actionable Properties
+0,person,
+1,bicycle,Moveable
+2,car,"Fillable, Moveable, Openable"
+3,motorcycle,Moveable
+4,airplane,"Fillable, Moveable"
+5,bus,"Fillable, Moveable"
+6,train,"Fillable, Moveable"
+7,truck,"Fillable, Moveable, Openable"
+8,boat,"Fillable, Moveable"
+9,traffic light,
+10,fire hydrant,
+11,stop sign ,
+12,parking meter,Fillable
+13,bench,Moveable
+14,bird,
+15,cat,
+16,dog,
+17,horse,
+18,sheep,
+19,cow,
+20,elephant,
+21,bear,
+22,zebra,
+23,giraffe,
+24,backpack,"Pickupable, Openable, Fillable"
+25,umbrella,Pickupable
+26,handbag,Pickupable
+27,tie,Pickupable
+28,suitcase,"Pickupable, Openable, Fillable"
+29,frisbee,Pickupable
+30,skis,Pickupable
+31,snowboard,Pickupable
+32,sports ball,Pickupable
+33,kite,Pickupable
+34,baseball bat ,Pickupable
+35,baseball glove,Pickupable
+36,skateboard,Pickupable
+37,surfboard,Pickupable
+38,tennis racket,Pickupable
+39,bottle,"Pickupable, Fillable, Breakable"
+40,wine glass,"Pickupable, Fillable, Breakable, Dirtyable"
+41,cup ,"Pickupable, Fillable, Breakable, Dirtyable"
+42,fork,Pickupable
+43,knife,Pickupable
+44,spoon,Pickupable
+45,bowl,"Pickupable, Fillable, Breakable, Dirtyable"
+46,banana,"Pickupable, Sliceable"
+47,apple,"Pickupable, Sliceable"
+48,sandwich,"Pickupable, Sliceable"
+49,orange,"Pickupable, Sliceable"
+50,broccoli,"Pickupable, Sliceable"
+51,carrot,"Pickupable, Sliceable"
+52,hot dog,"Pickupable, Sliceable"
+53,pizza,"Pickupable, Sliceable"
+54,donut,"Pickupable, Sliceable"
+55,cake,"Pickupable, Sliceable"
+56,chair,Moveable
+57,couch,Moveable
+58,potted plant,"Fillable, Moveable"
+59,bed,Dirtyable
+60,dining table,Moveable
+61,toilet ,Openable
+62,tv ,"Toggleable, Breakable, Moveable"
+63,laptop,"Openable, Pickupable, Toggleable, Breakable"
+64,mouse,Pickupable
+65,remote,Pickupable
+66,keyboard,Toggleable
+67,cell phone,"Pickupable, Toggleable, Breakable"
+68,microwave,"Openable, Toggleable, Moveable"
+69,oven,"Openable, Toggleable"
+70,toaster,"Toggleable, Moveable"
+71,sink,Toggleable
+72,refrigerator,Openable
+73,book,"Openable, Pickupable"
+74,clock,Pickupable
+75,vase,"Pickupable, Breakable"
+76,scissors,Pickupable
+77,teddy bear,Pickupable
+78,hair drier,Pickupable
+79,tooth brush,Pickupable

@@ -1,0 +1,127 @@
+,Object,RelatedVerbs
+0,alarm_clock,['go_on_a_night_table']
+1,aluminum_foil,[]
+2,apple,"['fall_from_a_tree', 'fall_off_a_tree']"
+3,arm_chair,[]
+4,baseball_bat,"['strike_ball', 'hurt_humans', 'hit_a_baseball']"
+5,basketball_bat,[]
+6,bathtub,[]
+7,bathtub_basin,[]
+8,bed,"['rest_a_person', 'provide_comfort']"
+9,blinds,['shade_the_sun']
+10,book,"['include_a_table_of_contents', 'include_an_index', 'teach_a_person_to_sing', 'teach_that_the_earth_is_round']"
+11,boots,[]
+12,bottle,"['hold_water', 'quiet_a_baby', 'store_wine']"
+13,bowl,['keep_water_in_it']
+14,box,"['store_food', 'hold_things', 'store_clothes', 'hold_a_secret', 'store_objects', 'hold_stuff', 'can_catch_a_ball']"
+15,bread,"['rise_in_an_oven', 'get_STALE', 'rise_slowly', 'turn_into_toast', 'rise_until_it_doubles_in_volume', 'raise_while_it_cooks', 'rise_overnight']"
+16,butter_knife,['butter_bread']
+17,cabinet,[]
+18,cabinet,[]
+19,candle,"['emit_light', 'burn_brightly', 'be_a_fire_hazard', 'burn_at_both_ends', 'light_a_small_room', 'burn_for_hours', 'light_the_house', 'start_a_larger_fire', 'light_a_room', 'emit_a_scent', 'light_the_way', 'light_a_small_area', 'heat_a_dip']"
+20,cd,['store_data']
+21,cell_phone,[]
+22,chair,"['be_facing_a_door', 'stand_alone', 'be_touching_the_wall', 'head_a_committee']"
+23,cloth,"['become_wet', 'shine_metal', 'cover_secret_objects', 'clean_your_shoes']"
+24,coffee_machine,[]
+25,coffee_table,[]
+26,counter_top,[]
+27,credit_card,"['charge_an_annual_fee', 'help_a_person_save_time', 'help_a_business_track_expenses', 'help_a_person_spend_money', 'help_a_business_track_purchases', 'help_a_person_buy_things', 'help_people_get_into_debt', 'help_a_person_track_expenses', 'get_people_in_financial_trouble']"
+28,cup,"['hold_liquids', 'store_liquid']"
+29,curtains,['block_light']
+30,desk,[]
+31,desk_lamp,[]
+32,desktop,[]
+33,dining_table,[]
+34,dish_sponge,[]
+35,dog_bed,[]
+36,drawer,[]
+37,dresser,['cosist_of_many_drawers']
+38,dumbbell,[]
+39,egg,"['break_open', 'stick_to_a_skillet']"
+40,faucet,"['break', 'wet_a_sink']"
+41,floor,[]
+42,floor_lamp,[]
+43,foot_stool,[]
+44,fork,"['move_the_food_to_your_mouth', 'be_in_a_road', 'hold_things']"
+45,fridge,['cool_food']
+46,garbage_bag,[]
+47,hand_towel,[]
+48,hand_towel_holder,[]
+49,house_plant,[]
+50,kettle,[]
+51,key_chain,[]
+52,knife,"['spread_butter', 'spread_peanut_butter', 'cut', 'butter_bread', 'cut_that_apple', 'hurt_a_dog', 'hurt', 'spread_butter_on_bread', 'spread_margarine', 'be_cutting_food', 'cut_most_things', 'cut_leather', 'butter_a_piece_of_toast', ""cut_a_man's_hand"", 'cut_cheese', 'butter_bred', 'divide_a_cake', 'spread_peanut_butter_on_bread', 'kill', 'feel_sharp']"
+53,ladle,[]
+54,laptop,[]
+55,laundry_hamper,[]
+56,lettuce,[]
+57,light_switch,[]
+58,microwave,"['heat_food', 'warm_a_cup_of_milk', 'dry_most_liquids', 'warm_up_your_coffee']"
+59,mirror,['reflect_images']
+60,mug,['hold_liquid']
+61,newspaper,"['list_advertisers', 'spread_the_news', 'report_events', 'announce', 'advertise', 'motivate', 'inform', 'spread_lies', 'air_rumours', 'communicate', 'educate', 'report_that_the_weather_changes']"
+62,ottoman,[]
+63,painting,"['picture_a_tree', 'please_a_person', 'prevents_it_from_rusting']"
+64,pan,[]
+65,paper_towel_roll,[]
+66,pen,"['mark_a_sheet_of_paper', 'mark_the_spot', 'be_different_colors']"
+67,pencil,"['mark_a_paper', 'shade_a_sketch', 'last_for_awhile', 'leave_marks_on_paper', 'mark_a_piece_of_paper']"
+68,pepper_shaker,[]
+69,pillow,[]
+70,plate,[]
+71,plunger,[]
+72,poster,[]
+73,pot,"['cloud_your_memory', 'cloud_minds']"
+74,potato,['taste_good']
+75,remote_control,[]
+76,room_decor,[]
+77,safe,[]
+78,salt_shaker,[]
+79,scrub_brush,[]
+80,shelf,"['hold_some_books', 'be_in_a_closet']"
+81,shelving_unit,[]
+82,shower_curtain,['move']
+83,shower_door,[]
+84,shower_glass,[]
+85,shower_head,[]
+86,side_table,[]
+87,sink,[]
+88,sink_basin,[]
+89,soap_bar,[]
+90,soap_bottle,[]
+91,soap_bottle,[]
+92,sofa,[]
+93,spatula,[]
+94,spoon,"['be_use_to_eat_soup', 'hold_dozens_of_pieces_of_rice', 'eat_with']"
+95,spray_bottle,[]
+96,statue,['stay_in_one_place']
+97,stool,[]
+98,stove_burner,[]
+99,stove_knob,[]
+100,table_top_decor,[]
+101,target_circle,[]
+102,teddy_bear,[]
+103,television,"['reach_millions', 'be_unplugged', 'show_images', 'watch_the_news']"
+104,tennis_racket,[]
+105,tissue_box,[]
+106,toaster,"['brown_toast', 'brown_bread']"
+107,toilet,"['flush', 'smell_bad', 'refill']"
+108,toilet_paper,[]
+109,toilet_paper_hanger,[]
+110,tomato,[]
+111,towel,"['dry_hair', 'dry_your_body', 'dry_the_dishes', 'dry_spilled_milk', 'dry_wet_skin']"
+112,towel_holder,[]
+113,tv_stand,[]
+114,vacuum_cleaner,['short_out']
+115,vase,"['hold_flower', 'fall_off_a_shelf']"
+116,watch,"['time_events', 'time_an_event', 'time_a_race', 'be_many_colours,_including_brown']"
+117,watering_can,[]
+118,window,"['let_in_a_beam_of_light', 'stick_open', 'face_the_mountains', 'break_easily', 'be_facing_north', 'stick_shut']"
+119,wine_bottle,[]
+120,oven,"['brown_chicken', 'warm_a_meal', 'roast', 'cool_its_temperature', 'warm_a_pie', 'heat_a_meal', 'bake']"
+121,tooth_brush,[]
+122,hair_drier,[]
+123,keyboard,[]
+124,scissors,"['cut_that_paper', 'cut_cardboard', 'tear_cloth', 'part_paper', 'become_blunt', 'tear_paper']"
+125,mouse,"['spring_a_trap', 'hear_a_cat', 'bell_a_cat', 'enter_a_mousehole', 'ring_a_bell', 'to_eat_rice', 'enter_the_trap', 'eat_grain', 'be_a_pet']"

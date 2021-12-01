@@ -1,0 +1,127 @@
+,Object,RelatedVerbs
+0,alarm_clock,"['awaken', 'ring', 'go_off', 'clock_time', 'clock', 'waking_you_up', 'wake_up_at_a_certain_time', 'waking_at_a_specified_time']"
+1,aluminum_foil,['bake_things_in']
+2,apple,"['eating', 'sate_hunger', 'making_apple_pie', 'getting_good_carbs', 'getting_good_grades_from_a_teacher', 'representing_knowlege', 'enjoy_the_fruit', 'making_applesauce', 'tempting_eve', 'make_a_pie', 'illustrating_gravity_to_Sir_Isaac_Newton', 'growing_apple_trees', 'picking_from_the_tree_when_ripe', 'test_your_theory_of_gravity', 'pie', 'munching', 'computing', 'bait_a_trap', 'illustrating_the_letter_A', 'making_pie']"
+3,arm_chair,[]
+4,baseball_bat,"['hit_a_baseball', 'kill_somebody']"
+5,basketball_bat,[]
+6,bathtub,"['bathing', 'take_a_bath_in', 'soak_in', 'soaking_in', 'take_a_warm_bath', 'baths', 'bathe', 'cleaning_the_body', 'give_the_dog_a_bath', 'make_gin', 'get_clean', 'bathe_in', 'make_beer', 'take_a_bath', 'getting_clean']"
+7,bathtub_basin,[]
+8,bed,"['have_sex', 'Resting_on', 'making_love', 'fucking_in', 'lie_down', 'sit_on', 'sleep', 'resting', 'hold', 'reading_in', 'lying_down', 'napping_on', 'having_sex_in', 'laying_down', 'reading', 'sitting_on', 'having_sex', 'a_person_to_sleep', 'laying_on', 'going_to_bed']"
+9,blinds,"['keep_out_light_from_houses', 'cover_your_window']"
+10,book,"['learning', 'entertainment', 'studying', 'education', 'learn', 'developing_perspective', 'study', 'learn_from', 'recording_charges_in_a_police_register', 'learning_about_soccer', 'finding_out_about_the_world', 'publishing_what_you_write', 'keeping_track_of_hotel_facilities', 'showing_the_way', 'learning_about_painting', 'learning_about_Christian_theology', 'learning_about_folklore', 'resolving_disputes', 'gathering_data_in_one_place', 'learning_about_etiquette']"
+11,boots,['keep_your_feet_warm']
+12,bottle,"['storing_liquids', 'storing_liquid', 'hold', 'drinking_from', 'holding_juice', 'store_liquid', 'feed_a_baby', 'pouring_liquid_from', 'hold_a_drink', 'holding_soda', 'keep_pills_in', 'Feeding_a_baby', 'keeping_liquid_in', 'carrying_drinks_around_in', 'pouring_liquid_into', 'storing_beer', 'holding_water']"
+13,bowl,"['hold_Cream_of_Wheat', 'have_an_athletic_event', 'hold_relish', 'hold_marinades', 'hold_cereal', 'hold_mush', 'hold_grapes', 'hold_broth', 'play_football', 'hold_peanuts', 'hold_mixed_nuts', 'serve', 'hold_oranges', 'hold_beans', 'hold_sugar', 'hold_cream', 'hold_fruit', 'hold_wine', 'hold_blueberries', 'hold_spice']"
+14,box,"['storing_something_in', 'packing', 'storage', 'holding_things', 'accommodate', 'wrapping_a_gift_in', 'seat', 'containing_things', 'contain_things', 'keeping_stuff_in', 'hold', 'sealing_with_tape', 'containing_objects_for_shipping', 'a_basic_design_concept', 'holding_fish', 'carry_something', 'storage_of_items', 'putting_things_in', 'thinking_outside_of', 'hold_a_cupcake']"
+15,bread,"['eating', 'sandwiches', 'baking', 'buttering', 'drying_to_make_stuffing', 'tearing', 'spreading_with_butter', 'Making_bread_and_butter_pudding_with', 'nutrition', 'making_toast', 'pudding', 'Feeding_to_the_birds', 'consumption', 'Toasting', 'satiating_hunger']"
+16,butter_knife,['spreading_butter_on_bread']
+17,cabinet,[]
+18,cabinet,[]
+19,candle,"['light_a_room', 'luminosity', 'light', 'light', 'provide_light', 'light', 'decoration', 'a_small_light', 'bringing_scents_to_the_area', 'put_in_a_chalice', 'providing_fuel_for_a_wick', 'decorations', 'creating_mood', 'creating_aroma', 'read_when_the_lights_are_out', 'creating_a_romatic_mood_at_dinner', 'celebrations', 'heat', 'providing_light', 'romantic_dinners']"
+20,cd,"['listening_to_music', 'storing_information', 'storing_data', 'writing_data_optically_with_a_laser', 'distribution_of_music', 'store_information', 'distribute_music', 'investing_money', 'distribution_of_data', 'listen_to_music', 'playing_music', 'Recording_music', 'loading_computer_programs', 'storing_music', 'file_storage', 'store_binary_information', 'Backing_up_important_computer_files', 'recording_information', 'putting_in_your_computer', 'analyze_dna_hybridization']"
+21,cell_phone,[]
+22,chair,"['resting', 'people', 'seat', 'electrocuting_the_condemend', 'offer_hospitality', 'leading_a_meeting', 'block_a_door', 'sitting_down', 'sitting', 'sleep_in', 'sit_at_the_table', 'reach_high_cupboards', 'sit_down', 'relaxing_in', 'reupholstering', 'stand_on', 'a_person_to_seat', 'rest_your_legs']"
+23,cloth,"['clean', 'make_clothing', 'cleaning_something', 'dry_dishes', 'clothing', 'making_clothing', 'covering_skin', 'making_clothes', 'stronger_than_the_original_thread', 'apply_salve', 'making_a_dress', 'dust_furniture', 'patch', 'holding_items', 'cover_your_skin', 'wiping_up_dust', 'bind_a_book', 'wiping', 'wipe_something_clean', 'making_bed_coverings']"
+24,coffee_machine,[]
+25,coffee_table,"['make_love', 'putting_magazines_on', 'place_magazines_on', 'display_large_books', 'placing_coffee', 'hold_cool_art_books', 'putting_your_feet_up', 'furnish_a_living_room', 'putting_coffee_cups_on', 'hold_a_lamp', 'place_your_drink_on', 'setting_down_the_newspaper', 'putting_things_on', 'holding_coffee', 'filling_a_room_with_furniture', 'putting_up_your_feet', 'setting_down_a_cup_of_coffee', 'holding_books', 'serve_coffee', 'putting_your_feet_up_on']"
+26,counter_top,[]
+27,credit_card,"['renting_a_car', 'buy_gas', 'purchasing_things', 'shop', 'buy_something_without_cash', 'establishing_credit', 'purchasing_items_in_shops', 'paying', 'making_hotel_reservations', 'purchasing', 'transfer_of_wealth', 'purchasing_items_over_the_internet', 'pay_your_purchases', 'buying_gas', 'purchasing_items_over_the_telephone', 'make_payments', 'purchasing_stuff', 'buying_clothes', 'age_verification', 'charging']"
+28,cup,"['drinking', 'measuring_liquids', 'hold', 'drinking_coffee', 'hold_coffee', 'drink_soup', 'measuring', 'pouring_liquid_out_of_it', 'drinking_or_measuring_things', 'hold_powders', 'something_you_do_with_your_hands', 'protecting_a_sensitive_body_part', 'measuring_ingredients', 'protect_your_junk', 'drink_juice', 'presenting_as_a_prize', 'half_of_a_bra', 'drink_out_of', 'drinking_a_liquid_out_of', 'holding_a_substance_or_an_object']"
+29,curtains,[]
+30,desk,"['working', 'write', 'work', 'sitting_at_it_in_school', 'filing', 'computer_use', 'surface_area_to_do_paperwork', 'work_sitting_down', 'drafting', 'storing_and_working_with_papers', 'putting_documents_in_its_drawers', 'work_on', 'typing_on', 'work', 'reading_at', 'place_something_on_it', 'spilling_coffee_over_it', 'supporting_a_somputer_system', 'storing_your_computer', 'writing']"
+31,desk_lamp,[]
+32,desktop,[]
+33,dining_table,"['eat_dinner', 'playing_games_on', 'sitting_around_with_your_family', 'serving_dinner', 'eat_dinnner', 'entertaining_others', 'have_sex_with_your_spouse', 'family_discussions', 'have_a_gathering_of_friends', 'having_friends_around_for_dinner', 'working_on_a_hobby', 'family_meetings', 'placing_served_food', 'holding_center_pieces', 'putting_food_on', 'eating_dinner', 'making_love', 'playing_games', 'eating_a_meal', 'eating_food']"
+34,dish_sponge,[]
+35,dog_bed,[]
+36,drawer,"['storing_socks', 'storing_things', 'hold_things', 'store', 'segregated_storage', 'storing_clothes', 'hiding_clutter', 'storing_personal_items', 'storing_sweaters', 'keeping_things', 'holding_things', 'organization', 'storing_things_in', 'opening_and_closting', 'storing_underwear', 'hiding_things_away_inside', 'store_things_out_of_sight', 'store_things', 'socks', 'holding_junk']"
+37,dresser,"['storing_clothing', 'holding_clothes', 'storing_clothes', 'store_crockery', 'storing_items_of_clothing', 'supporting_a_mirror', 'hold_clothing', 'store_clothes', 'put_clothes_in', 'furnishing_a_room']"
+38,dumbbell,[]
+39,egg,"['food', 'rolling_on_the_White_House_lawn', 'make_breakfast', 'procreation_of_a_bird', 'throwing', 'scrambling', 'cooking', 'make_an_omelet', 'nurturing', 'hiding_at_easter', 'sexual_reproduction', 'breed']"
+40,faucet,"['get_water', 'directing_the_flow_of_water', 'drink_water', 'running_water', 'draw_water', 'washing_newborns', 'stopping_water_from_flowing', 'washing_hands', 'taking_a_shower', 'water', 'operating_a_water_valve', 'getting_water', 'turning_on', 'obtaining_water', 'washing_dishes', 'tap_into_a_water_system', 'get_a_pail_of_water', 'receive_water']"
+41,floor,"['walk', 'walking_on', 'sit_on', 'standing_on', 'walk_on', 'keeping_varmints_out', 'walking', 'setting_solid_objects_on', 'stand_on', 'preventing_things_from_falling', 'walking_upon', 'dance_on', 'standing_upon', 'limit_the_minimum_value', 'sitting_on']"
+42,floor_lamp,[]
+43,foot_stool,[]
+44,fork,"['eating_food', 'eat_a_meal', 'eat_dinner', 'picking_up_food', 'eat_food', 'dividing_a_road_in_two', 'lift_food_to_your_mouth', 'providing_a_choice', 'eat', 'eat_meat', 'moving_food_to_the_mouth', 'eating_food_with', 'eating_vegetables', 'eating', 'eat_a_steak', 'piercing_food', 'eating_food_off_a_plate', 'holding_food', 'eat_your_vegetables', 'turning_soil']"
+45,fridge,['refrigeration']
+46,garbage_bag,['containing_garbage']
+47,hand_towel,[]
+48,hand_towel_holder,[]
+49,house_plant,[]
+50,kettle,"['boil_water', 'making_tea', 'heating_water', 'hold', 'boil', 'cook_soup', 'boiling_water', 'hold_something_placed_over_a_fire', 'prepare_tea', 'carry_water', 'heat_water_over_the_fire', 'wash_your_hands', 'make_water_hot', 'water', 'boil_water_in', 'boil_water_for_tea', 'make_stew']"
+51,key_chain,"['keep_keys_together', 'hold_your_keys', 'keeping_keys_together', 'holding_keys', 'easily_locate_a_set_of_keys', 'holding_a_belt_clip', 'keys', 'holder_multiple_keys', 'hold_many_keys_together', 'holding_lots_of_keys', 'hold_a_collection_of_keys', 'store_keys', 'holding_a_keyfob', 'keep_several_different_keys_together', 'showing_your_temperament', 'Decoration']"
+52,knife,"['stabbing', 'butter', 'cutting_food', 'carving_wood', 'slicing', 'scratching', 'cut', 'killing', 'cutting_steak', 'cutting', 'stab', 'cut_meat_with', 'boning', 'cut_string', 'cut', 'pare_an_apple', 'slicing_bread', 'cut', 'cut_a_rope', 'making_a_hole']"
+53,ladle,[]
+54,laptop,[]
+55,laundry_hamper,[]
+56,lettuce,['make_a_salad']
+57,light_switch,"['turn_on_a_light', 'turn_off_a_light']"
+58,microwave,"['cooking_food_fast', 'make_popcorn', 'preparing_food']"
+59,mirror,"['see_yourself', 'reflection', 'light_reflection', 'looking_at_yourself', 'see_your_reflection', 'reflect', 'spectator', 'send_semaphore', 'checking_make_up', 'reflecting_light', 'avoid_moving_your_head_and_body', 'see_how_you_look', 'looking_behind_you', 'look_at_yourself', 'seeing_your_reflection', 'focus_sunlight', 'look_at_your_hair', 'seeing_a_reflected_image']"
+60,mug,"['drinking_from', 'coffee', 'drink_coffee', 'drinker', 'holding_coffee', 'hold', 'drinking_tea', 'drink_beer', 'hold_a_beverage', 'cleaning', 'drinks', 'drink_coffee_from', 'drinking_beer', 'drinking', 'holding', 'put_coffee_in', 'drinking_a_hot_drink_from', 'containing_a_drink', 'tea', 'hold_liquid_for_drinking']"
+61,newspaper,"['reading', 'informing_people']"
+62,ottoman,"['sitting', 'put_your_feet_on', 'rest_your_feet', 'prop_feet', 'sit', 'put_your_feet_up', 'put_your_feet_up_and_relax', 'relaxing', 'prop_up_your_feet', 'decoration', 'resting_your_feet', 'sit_on', 'raising_up_feet', 'sit_down', 'reclining_your_legs', 'take_a_nap']"
+63,painting,"['Art', 'expressing_yourself', 'creating_a_work_of_art', 'expressing_artistically', 'decorating', 'relaxation', 'artists', 'home_improvement', 'tranquility', 'leisure', 'being_different', 'hiding_blemishes_and_imperfections', 'changing_room_decor', 'changing_textures', 'capturing_what_is_in_the_memory', 'doing_a_portrait', 'making_money', 'improving', 'brightening_up_an_area', 'covering_up_old_paint']"
+64,pan,"['cooking', 'frying', 'frying_food', 'fry_an_egg', 'cooking_food', 'cook_eggs', 'fry_food', 'hitting_people_with', 'frying_foods', 'catch_oil_under_a_car', 'cook_fish', 'cook_food_on_in_the_oven', 'store_foods']"
+65,paper_towel_roll,[]
+66,pen,"['writing_letters', 'write_things_down', 'writing', 'drawing', 'write_a_story', 'holding_animals', 'keep_in_animals', 'draw_with', 'leaking_in_your_shirt_pocket', 'write_a_poem', 'writting_on_a_note', 'writing_and_drawing', 'solve_crossword_puzzles', 'write_a_note', 'creating_stories_and_poems', 'writing_a_book', 'hold_an_animal', 'taking_notes', 'sign_a_card', 'signing_checks']"
+67,pencil,"['write_something_on_paper', 'doing_math', 'letter_writing', 'write_a_story', 'writing', 'writing_or_drawing', 'drawing_a_picture', 'draw_a_portrait', 'writing_a_shopping_list', 'note-taking', 'erasing', 'breaking', 'scratching_your_head', 'doodling', 'write_a_draft_of_a_document', 'scribbling']"
+68,pepper_shaker,[]
+69,pillow,"['sleeping', 'make_a_seat_softer']"
+70,plate,"['hold_food', 'eating_from', 'put_food_in', 'holding_food', 'holding_meal', 'stand_on_it', 'serve_cookies', 'serve_food_for_eating', 'holding_the_food_you_eat', 'setting_the_table', 'serve_food', 'medical_device', 'more_formal_than_informal_dining', 'holding_something', 'placing_food_upon,_before_eating', 'using_with_utensils_to_eat', 'eating_a_meal', 'decoration', 'eat_from', 'holding_food_for_one_person']"
+71,plunger,[]
+72,poster,['decorating_your_room']
+73,pot,"['make_soup', 'pissing_in', 'storing_things_in', 'holding_water_while_boiling_it', 'grow_plants', 'planting_a_plant', 'depositing_bodily_wastes', 'grow_pot', 'planting_in', 'holding_gold', 'catching_water_from_leaks', 'planting_flowers_in', 'growing_a_plant_in', 'stirring', 'cooking_raw_food', 'holding_liquid', 'making_soup', 'storage', 'cook_a_stew', 'keeping_paint_in']"
+74,potato,"['power_a_special_clock', 'eating']"
+75,remote_control,"['control_a_device_from_a_distance', 'change_the_channel', 'turn_on_a_television', 'changing_television_program_from_a_distance', 'change_channels', 'open_a_garage_door']"
+76,room_decor,[]
+77,safe,['keeping_things_safe']
+78,salt_shaker,[]
+79,scrub_brush,[]
+80,shelf,"['storing_books', 'store_things', 'holding_books', 'displaying_knicknacks', 'storage', 'storing_food', 'books', 'hold_your_alcohol', 'hold_things', 'store_small_items', 'store_your_books', 'displaying_framed_photos', 'storing_dishes', 'keeping_things_off_the_floor', 'hold_books', 'holding_items']"
+81,shelving_unit,[]
+82,shower_curtain,"['have_privacy', 'seperating_the_shower_from_the_bathroom', 'providing_a_water_barrier', 'keeing_the_water_in_the_shower', 'blocking_water', 'isolation', 'keep_water_off_the_floor', ""concealing_one's_naked_body_from_others"", 'keeping_the_floor_dry', 'modesty', 'keep_the_bathroom_dry', 'keep_water_off_the_bathroom_floor', 'avoid_a_mess', 'Making_the_bathroom_look_pretty', 'protecting_the_bathroom_floor']"
+83,shower_door,"['privacy', 'keep_water_off_the_bathroom_floor', 'keeping_the_bathroom_from_getting_wet', 'entry_and_exit_to_the_shower', 'non_slip_access', 'increase_privacy', 'enter_a_shower', 'exit_a_shower', 'restrict_shower_water_to_the_shower', 'being_translucent', 'keep_in_heat_during_a_shower', 'reduce_visibility_into_the_shower', 'improving_on_shower_curtain', 'retaining_water_from_shower', 'obscuring_the_view', 'indicate_when_shower_is_in_use', 'keeping_the_bathroom_dry', 'easy_open_and_close', 'closing_while_using_the_shower', 'get_some_privacy_while_showering']"
+84,shower_glass,[]
+85,shower_head,"['adjust_water_flow', 'spray_water', 'control_the_water_spray', 'wash_yout_body', 'take_a_shower', 'dispensing_water']"
+86,side_table,[]
+87,sink,"['hold_dirty_dishes', 'rinse_dishes', 'brushing_teeth', 'drain_off_water', 'soak_dishes', 'clean_fish', 'washing_hair', 'clean_chicken', 'wash_your_hands', 'washing', 'rinsing_things', 'washing_dogs', 'wash_mugs', 'washing_up_face_and_hands', 'washing_the_laundry', 'wet_work', 'wash_glasses', 'saoking_things', 'washing_clothes', 'cleaning_dishes']"
+88,sink_basin,[]
+89,soap_bar,[]
+90,soap_bottle,[]
+91,soap_bottle,[]
+92,sofa,"['relax', 'lounging', 'lying_on', 'sleeping', 'watching_tv', 'people', 'seat', 'reading_a_book', 'sleep_upon', 'providing_seating_for_several_guest', 'watching_tv_from', 'comfort', 'sitting_upon', 'sleeping_upon', 'relaxing', 'lying_upon', 'an_overnight_guest', 'have_a_seat', 'fucking', 'making_a_room_look_comfortable']"
+93,spatula,['turning_food']
+94,spoon,"['Eating', 'stirring_coffee', 'eating_ice_cream', 'eating_cereal', 'scooping_food', 'Drinking', 'taking_cough_syrup', 'people_to_eat_cereal_with', 'eating_applesauce', 'serving_soup', 'eating_liquids', 'stirring_tea', ""eat_soup'"", 'mixing_soup', 'eating_cold_ceral', 'eat_cereal_with', 'eating_food_off_a_plate', 'stir_your_coffee', 'scoop_ice_cream\\', 'eat_yogurt']"
+95,spray_bottle,[]
+96,statue,"['accent_your_garden', 'symbolize_something', 'honour_someone', 'decorate_your_lawn', 'honoring_a_person', 'imortalize_someone', 'display', 'a_memorial', 'honor_a_veteran']"
+97,stool,"['Resting', 'reaching_high_places', 'milking', 'climbing', 'tying_shoes', 'being_at_a_bar', 'standing_on_to_reach_high_shelves', 'increase_your_height', 'reach_something_that_is_up_high', 'Support', 'sitting_at_a_bar', 'Working']"
+98,stove_burner,[]
+99,stove_knob,[]
+100,table_top_decor,[]
+101,target_circle,[]
+102,teddy_bear,['cuddling']
+103,television,"['watching', 'watch_a_movie', 'dull_your_brain', 'broadcasting_shows_into_homes', 'watching_a_show', 'watch_the_news']"
+104,tennis_racket,[]
+105,tissue_box,[]
+106,toaster,"['making_toast', 'toasting_bread']"
+107,toilet,"['poop', 'urinate', 'peeing', 'shitting', 'waste', 'barf_in', 'go_potty', 'dispose_of_waste', 'depositing_human_waste', 'poop_in', 'dispose_of_tissue', 'pooping']"
+108,toilet_paper,"['wipe_your_arse', 'blow_your_nose', 'wiping_your_asshole', 'wipe_your_nose', 'females_to_wipe_their_vaginas', 'cleaning_up_liquids', 'wiping_up_a_small_spill', 'the_bathroom', 'wipe', 'personal_hygiene', 'wiping_oneself', 'toss_on_trees', 'absorbing_moisture', 'proper_toilet_hygiene', 'cleaning_after_defacating', 'wiping_your_eyes', 'kill_a_spider', 'wipe_off_makeup', 'blowing_your_nose', 'a_convenient_place_near_the_toilet']"
+109,toilet_paper_hanger,[]
+110,tomato,[]
+111,towel,"['dry_dishes', 'cleaning_up', 'drying_off', 'cleaning_up_messes', 'dry_yourself_if_you_are_wet', 'dry_your_self', 'dry_yourself', 'dry_yourself_after_swimming', 'drying_wet_objects', 'absord_any_kind_of_liquid', 'drying_the_body_after_a_shower', 'drying_your_body_after_swimming', 'being_dry', 'drying_your_hair_after_washing', 'dry_your_hands_and_body', 'drying_your_hands', 'clean_up_a_mess', 'drying_the_body_after_a_bath', 'absorbing_moisture', 'drying_your_hair']"
+112,towel_holder,[]
+113,tv_stand,[]
+114,vacuum_cleaner,"['vacumming', 'suck_up_flies']"
+115,vase,[]
+116,watch,"['time', 'keeping_track_of_time', 'being_on_time', 'looking_good', 'measure_the_passage_of_time', 'tell_the_current_time', 'telling_the_date', 'telling_what_day_it_is', 'timing_a_race', 'know_the_time', 'impressing_people']"
+117,watering_can,[]
+118,window,"['look_outside', 'looking_outside', 'letting_fresh_air_into_a_room', 'look_out_of', 'letting_light_in_a_building', 'keep_cold_air_out', 'ventilation_and_view', 'letting_in_light', 'keeping_cold_air_out', 'letting_air_in_a_building', 'looking_inside', 'letting_in_sunshine', 'looking_in', 'opening_and_closing', 'providing_a_view', 'letting_light_in', 'viewing_the_world', 'seeing_a_view', 'looking_out', 'letting_fresh_air_in']"
+119,wine_bottle,[]
+120,oven,"['cooking', 'bake_cookies', 'baking_food', 'bake_a_cake', 'roasting', 'cood_food', 'reheat_food', 'burn', 'bake_things,_like_food_or_ceramics', 'baking,_broiling,_and_heating_food', 'roast_a_turkey', 'baking', 'get_rid_of_story_witches', 'preparing_food', 'grill_vegetables']"
+121,tooth_brush,['cleaning_teeth']
+122,hair_drier,[]
+123,keyboard,"['typing', 'playing_music', 'type_a_letter', 'communicating', 'entering_text', 'coding', 'controlling_a_computer', 'entering_data', 'converting_movement_into_concepts', 'play_fur_elise', 'enter_data_to_computer', 'work', 'input_data', 'writing_text', 'type_on', 'play_music', 'storing_keys', 'type', 'data_entry', 'communicate_with_someone_in_a_chatroom']"
+124,scissors,"['cut', 'cut_a_string', ""cut_someone's_hair"", 'cut_your_sisters_pigtail_off', 'cut_leather', 'cut_paper_or_cloth', 'cut_paper_snowflakes', 'cut_textiles', 'cutting', 'cut_ribbons', 'ribbon', 'construction_paper']"
+125,mouse,"['surfing', 'computer_input', 'operate', 'move', 'control_a_computer', 'interface_with_the_computer']"

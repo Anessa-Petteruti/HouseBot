@@ -1,6 +1,7 @@
 import requests
 import numpy as np
 import pandas as pd
+import time
 
 #TODO: refine these verbs here
 #ai2thor_verbs = ["toggle","break","fill_with_liquid","dirty","use_up","cook","heat_up","make_cold","slice","open","pick_up","move"]
@@ -95,4 +96,39 @@ def saveDictOfVerbs():
 def formatCorrectly(verbs):
     return [verb.replace(" ","_") for verb in verbs]
 
-saveDictOfVerbs()
+rows = [55]
+
+def getSimilarityForVerbsGraph():
+    df = pd.read_csv('detectronnouns_capableof.csv')
+    overall = []
+    for i,j in df.iterrows():
+        if (i in rows):
+            object = j['Object']
+            verbs = getList(j['RelatedVerbs'])[:5]
+            average = [0,0,0,0,0,0,0,0,0,0]
+            print(object,len(verbs),verbs)
+            for verb in verbs:
+                rel = []
+                for verb2 in ai2thor_verbs:
+                    rel.append(getRelatedness(verb,verb2))
+                average = [a + b for a, b in zip(average, rel)]
+                overall.append([object,verb]+rel)
+                time.sleep(1)
+            average = [item/len(verbs) for item in average]
+            overall.append([object,"Average"]+average)
+            time.sleep(4)
+    print("Saving...")
+    df = pd.DataFrame(overall, columns = ['Object', 'RelatedVerb','Toggleable','Breakable','Fillable','Dirtyable','UseUpable','Cookable',
+    "Sliceable","Openable","Pickupable","Moveable"]) 
+    df.to_csv('help_capableOf_relatedness.csv')
+
+def getList(string):
+    str = string.replace("[","")
+    str = str.replace("]","")
+    str = str.replace("'","")
+    str = str.replace(" ","")
+    str = str.split(",")
+    return str
+
+
+getSimilarityForVerbsGraph()

@@ -1,0 +1,120 @@
+,Object Type,Actionable Properties
+0,alarm_clock,Pickupable
+1,aluminum_foil,Pickupable
+2,apple,"Pickupable, Sliceable"
+3,armchair,"Receptacle, Moveable"
+4,baseball_bat,Pickupable
+5,basketball,Pickupable
+6,bathtub,Receptacle
+7,bathtub_basin,Receptacle
+8,bed,"Receptacle, Dirtyable"
+9,blinds,Openable
+10,book,"Openable, Pickupable"
+11,boots,Pickupable
+12,bottle,"Pickupable, Fillable, Breakable"
+13,bowl,"Pickupable, Receptacle, Fillable, Breakable, Dirtyable"
+14,box,"Openable, Pickupable, Receptacle"
+15,bread,"Pickupable, Sliceable"
+16,butter_knife,Pickupable
+17,cabinet,"Openable, Receptacle"
+18,candle,"Pickupable, Toggleable"
+19,cd,Pickupable
+20,cell_phone,"Pickupable, Toggleable, Breakable"
+21,chair,Moveable
+22,cloth,"Pickupable, Dirtyable"
+23,coffee_machine,"Toggleable, Receptacle, Moveable"
+24,coffee_table,"Receptacle, Moveable"
+25,counter_top,Receptacle
+26,credit_card,Pickupable
+27,cup,"Pickupable, Receptacle, Fillable, Breakable, Dirtyable"
+28,curtains,
+29,desk,"Receptacle, Moveable"
+30,desk_lamp,"Toggleable, Moveable"
+31,desktop,Moveable
+32,dining_table,"Receptacle, Moveable"
+33,dish_sponge,Pickupable
+34,dog_bed,Moveable
+35,drawer,"Openable, Receptacle"
+36,dresser,"Receptacle, Moveable"
+37,dumbbell,Pickupable
+38,egg,"Pickupable, Sliceable, Breakable"
+39,faucet,Toggleable
+40,floor,
+41,floor_lamp,"Toggleable, Moveable"
+42,footstool,Moveable
+43,fork,Pickupable
+44,fridge,"Openable, Receptacle"
+45,garbage_bag,Moveable
+46,garbage_can,"Receptacle, Moveable"
+47,hand_towel,Pickupable
+48,hand_towel_holder,Receptacle
+49,house_plant,"Fillable, Moveable"
+50,kettle,"Openable, Pickupable, Fillable"
+51,key_chain,Pickupable
+52,knife,Pickupable
+53,ladle,Pickupable
+54,laptop,"Openable, Pickupable, Toggleable, Breakable"
+55,laundry_hamper,"Receptacle, Moveable"
+56,lettuce,"Pickupable, Sliceable"
+57,light_switch,Toggleable
+58,microwave,"Openable, Toggleable, Receptacle, Moveable"
+59,mirror,"Breakable, Dirtyable"
+60,mug,"Pickupable, Receptacle, Fillable, Breakable, Dirtyable"
+61,newspaper,Pickupable
+62,ottoman,"Receptacle, Moveable"
+63,painting,
+64,pan,"Pickupable, Receptacle, Dirtyable"
+65,paper_towel_roll,"Pickupable, UsedUp"
+66,pen,Pickupable
+67,pencil,Pickupable
+68,pepper_shaker,Pickupable
+69,pillow,Pickupable
+70,plate,"Pickupable, Receptacle, Breakable, Dirtyable"
+71,plunger,Pickupable
+72,poster,
+73,pot,"Pickupable, Receptacle, Fillable, Dirtyable"
+74,potato,"Pickupable, Sliceable, Cookable"
+75,remote_control,Pickupable
+76,room_decor,Moveable
+77,safe,"Openable, Receptacle, Moveable"
+78,salt_shaker,Pickupable
+79,scrub_brush,Pickupable
+80,shelf,Receptacle
+81,shelving_unit,Moveable
+82,shower_curtain,Openable
+83,shower_door,"Openable, Breakable"
+84,shower_glass,Breakable
+85,shower_head,Toggleable
+86,side_table,"Receptacle, Moveable"
+87,sink,Receptacle
+88,sink_basin,Receptacle
+89,soap_bar,Pickupable
+90,soap_bottle,"Pickupable, UsedUp"
+91,sofa,"Receptacle, Moveable"
+92,spatula,Pickupable
+93,spoon,Pickupable
+94,spray_bottle,Pickupable
+95,statue,"Pickupable, Breakable"
+96,stool,Moveable
+97,stove_burner,"Toggleable, Receptacle"
+98,stove_knob,Toggleable
+99,table_top_decor,Pickupable
+100,target_circle,
+101,teddy_bear,Pickupable
+102,television,"Toggleable, Breakable, Moveable"
+103,tennis_racket,Pickupable
+104,tissue_box,"Pickupable, UsedUp"
+105,toaster,"Toggleable, Receptacle, Moveable"
+106,toilet,"Openable, Receptacle"
+107,toilet_paper,"Pickupable, UsedUp"
+108,toilet_paper_hanger,Receptacle
+109,tomato,"Pickupable, Sliceable"
+110,towel,Pickupable
+111,towel_holder,Receptacle
+112,tv_stand,"Receptacle, Moveable"
+113,vacuum_cleaner,Moveable
+114,vase,"Pickupable, Breakable"
+115,watch,Pickupable
+116,watering_can,"Pickupable, Fillable"
+117,window,Breakable
+118,wine_bottle,"Pickupable, Fillable, Breakable"

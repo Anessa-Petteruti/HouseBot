@@ -86,17 +86,18 @@ def getTrueLabels(object):
 
 def getAllTrueLabels():
     groundTruthLabels = {}
-    df = pd.read_csv('ithor.csv')
-    for 
-    aiword = df.loc[df['Object Type'] == object, 'Actionable Properties']
-    print(aiword)
-    actions = df.loc[df['Object Type'] == object, 'Actionable Properties'].iloc[0]
-    if pd.isna(actions):
-        return -1
-    actions = actions.replace(" (Some)","")
-    actions = actions.split(", ")
-    print(actions)
-    return [verb in actions for verb in aithor_verbs]
+    df = pd.read_csv('groundtruthLabels.csv')
+    for i,row in df.iterrows():
+        object = row['Object Type']
+        actions = row['Actionable Properties']
+        if pd.isna(actions):
+            label = [False for verb in aithor_verbs]
+        else:
+            actions = actions.split(", ")
+            label = [verb in actions for verb in aithor_verbs]
+        groundTruthLabels[object] = label
+    return groundTruthLabels
+
 
 def sample_test(object):
     trueLabels = getTrueLabels(object)
@@ -112,7 +113,9 @@ def sample_test(object):
     print("F1 Score: ", f1_score_us(trueLabels,labels))
     print("MAP Score: ", mean_avg_prec_us(trueLabels,labels))
 
-def getLabelsFromChart(threshold,dfCapable,dfUsed):
+def getLabelsFromChart(threshold):
+    dfCapable = pd.read_csv('overallAverageCapable.csv')
+    dfUsed = pd.read_csv('overallAverageUsed.csv')
     concepnetLabels = {}
     for object in aithorNouns + detectronNouns:
         print(object)
@@ -127,10 +130,9 @@ def getLabelsFromChart(threshold,dfCapable,dfUsed):
 def main():
     # Will need to pass things in to these functions here...
     #process_object_labels()
-    dfCapable = pd.read_csv('overallAverageCapable.csv')
-    dfUsed = pd.read_csv('overallAverageUsed.csv')
-    conceptnetLabels = getLabelsFromChart(0,dfCapable,dfUsed)
+    conceptnetLabels = getLabelsFromChart(0)
     groundTruthLabels = getAllTrueLabels()
+
 
 #RECEPTABCLE HEAT AND COLD NEED OT BE ADDED
 

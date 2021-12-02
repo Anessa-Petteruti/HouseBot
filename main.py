@@ -145,10 +145,14 @@ def getAccuracy(labels, pred):
 def main():
     # Will need to pass things in to these functions here...
     #process_object_labels()
-    conceptnetLabels = getLabelsFromChart(0.1)
+    conceptnetLabels = getLabelsFromChart(0.02)
+    print(conceptnetLabels["sofa"])
     groundTruthLabels = getAllTrueLabels()
-    acc = getAccuracy(conceptnetLabels, groundTruthLabels)
-    print(acc)
+    print(groundTruthLabels["sofa"])
+    acc1 = get_acc(conceptnetLabels, groundTruthLabels)
+    acc2 = getAccuracy(conceptnetLabels, groundTruthLabels)
+    print(acc1)
+    print(acc2)
 
 #RECEPTABCLE HEAT AND COLD NEED OT BE ADDED
 

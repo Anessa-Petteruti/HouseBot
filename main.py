@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import pandas as pd
-from sklearn.metrics import average_precision_score, f1_score
+from sklearn.metrics import average_precision_score, f1_score, accuracy_score
 from conceptnet import calculateProbBySimilarVerbs, calculateProbBySimilarity
 #import ConceptNet
 
@@ -127,12 +127,28 @@ def getLabelsFromChart(threshold):
         concepnetLabels[object] = thresholded
     return concepnetLabels
 
+def get_acc(labels, pred):
+    final_acc = 0
+    labels = list(labels.values())
+    pred = list(pred.values())
+    for i in range(len(labels)):
+        final_acc += accuracy_score(labels[i], pred[i])
+    return final_acc / len(labels)
+
+def getAccuracy(labels, pred):
+    final_acc = 0
+    nouns = list(labels.keys())
+    for obj in nouns:
+        final_acc += accuracy_score(labels[obj], pred[obj])
+    return final_acc / len(labels)
+
 def main():
     # Will need to pass things in to these functions here...
     #process_object_labels()
-    conceptnetLabels = getLabelsFromChart(0)
+    conceptnetLabels = getLabelsFromChart(0.1)
     groundTruthLabels = getAllTrueLabels()
-
+    acc = getAccuracy(conceptnetLabels, groundTruthLabels)
+    print(acc)
 
 #RECEPTABCLE HEAT AND COLD NEED OT BE ADDED
 

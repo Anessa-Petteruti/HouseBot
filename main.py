@@ -84,6 +84,20 @@ def getTrueLabels(object):
     print(actions)
     return [verb in actions for verb in aithor_verbs]
 
+def getAllTrueLabels():
+    groundTruthLabels = {}
+    df = pd.read_csv('ithor.csv')
+    for 
+    aiword = df.loc[df['Object Type'] == object, 'Actionable Properties']
+    print(aiword)
+    actions = df.loc[df['Object Type'] == object, 'Actionable Properties'].iloc[0]
+    if pd.isna(actions):
+        return -1
+    actions = actions.replace(" (Some)","")
+    actions = actions.split(", ")
+    print(actions)
+    return [verb in actions for verb in aithor_verbs]
+
 def sample_test(object):
     trueLabels = getTrueLabels(object)
     if trueLabels == -1:
@@ -108,14 +122,15 @@ def getLabelsFromChart(threshold,dfCapable,dfUsed):
             toUse = capable
         thresholded = [item > threshold for item in toUse]
         concepnetLabels[object] = thresholded
-    print(concepnetLabels)
+    return concepnetLabels
 
 def main():
     # Will need to pass things in to these functions here...
     #process_object_labels()
     dfCapable = pd.read_csv('overallAverageCapable.csv')
     dfUsed = pd.read_csv('overallAverageUsed.csv')
-    getLabelsFromChart(0,dfCapable,dfUsed)
+    conceptnetLabels = getLabelsFromChart(0,dfCapable,dfUsed)
+    groundTruthLabels = getAllTrueLabels()
 
 #RECEPTABCLE HEAT AND COLD NEED OT BE ADDED
 

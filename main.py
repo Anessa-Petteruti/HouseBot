@@ -22,7 +22,7 @@ aithorNouns = ["alarm_clock", "aluminum_foil", "apple", "armchair", "baseball_ba
 "cabinet", "candle", "cd", "cell_phone", "chair", "cloth", "coffee_machine", "coffee_table", "counter_top",
 "credit_card", "cup", "curtains", "desk", "desk_lamp", "desktop", "dining_table", "dish_sponge", "dog_bed",
 "drawer", "dresser", "dumbbell", "egg", "faucet", "floor", "floor_lamp", "footstool", "fork", 
-"fridge", "garbage_bag", "hand_towel", "hand_towel_holder", "house_plant", "kettle", "key_chain", "knife", 
+"fridge", "garbage_bag", "garbage_can","hand_towel", "hand_towel_holder", "house_plant", "kettle", "key_chain", "knife", 
 "ladle", "laptop", "laundry_hamper", "lettuce", "light_switch", "microwave", "mirror", "mug", "newspaper", 
 "ottoman", "painting", "pan", "paper_towel_roll", "pen", "pencil", "pepper_shaker", "pillow", "plate", "plunger",
 "poster", "pot", "potato", "remote_control", "room_decor", "safe", "salt_shaker", "scrub_brush", "shelf", "shelving_unit", 

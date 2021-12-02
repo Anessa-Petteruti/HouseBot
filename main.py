@@ -8,6 +8,7 @@ from conceptnet import calculateProbBySimilarVerbs, calculateProbBySimilarity
 threshold = .001
 #aithor_verbs = ["Toggleable","Breakable","Fillable","Dirtable","UsedUp","Cookable","Heatable","Coldable","Sliceable","Openable","Pickupable","Moveable"]
 aithor_verbs = ["Toggleable","Breakable","Fillable","Dirtyable","UsedUp","Cookable","Sliceable","Openable","Pickupable","Moveable"]
+properties = ["Toggleable","Breakable","Fillable","Dirtyable","UseUpable","Cookable","Sliceable","Openable","Pickupable","Moveable"]
 #Dictionary mapping detectron verbs to ai2thor verbs (currently only ones with very similar aithor words included):
 nounDict = {"sports ball": "BasketBall", "baseball bat": "BaseballBat", "tennis racket": "TennisRacket", "bottle": "Bottle",
 "wine glass": "WineBottle", "cup": "Cup", "fork" : "Fork", "knife": "Knife", "spoon": "Spoon", "bowl": "Bowl",
@@ -15,6 +16,25 @@ nounDict = {"sports ball": "BasketBall", "baseball bat": "BaseballBat", "tennis 
 "toilet": "Toilet", "tv": "Television", "laptop": "Laptop", "remote": "RemoteControl", "cell phone": "CellPhone",
 "microwave": "Microwave", "toaster": "Toaster", "sink": "Sink", "refrigerator": "fridge", "book": "Book", "clock": "AlarmClock",
 "vase": "Vase", "teddy bear": "Teddy Bear"}
+
+aithorNouns = ["alarm_clock", "aluminum_foil", "apple", "armchair", "baseball_bat", "basketball", "bathtub",
+"bathtub_basin", "bed", "blinds", "book", "boots", "bottle", "bowl", "box", "bread", "butter_knife", 
+"cabinet", "candle", "cd", "cell_phone", "chair", "cloth", "coffee_machine", "coffee_table", "counter_top",
+"credit_card", "cup", "curtains", "desk", "desk_lamp", "desktop", "dining_table", "dish_sponge", "dog_bed",
+"drawer", "dresser", "dumbbell", "egg", "faucet", "floor", "floor_lamp", "footstool", "fork", 
+"fridge", "garbage_bag", "hand_towel", "hand_towel_holder", "house_plant", "kettle", "key_chain", "knife", 
+"ladle", "laptop", "laundry_hamper", "lettuce", "light_switch", "microwave", "mirror", "mug", "newspaper", 
+"ottoman", "painting", "pan", "paper_towel_roll", "pen", "pencil", "pepper_shaker", "pillow", "plate", "plunger",
+"poster", "pot", "potato", "remote_control", "room_decor", "safe", "salt_shaker", "scrub_brush", "shelf", "shelving_unit", 
+"shower_curtain", "shower_door", "shower_glass", "shower_head", "side_table", "sink", "sink_basin", "soap_bar", 
+"soap_bottle", "sofa", "spatula", "spoon", "spray_bottle", "statue", "stool", "stove_burner", "stove_knob","table_top_decor",
+"target_circle", "teddy_bear", "television", "tennis_racket", "tissue_box", "toaster", "toilet", "toilet_paper", 
+"toilet_paper_hanger", "tomato","towel", "towel_holder", "tv_stand", "vacuum_cleaner", "vase","watch", "watering_can", "window", "wine_bottle"]
+detectronNouns = ["person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck","boat", "traffic_light",
+"fire_hydrant", "stop_sign", "parking_meter", "bench", "bird", "cat", "dog", "horse", "sheep", "cow","elephant", "bear", 
+"zebra", "giraffe", "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports_ball", 
+"kite","baseball_glove", "skateboard", "surfboard", "wine_glass", "banana", "sandwich", "orange", "broccoli", "carrot", 
+"hot_dog", "pizza", "donut", "cake", "couch","potted_plant", "mouse", "keyboard", "oven","clock","scissors", "hair_drier", "tooth_brush"]
 
 def process_object_labels():
     """
@@ -78,11 +98,24 @@ def sample_test(object):
     print("F1 Score: ", f1_score_us(trueLabels,labels))
     print("MAP Score: ", mean_avg_prec_us(trueLabels,labels))
 
+def getLabelsFromChart(threshold,dfCapable,dfUsed):
+    concepnetLabels = {}
+    for object in aithorNouns + detectronNouns:
+        print(object)
+        toUse = [dfUsed.loc[dfUsed['Object'] == object, verb].iloc[0] for verb in properties]
+        capable = [dfCapable.loc[dfCapable['Object'] == object, verb].iloc[0] for verb in properties]
+        if all(item == 0 for item in toUse):
+            toUse = capable
+        thresholded = [item > threshold for item in toUse]
+        concepnetLabels[object] = thresholded
+    print(concepnetLabels)
+
 def main():
     # Will need to pass things in to these functions here...
     #process_object_labels()
-
-    sample_test('Mug')
+    dfCapable = pd.read_csv('overallAverageCapable.csv')
+    dfUsed = pd.read_csv('overallAverageUsed.csv')
+    getLabelsFromChart(0,dfCapable,dfUsed)
 
 #RECEPTABCLE HEAT AND COLD NEED OT BE ADDED
 

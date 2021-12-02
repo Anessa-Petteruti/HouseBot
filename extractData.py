@@ -96,7 +96,7 @@ def saveDictOfVerbs():
 def formatCorrectly(verbs):
     return [verb.replace(" ","_") for verb in verbs]
 
-rows = [116]
+
 
 def getSimilarityForVerbsGraph():
     df = pd.read_csv('aithornouns_capableof.csv')
@@ -122,6 +122,23 @@ def getSimilarityForVerbsGraph():
     "Sliceable","Openable","Pickupable","Moveable"]) 
     df.to_csv('help_capableOf_relatedness.csv')
 
+rows = [42,48,49]
+
+def getNounSimilarity():
+    overall = []
+    for i,obj in enumerate(detectronNouns):
+        if i in rows:
+            print(obj)
+            rel = []
+            for verb2 in ai2thor_verbs:
+                rel.append(getRelatedness(obj,verb2))
+            overall.append([obj]+rel)
+            time.sleep(2)
+    print("Saving...")
+    df = pd.DataFrame(overall, columns = ['Object', 'Toggleable','Breakable','Fillable','Dirtyable','UseUpable','Cookable',
+    "Sliceable","Openable","Pickupable","Moveable"]) 
+    df.to_csv('help_toProperty_relatedness.csv')
+
 def getList(string):
     str = string.replace("[","")
     str = str.replace("]","")
@@ -131,4 +148,4 @@ def getList(string):
     return str
 
 
-getSimilarityForVerbsGraph()
+getNounSimilarity()

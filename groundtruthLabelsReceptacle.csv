@@ -1,0 +1,176 @@
+,Unnamed: 0,Object Type,Actionable Properties
+0,0,alarm_clock,Pickupable
+1,1,aluminum_foil,Pickupable
+2,2,apple,"Pickupable, Sliceable"
+3,3,armchair,"Fillable, Moveable"
+4,4,baseball_bat,Pickupable
+5,5,basketball,Pickupable
+6,6,bathtub,Fillable
+7,7,bathtub_basin,Fillable
+8,8,bed,"Fillable, Dirtyable"
+9,9,blinds,Openable
+10,10,book,"Openable, Pickupable"
+11,11,boots,Pickupable
+12,12,bottle,"Pickupable, Fillable, Breakable"
+13,13,bowl,"Pickupable, Fillable, Fillable, Breakable, Dirtyable"
+14,14,box,"Openable, Pickupable, Fillable"
+15,15,bread,"Pickupable, Sliceable"
+16,16,butter_knife,Pickupable
+17,17,cabinet,"Openable, Fillable"
+18,18,candle,"Pickupable, Toggleable"
+19,19,cd,Pickupable
+20,20,cell_phone,"Pickupable, Toggleable, Breakable"
+21,21,chair,Moveable
+22,22,cloth,"Pickupable, Dirtyable"
+23,23,coffee_machine,"Toggleable, Fillable, Moveable"
+24,24,coffee_table,"Fillable, Moveable"
+25,25,counter_top,Fillable
+26,26,credit_card,Pickupable
+27,27,cup,"Pickupable, Fillable, Fillable, Breakable, Dirtyable"
+28,28,curtains,
+29,29,desk,"Fillable, Moveable"
+30,30,desk_lamp,"Toggleable, Moveable"
+31,31,desktop,Moveable
+32,32,dining_table,"Fillable, Moveable"
+33,33,dish_sponge,Pickupable
+34,34,dog_bed,Moveable
+35,35,drawer,"Openable, Fillable"
+36,36,dresser,"Fillable, Moveable"
+37,37,dumbbell,Pickupable
+38,38,egg,"Pickupable, Sliceable, Breakable"
+39,39,faucet,Toggleable
+40,40,floor,
+41,41,floor_lamp,"Toggleable, Moveable"
+42,42,footstool,Moveable
+43,43,fork,Pickupable
+44,44,fridge,"Openable, Fillable"
+45,45,garbage_bag,Moveable
+46,46,garbage_can,"Fillable, Moveable"
+47,47,hand_towel,Pickupable
+48,48,hand_towel_holder,Fillable
+49,49,house_plant,"Fillable, Moveable"
+50,50,kettle,"Openable, Pickupable, Fillable"
+51,51,key_chain,Pickupable
+52,52,knife,Pickupable
+53,53,ladle,Pickupable
+54,54,laptop,"Openable, Pickupable, Toggleable, Breakable"
+55,55,laundry_hamper,"Fillable, Moveable"
+56,56,lettuce,"Pickupable, Sliceable"
+57,57,light_switch,Toggleable
+58,58,microwave,"Openable, Toggleable, Fillable, Moveable"
+59,59,mirror,"Breakable, Dirtyable"
+60,60,mug,"Pickupable, Fillable, Fillable, Breakable, Dirtyable"
+61,61,newspaper,Pickupable
+62,62,ottoman,"Fillable, Moveable"
+63,63,painting,
+64,64,pan,"Pickupable, Fillable, Dirtyable"
+65,65,paper_towel_roll,"Pickupable, UsedUp"
+66,66,pen,Pickupable
+67,67,pencil,Pickupable
+68,68,pepper_shaker,Pickupable
+69,69,pillow,Pickupable
+70,70,plate,"Pickupable, Fillable, Breakable, Dirtyable"
+71,71,plunger,Pickupable
+72,72,poster,
+73,73,pot,"Pickupable, Fillable, Fillable, Dirtyable"
+74,74,potato,"Pickupable, Sliceable, Cookable"
+75,75,remote_control,Pickupable
+76,76,room_decor,Moveable
+77,77,safe,"Openable, Fillable, Moveable"
+78,78,salt_shaker,Pickupable
+79,79,scrub_brush,Pickupable
+80,80,shelf,Fillable
+81,81,shelving_unit,Moveable
+82,82,shower_curtain,Openable
+83,83,shower_door,"Openable, Breakable"
+84,84,shower_glass,Breakable
+85,85,shower_head,Toggleable
+86,86,side_table,"Fillable, Moveable"
+87,87,sink,Fillable
+88,88,sink_basin,Fillable
+89,89,soap_bar,Pickupable
+90,90,soap_bottle,"Pickupable, UsedUp"
+91,91,sofa,"Fillable, Moveable"
+92,92,spatula,Pickupable
+93,93,spoon,Pickupable
+94,94,spray_bottle,Pickupable
+95,95,statue,"Pickupable, Breakable"
+96,96,stool,Moveable
+97,97,stove_burner,"Toggleable, Fillable"
+98,98,stove_knob,Toggleable
+99,99,table_top_decor,Pickupable
+100,100,target_circle,
+101,101,teddy_bear,Pickupable
+102,102,television,"Toggleable, Breakable, Moveable"
+103,103,tennis_racket,Pickupable
+104,104,tissue_box,"Pickupable, UsedUp"
+105,105,toaster,"Toggleable, Fillable, Moveable"
+106,106,toilet,"Openable, Fillable"
+107,107,toilet_paper,"Pickupable, UsedUp"
+108,108,toilet_paper_hanger,Fillable
+109,109,tomato,"Pickupable, Sliceable"
+110,110,towel,Pickupable
+111,111,towel_holder,Fillable
+112,112,tv_stand,"Fillable, Moveable"
+113,113,vacuum_cleaner,Moveable
+114,114,vase,"Pickupable, Breakable"
+115,115,watch,Pickupable
+116,116,watering_can,"Pickupable, Fillable"
+117,117,window,Breakable
+118,118,wine_bottle,"Pickupable, Fillable, Breakable"
+0,0,person,
+1,1,bicycle,Moveable
+2,2,car,"Fillable, Moveable, Openable"
+3,3,motorcycle,Moveable
+4,4,airplane,"Fillable, Moveable"
+5,5,bus,"Fillable, Moveable"
+6,6,train,"Fillable, Moveable"
+7,7,truck,"Fillable, Moveable, Openable"
+8,8,boat,"Fillable, Moveable"
+9,9,traffic_light,
+10,10,fire_hydrant,
+11,11,stop_sign,
+12,12,parking_meter,Fillable
+13,13,bench,Moveable
+14,14,bird,
+15,15,cat,
+16,16,dog,
+17,17,horse,
+18,18,sheep,
+19,19,cow,
+20,20,elephant,
+21,21,bear,
+22,22,zebra,
+23,23,giraffe,
+24,24,backpack,"Pickupable, Openable, Fillable"
+25,25,umbrella,Pickupable
+26,26,handbag,Pickupable
+27,27,tie,Pickupable
+28,28,suitcase,"Pickupable, Openable, Fillable"
+29,29,frisbee,Pickupable
+30,30,skis,Pickupable
+31,31,snowboard,Pickupable
+32,32,sports_ball,Pickupable
+33,33,kite,Pickupable
+34,35,baseball_glove,Pickupable
+35,36,skateboard,Pickupable
+36,37,surfboard,Pickupable
+37,40,wine_glass,"Pickupable, Fillable, Breakable, Dirtyable"
+38,46,banana,"Pickupable, Sliceable"
+39,48,sandwich,"Pickupable, Sliceable"
+40,49,orange,"Pickupable, Sliceable"
+41,50,broccoli,"Pickupable, Sliceable"
+42,51,carrot,"Pickupable, Sliceable"
+43,52,hot_dog,"Pickupable, Sliceable"
+44,53,pizza,"Pickupable, Sliceable"
+45,54,donut,"Pickupable, Sliceable"
+46,55,cake,"Pickupable, Sliceable"
+47,57,couch,Moveable
+48,58,potted_plant,"Fillable, Moveable"
+49,64,mouse,Pickupable
+50,66,keyboard,Toggleable
+51,69,oven,"Openable, Toggleable"
+52,74,clock,Pickupable
+53,76,scissors,Pickupable
+55,78,hair_drier,Pickupable
+56,79,tooth_brush,Pickupable

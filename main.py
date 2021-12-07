@@ -9,7 +9,7 @@ threshold = .001
 #aithor_verbs = ["Toggleable","Breakable","Fillable","Dirtable","UsedUp","Cookable","Heatable","Coldable","Sliceable","Openable","Pickupable","Moveable"]
 aithor_verbs = ["Toggleable","Breakable","Fillable","Dirtyable","UsedUp","Cookable","Sliceable","Openable","Pickupable","Moveable"]
 properties = ["Toggleable","Breakable","Fillable","Dirtyable","UseUpable","Cookable","Sliceable","Openable","Pickupable","Moveable"]
-#Dictionary mapping detectron verbs to ai2thor verbs (currently only ones with very similar aithor words included):
+#Dictionary mapping detectron verbs to ai2thor verbs (currently only ones with very similar aithor words included): NEEDED FOR INTEGRATION
 nounDict = {"sports ball": "BasketBall", "baseball bat": "BaseballBat", "tennis racket": "TennisRacket", "bottle": "Bottle",
 "wine glass": "WineBottle", "cup": "Cup", "fork" : "Fork", "knife": "Knife", "spoon": "Spoon", "bowl": "Bowl",
 "apple": "Apple", "chair": "Chair", "couch": "Sofa", "potted plant": "HousePlant", "bed": "Bed", "dining table" : "DiningTable",
@@ -17,6 +17,7 @@ nounDict = {"sports ball": "BasketBall", "baseball bat": "BaseballBat", "tennis 
 "microwave": "Microwave", "toaster": "Toaster", "sink": "Sink", "refrigerator": "fridge", "book": "Book", "clock": "AlarmClock",
 "vase": "Vase", "teddy bear": "Teddy Bear"}
 
+#Nouns present in aithor 
 aithorNouns = ["alarm_clock", "aluminum_foil", "apple", "armchair", "baseball_bat", "basketball", "bathtub",
 "bathtub_basin", "bed", "blinds", "book", "boots", "bottle", "bowl", "box", "bread", "butter_knife", 
 "cabinet", "candle", "cd", "cell_phone", "chair", "cloth", "coffee_machine", "coffee_table", "counter_top",
@@ -30,6 +31,8 @@ aithorNouns = ["alarm_clock", "aluminum_foil", "apple", "armchair", "baseball_ba
 "soap_bottle", "sofa", "spatula", "spoon", "spray_bottle", "statue", "stool", "stove_burner", "stove_knob","table_top_decor",
 "target_circle", "teddy_bear", "television", "tennis_racket", "tissue_box", "toaster", "toilet", "toilet_paper", 
 "toilet_paper_hanger", "tomato","towel", "towel_holder", "tv_stand", "vacuum_cleaner", "vase","watch", "watering_can", "window", "wine_bottle"]
+
+#Nouns that detectron can detect not including nouns already present in aithorNouns list
 detectronNouns = ["person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck","boat", "traffic_light",
 "fire_hydrant", "stop_sign", "parking_meter", "bench", "bird", "cat", "dog", "horse", "sheep", "cow","elephant", "bear", 
 "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports_ball", 
@@ -72,18 +75,17 @@ def mean_avg_prec_us(true,score):
     """
     return average_precision_score(true,score)
 
+#Gets the true property lables for an object from the ithor chart - only works for aithor nouns currently
 def getTrueLabels(object):
     df = pd.read_csv('ithor.csv')
-    #aiword = df.loc[df['Object Type'] == object, 'Actionable Properties']
-    #(aiword)
     actions = df.loc[df['Object Type'] == object, 'Actionable Properties'].iloc[0]
     if pd.isna(actions):
         return -1
     actions = actions.replace(" (Some)","")
     actions = actions.split(", ")
-    #print(actions)
     return [verb in actions for verb in aithor_verbs]
 
+#get all true labels for all objects from the groundtruthLabels charts 
 def getAllTrueLabels():
     groundTruthLabels = {}
     df = pd.read_csv('groundtruthLabels.csv')
@@ -113,6 +115,7 @@ def sample_test(object):
     print("F1 Score: ", f1_score_us(trueLabels,labels))
     print("MAP Score: ", mean_avg_prec_us(trueLabels,labels))
 
+#Gets all predicted labels from the average charts for all objects using one threshold across all properties
 def getLabelsFromChart(threshold):
     dfCapable = pd.read_csv('overallAverageCapable.csv')
     dfUsed = pd.read_csv('overallAverageUsed.csv')
@@ -127,6 +130,25 @@ def getLabelsFromChart(threshold):
         concepnetLabels[object] = thresholded
     return concepnetLabels
 
+#Gets all predicted labels from the average charts for all objects using one threshold across all properties
+def getMaxLabelsFromChart():
+    dfCapable = pd.read_csv('overallAverageCapable.csv')
+    dfUsed = pd.read_csv('overallAverageUsed.csv')
+    concepnetLabels = {}
+    for object in aithorNouns + detectronNouns:
+        toUse = [dfUsed.loc[dfUsed['Object'] == object, verb].iloc[0] for verb in properties]
+        capable = [dfCapable.loc[dfCapable['Object'] == object, verb].iloc[0] for verb in properties]
+        if all(item == 0 for item in capable):
+            #if all(item == 0 for item in toUse):
+            concepnetLabels[object] = 8
+            continue
+            #else:
+                #capable = toUse
+        maxLabel = np.argmax(capable)
+        concepnetLabels[object] = maxLabel
+    return concepnetLabels
+
+#Gets all predicted labels from the average charts for all objects using a list of thresholds, one for each property
 def getLabelsFromChartMultiThresh(threshold):
     dfCapable = pd.read_csv('overallAverageCapable.csv')
     dfUsed = pd.read_csv('overallAverageUsed.csv')
@@ -141,6 +163,7 @@ def getLabelsFromChartMultiThresh(threshold):
         concepnetLabels[object] = thresholded
     return concepnetLabels
 
+#calculates accuracy, precision, and recall for 1 label and ground truth
 def modified_accuracy_score(label,pred):
     matching = 0
     matchingFalse = 0
@@ -167,6 +190,7 @@ def modified_accuracy_score(label,pred):
     #print(label,pred,accuracy,precision,recall, matching, falsePos, falseNeg, matchingFalse)
     return accuracy, precision, recall
 
+#calculates accuracy, precision, and recall for multiple labels and corresponding ground truths
 def get_acc_modified(labels,pred):
     final_acc = 0
     final_prec = 0
@@ -186,6 +210,7 @@ def get_acc_modified(labels,pred):
             num_recall += 1
     return final_acc / len(labels), final_prec / num_prec, final_recall / num_recall
 
+#calculates accuracy, precision, and recall for multiple labels and corresponding ground truths at one index j (property_j)
 def get_single_acc_modified(labels,pred,j):
     final_pos = 0
     final_neg = 0
@@ -201,9 +226,9 @@ def get_single_acc_modified(labels,pred,j):
         elif labels[i][j] and not pred[i][j]:
             final_recall += 1
         elif not labels[i][j] and pred[i][j]:
-            final_prec += 1
-        elif not labels[i][j] and not pred[i][j]:
             final_neg += 1
+        elif not labels[i][j] and not pred[i][j]:
+            final_pos += 1
     if final_prec == 0:
         return (final_pos + final_neg) / len(labels), -1, final_pos / final_recall
     elif final_recall == 0:
@@ -213,6 +238,7 @@ def get_single_acc_modified(labels,pred,j):
     else:
         return (final_pos + final_neg) / len(labels), final_pos / final_prec, final_pos / final_recall
 
+#calculates accuracy for multiple labels and ground truths
 def get_acc(labels, pred):
     final_acc = 0
     labels = list(labels.values())
@@ -221,6 +247,7 @@ def get_acc(labels, pred):
         final_acc += accuracy_score(labels[i], pred[i])
     return final_acc / len(labels)
 
+#calculates accuracy for multiple labels and ground truths
 def getAccuracy(labels, pred):
     final_acc = 0
     nouns = list(labels.keys())
@@ -228,6 +255,7 @@ def getAccuracy(labels, pred):
         final_acc += accuracy_score(labels[obj], pred[obj])
     return final_acc / len(labels)
 
+#calculates accuracy for multiple labels and ground truths for one property j
 def getSingleAccuracy(labels, pred,j):
     final_acc = 0
     labels = list(labels.values())
@@ -237,6 +265,7 @@ def getSingleAccuracy(labels, pred,j):
             final_acc += 1
     return final_acc / len(labels)
 
+#calculates optimal accuracy using a single threshold
 def findOptimalAccuracy():
     bestAcc = 0
     bestThresh = 0
@@ -250,6 +279,7 @@ def findOptimalAccuracy():
         print("Threshold: ", i, " Accuracy: ", acc)
     print(bestThresh, bestAcc)
 
+#calculates optimal accuracy, precision, and recall using a single threshold
 def findOptimalAccuracyModified():
     bestAcc = 0
     bestPrec = 0
@@ -273,6 +303,7 @@ def findOptimalAccuracyModified():
         print("Threshold: ", i, " Accuracy: ", acc, " Precision: ", prec, " Recall: ", recall)
     print(bestThreshA, bestAcc, bestThreshP, bestPrec, bestThreshR, bestRec)
 
+#calculates optimal accuracy using list of thresholds, one for each property
 def findOptimalMultiAccuracy():
     groundTruthLabels = getAllTrueLabels()
     bestThreshOverall = []
@@ -294,6 +325,7 @@ def findOptimalMultiAccuracy():
         bestAccOverall.append(bestAcc)
     print(bestThreshOverall,bestAccOverall)
 
+#calculates optimal accuracy, precision, and recall using list of thresholds, one for each property
 def findOptimalMultiAccuracyModified():
     bestAccOverall = {}
     bestThreshOverall = {}
@@ -325,6 +357,110 @@ def findOptimalMultiAccuracyModified():
         bestAccOverall[j] = [bestAcc,bestPrec,bestRec]
     print(bestThreshOverall,bestAccOverall)
 
+def analyzeResults():
+    groundTruthLabels = getAllTrueLabels()
+    conceptnetLabels = getLabelsFromChart(.1) #random threshold - need to fill in with the best threshold
+    objects = pd.read_csv('detectron_prediction_final.csv')
+    for row in objects.iterrows():
+        groundTruth = formatToList(row['Ground Truth Objects (actual objects in the image) JUST AI2THOR NOUNS'])
+        predicted = formatToList(row['Detectron Predicted Objects'])
+        assert(len(groundTruth) == len(predicted))
+        extra = 0
+        correct = 0
+        incorrect = 0
+        accuracy = 0
+        syn_accuracy = 0
+        for i in range(len(groundTruth)):
+            gTObj = groundTruth[i]
+            predObj = predicted[i]
+            if gTObj == "extra":
+                extra += 1
+            elif gTObj == "incorrect":
+                incorrect += 1
+            else:
+                correct += 1
+                accuracy += get_acc([groundTruthLabels[gTObj]],[conceptnetLabels[predObj]])
+                #add synonym accuracy and finish print statements and all info 
+        print("For object ", row, " it found ", correct / (correct + incorrect), " objects correctly, with ", extra, " extras.")
+
+
+
+def formatToList(text):
+    text = text.replace("'","")
+    text = text.replace("[","")
+    text = text.replace("]","")
+    text = text.replace(", ","/")
+    text = text.replace(" ", "_")
+    text = text.split("/")
+    return text
+
+def getMaxAccuracy():
+    conceptnetIndices = getMaxLabelsFromChart()
+    groundTruthLabels = getAllTrueLabels()
+    fullAccuracy = 0
+    possibleAccuracy = 0
+    possibleAccuracyTotal = 0
+    availableInfo = 0
+    total = 0
+    #could put a threshold on possible accuracy max values i guess
+    for key in conceptnetIndices.keys():
+        index = conceptnetIndices[key]
+        total += 1
+        if index != -1:
+            availableInfo += 1
+            result = groundTruthLabels[key][index]
+            if result: 
+                fullAccuracy += 1
+            if not all(not item for item in groundTruthLabels[key]):
+                possibleAccuracyTotal += 1
+                if result:
+                    possibleAccuracy += 1
+    print("Total accuracy: ", fullAccuracy/total, " total for available info", fullAccuracy/availableInfo)
+    print("possible on available accuracy: ", possibleAccuracy/availableInfo, " super possible accuracy: ", possibleAccuracy/ possibleAccuracyTotal)
+
+
+def getMaxAccuracySimple():
+    conceptnetIndices = getMaxLabelsFromChart()
+    groundTruthLabels = getAllTrueLabels()
+    fullAccuracy = 0
+    possibleAccuracy = 0
+    possibleAccuracyTotal = 0
+    total = 0
+    #could put a threshold on possible accuracy max values i guess
+    for key in detectronNouns:
+        index = conceptnetIndices[key]
+        total += 1
+        result = groundTruthLabels[key][index]
+        if result: 
+            fullAccuracy += 1
+        if not all(not item for item in groundTruthLabels[key]):
+            possibleAccuracyTotal += 1
+            if result:
+                possibleAccuracy += 1
+    print("Total accuracy: ", fullAccuracy/total, " possible accuracy", possibleAccuracy/possibleAccuracyTotal)
+
+#used for first: Total accuracy:  0.32571428571428573  possible accuracy:  0.3877551020408163
+#capable of first: Total accuracy:  0.3485714285714286  possible accuracy:  0.41496598639455784
+# not pickupable just dont count if no info used for: Total accuracy:  0.16  total for available info 0.23140495867768596
+# possible on available accuracy:  0.23140495867768596  super possible accuracy:  0.27450980392156865
+# not pickupable just dont count if no info capable of: Total accuracy:  0.18285714285714286  total for available info 0.2644628099173554
+# possible on available accuracy:  0.2644628099173554  super possible accuracy:  0.3137254901960784 
+#Simple no default capable: Total accuracy:  0.3942857142857143  possible accuracy 0.46938775510204084
+#Simple no default to use: Total accuracy:  0.3314285714285714  possible accuracy 0.3945578231292517
+#simple capable w/o receptacle: Total accuracy:  0.4114285714285714  possible accuracy 0.46153846153846156
+#simple used for w/o receptacle: Total accuracy:  0.3314285714285714  possible accuracy 0.3717948717948718
+
+##simple used for w/o receptacle aithornouns: Total accuracy:  0.3025210084033613  possible accuracy 0.3157894736842105
+##simple used for aithornouns: Total accuracy:  0.3025210084033613  possible accuracy 0.34285714285714286
+##simple capable of w/o receptacle aithornouns: Total accuracy:  0.44537815126050423  possible accuracy 0.4649122807017544
+##simple capable of aithornouns: Total accuracy:  0.42016806722689076  possible accuracy 0.47619047619047616
+
+##simple used for w/o receptacle detectronnouns: Total accuracy:  0.3392857142857143  possible accuracy 0.4523809523809524
+##simple used for detectronnouns: Total accuracy:  0.39285714285714285  possible accuracy 0.5238095238095238
+##simple capable of w/o receptacle detectronnouns: Total accuracy:  0.3392857142857143  possible accuracy 0.4523809523809524
+##simple capable of detectronnouns: Total accuracy:  0.3392857142857143  possible accuracy 0.4523809523809524
+
+
 # Otimal Accuracy threshold: [0.18000000000000005, 0.13000000000000006, 0.17000000000000004, 0.23000000000000004, 
 # 0.15000000000000002, 0.24000000000000005, 0.19000000000000006, 0.12000000000000004, 0.13000000000000006, 
 # 0.08000000000000003] Optimal Accuracies per thresh: [0.9142857142857143, 0.9085714285714286, 0.8857142857142857, 
@@ -355,7 +491,7 @@ def main():
     #acc2 = getAccuracy(conceptnetLabels, groundTruthLabels)
     #print(acc1)
     #print(acc2)
-    findOptimalMultiAccuracyModified()
+    getMaxAccuracySimple()
 
 #RECEPTABCLE HEAT AND COLD NEED OT BE ADDED
 
@@ -363,7 +499,7 @@ if __name__ == "__main__":
     main()
 
 
-#Readout from multi thresholding and getting all of these 
+#Readout from multi thresholding and getting all of these values: 
 #j:  0  Threshold:  -0.1  Accuracy:  0.11428571428571428  Precision:  1.0  Recall:  0.0935672514619883
 # j:  0  Threshold:  -0.09000000000000001  Accuracy:  0.12  Precision:  1.0  Recall:  0.09411764705882353
 # j:  0  Threshold:  -0.08000000000000002  Accuracy:  0.12571428571428572  Precision:  1.0  Recall:  0.09467455621301775

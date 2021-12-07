@@ -1,0 +1,122 @@
+,Image,Ground Truth Objects (actual objects in the image) JUST AI2THOR NOUNS,Detectron Predicted Objects,Baseline Accuracy
+0,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4983D0>,['toilet'],['toilet'],1
+1,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498510>,"['bottle', 'bowl', 'oven', 'cup', 'refrigerator', 'bottle']","['bottle', 'bowl', 'oven', 'cup', 'refrigerator', 'bottle']",1
+2,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4981D0>,"['clock', 'chair']","['clock', 'chair']",1
+3,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498650>,['chair'],['chair'],1
+4,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498850>,"['extra', 'extra', 'incorrect', 'extra', 'dining table', 'extra', 'incorrect', 'chair']","['frisbee', 'tv', 'cup', 'tv', 'dining table', 'kite', 'bed', 'chair']",0.25
+5,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498B10>,"['potted plant', 'vase', 'couch', 'couch', 'dining table', 'extra']","['potted plant', 'vase', 'couch', 'couch', 'dining table', 'chair']",0.8333333333
+6,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498D90>,[],[],
+7,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E050>,"['potted plant', 'tv', 'remote', 'vase']","['potted plant', 'tv', 'remote', 'vase']",1
+8,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E2D0>,[],[],
+9,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E510>,"['sink', 'incorrect']","['sink', 'sink']",0.5
+10,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498FD0>,"['laptop', 'potted plant', 'chair', 'vase', 'dining table', 'vase', 'chair']","['laptop', 'potted plant', 'chair', 'vase', 'dining table', 'vase', 'chair']",1
+11,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498C10>,"['sink', 'cup', 'incorrect', 'bottle', 'incorrect', 'extra', 'extra']","['sink', 'cup', 'sports ball', 'bottle', 'sports ball', 'sink', 'sink']",0.4285714286
+12,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4986D0>,"['chair', 'dining table', 'refrigerator']","['chair', 'dining table', 'refrigerator']",1
+13,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498210>,"['laptop', 'chair', 'potted plant', 'book', 'vase', 'cup', 'extra', 'cell phone', 'incorrect', 'extra', 'clock', 'extra']","['laptop', 'chair', 'potted plant', 'book', 'vase', 'cup', 'chair', 'cell phone', 'tv', 'chair', 'clock', 'vase']",0.6666666667
+14,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E610>,[],[],
+15,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E290>,[],[],
+16,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E850>,"['extra', 'couch', 'remote', 'dining table']","['bed', 'couch', 'remote', 'dining table']",0.75
+17,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49EAD0>,['incorrect'],['traffic light'],0
+18,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49ED50>,['refrigerator'],['refrigerator'],1
+19,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49EFD0>,"['incorrect', 'incorrect']","['airplane', 'airplane']",0
+20,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4290>,['chair'],['chair'],1
+21,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4510>,"['tv', 'incorrect', 'incorrect']","['tv', 'person', 'refrigerator']",0.3333333333
+22,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4790>,['incorrect'],['mouse'],0
+23,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4A10>,"['incorrect', 'laptop', 'tv', 'couch', 'potted plant', 'vase', 'vase', 'incorrect', 'vase', 'keyboard']","['frisbee', 'laptop', 'tv', 'couch', 'potted plant', 'vase', 'vase', 'toilet', 'vase', 'keyboard']",0.8
+24,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4C90>,"['potted plant', 'tv', 'extra', 'vase', 'chair']","['potted plant', 'tv', 'couch', 'vase', 'chair']",0.8
+25,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4F10>,"['potted plant', 'oven', 'bowl', 'vase', 'incorrect']","['potted plant', 'oven', 'bowl', 'vase', 'frisbee']",1
+26,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AA1D0>,"['toilet', 'extra']","['toilet', 'toilet']",0.5
+27,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4F90>,"['laptop', 'bowl', 'cell phone', 'book', 'dining table']","['laptop', 'bowl', 'cell phone', 'book', 'dining table']",1
+28,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4990>,"['chair', 'chair', 'laptop', 'chair']","['chair', 'chair', 'laptop', 'chair']",1
+29,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4690>,[],[],
+30,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4ED0>,[],[],
+31,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4DD0>,"['vase', 'potted plant', 'chair', 'vase', 'couch', 'remote', 'chair']","['vase', 'potted plant', 'chair', 'vase', 'couch', 'remote', 'chair']",1
+32,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4AD0>,"['chair', 'incorrect', 'incorrect']","['chair', 'sports ball', 'toilet']",0.3333333333
+33,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4190>,['sink'],['sink'],1
+34,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49EE50>,[],[],
+35,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E8D0>,"['chair', 'incorrect', 'chair', 'chair', 'chair', 'chair', 'chair', 'extra']","['chair', 'bed', 'chair', 'chair', 'chair', 'chair', 'chair', 'chair']",0.75
+36,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E7D0>,"['vase', 'potted plant', 'incorrect', 'chair']","['vase', 'potted plant', 'tv', 'chair']",0.75
+37,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E410>,['sink'],['sink'],1
+38,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA54F310>,"['sink', 'bottle']","['sink', 'bottle']",1
+39,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498750>,['incorrect'],['tv'],0
+40,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498F50>,"['couch', 'couch', 'tv', 'incorrect', 'remote']","['couch', 'couch', 'tv', 'tv', 'remote']",0.8
+41,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498F90>,"['oven', 'microwave']","['oven', 'microwave']",1
+42,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AA310>,"['chair', 'potted plant', 'couch', 'tv', 'vase', 'book']","['chair', 'potted plant', 'couch', 'tv', 'vase', 'book']",1
+43,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AA510>,"['cup', 'sink', 'microwave', 'bottle']","['cup', 'sink', 'microwave', 'bottle']",1
+44,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AA790>,"['vase', 'dining table', 'incorrect', 'extra', 'chair', 'chair', 'incorrect']","['vase', 'dining table', 'frisbee', 'dining table', 'chair', 'chair', 'frisbee']",0.5714285714
+45,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AAA10>,"['vase', 'bed', 'clock']","['vase', 'bed', 'clock']",1
+46,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AAC90>,"['tv', 'chair', 'chair', 'extra', 'couch']","['tv', 'chair', 'chair', 'chair', 'couch']",0.8
+47,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AAF10>,"['incorrect', 'bottle', 'sink', 'potted plant', 'vase', 'refrigerator', 'dining table', 'incorrect', 'cup']","['umbrella', 'bottle', 'sink', 'potted plant', 'vase', 'refrigerator', 'dining table', 'umbrella', 'cup']",0.7777777777
+48,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B81D0>,['incorrect'],['stop sign'],0
+49,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B8450>,['sink'],['sink'],1
+50,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B86D0>,"['refrigerator', 'bowl', 'sink', 'bowl']","['refrigerator', 'bowl', 'sink', 'bowl']",1
+51,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B8950>,[],[],
+52,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B8BD0>,"['sink', 'bottle']","['sink', 'bottle']",1
+53,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B8E50>,"['incorrect', 'bed', 'incorrect']","['frisbee', 'bed', 'bench']",0.3333333333
+54,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AAB90>,[],[],
+55,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AA590>,[],[],
+56,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AA690>,"['bottle', 'extra']","['bottle', 'bottle']",0.5
+57,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AA850>,"['laptop', 'chair', 'chair', 'extra']","['laptop', 'chair', 'chair', 'couch']",0.75
+58,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AAD50>,"['chair', 'laptop', 'bowl', 'chair', 'dining table']","['chair', 'laptop', 'bowl', 'chair', 'dining table']",1
+59,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AA290>,"['potted plant', 'vase']","['potted plant', 'vase']",1
+60,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498BD0>,"['bottle', 'chair', 'incorrect', 'microwave']","['bottle', 'chair', 'mouse', 'microwave']",0.75
+61,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498990>,[],[],
+62,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E490>,"['potted plant', 'tv', 'incorrect', 'chair', 'extra']","['potted plant', 'tv', 'mouse', 'chair', 'couch']",0.8
+63,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E110>,[],[],
+64,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E950>,"['potted plant', 'incorrect', 'chair', 'vase', 'book']","['potted plant', 'person', 'chair', 'vase', 'book']",0.8
+65,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49ECD0>,"['potted plant', 'sink', 'vase']","['potted plant', 'sink', 'vase']",1
+66,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4FD0>,"['potted plant', 'bottle', 'sink', 'bowl', 'wine glass', 'bottle', 'wine glass', 'incorrect', 'incorrect', 'bowl', 'bowl']","['potted plant', 'bottle', 'sink', 'bowl', 'wine glass', 'bottle', 'wine glass', 'frisbee', 'frisbee', 'bowl', 'bowl']",0.8181818182
+67,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4390>,"['toilet', 'incorrect']","['toilet', 'toilet']",0.5
+68,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4910>,['laptop'],['laptop'],1
+69,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4450>,"['sink', 'vase', 'sink', 'cup']","['sink', 'vase', 'sink', 'cup']",1
+70,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B89D0>,"['potted plant', 'couch', 'incorrect', 'vase', 'incorrect', 'vase', 'laptop']","['potted plant', 'couch', 'mouse', 'vase', 'bird', 'vase', 'laptop']",0.7142857143
+71,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B88D0>,['incorrect'],['stop sign'],0
+72,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B85D0>,[],[],
+73,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B82D0>,"['microwave', 'bottle', 'incorrect']","['microwave', 'bottle', 'dining table']",0.6666666667
+74,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B8C50>,[],[],
+75,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CA190>,['incorrect'],['dining table'],0
+76,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CA410>,[],[],
+77,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CA690>,[],[],
+78,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CA910>,['incorrect'],['refrigerator'],0
+79,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CAB90>,['incorrect'],['chair'],0
+80,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CAE10>,['chair'],['chair'],1
+81,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CF0D0>,"['bottle', 'bottle', 'bottle', 'bottle', 'bottle', 'bottle', 'bed', 'remote']","['bottle', 'bottle', 'bottle', 'bottle', 'bottle', 'bottle', 'bed', 'remote']",1
+82,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CF350>,['incorrect'],['chair'],0
+83,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CF5D0>,[],[],
+84,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CAB50>,"['potted plant', 'book', 'clock', 'vase', 'book']","['potted plant', 'book', 'clock', 'vase', 'book']",1
+85,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CA7D0>,"['couch', 'incorrect', 'chair', 'couch', 'extra', 'extra']","['couch', 'airplane', 'chair', 'couch', 'chair', 'couch']",0.5
+86,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CA250>,['incorrect'],['umbrella'],0
+87,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CA090>,[],[],
+88,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B8090>,[],[],
+89,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B8290>,"['incorrect', 'incorrect', 'laptop']","['vase', 'dining table', 'laptop']",0.3333333333
+90,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B8B90>,[],[],
+91,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B8D50>,['refrigerator'],['refrigerator'],1
+92,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4750>,"['sink', 'bottle']","['sink', 'bottle']",1
+93,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4D90>,['sink'],['sink'],1
+94,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B87D0>,"['toilet', 'incorrect', 'sink']","['toilet', 'chair', 'sink']",0.6666666667
+95,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B8F90>,[],[],
+96,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CAF10>,[],[],
+97,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CA610>,"['cup', 'cup']","['cup', 'cup']",1
+98,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CA790>,"['chair', 'incorrect']","['chair', 'bird']",0.5
+99,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CA990>,"['bed', 'clock']","['bed', 'clock']",1
+100,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4110>,"['chair', 'chair', 'chair', 'chair', 'couch', 'chair', 'chair', 'extra', 'extra']","['chair', 'chair', 'chair', 'chair', 'couch', 'chair', 'chair', 'chair', 'chair']",0.7777777777
+101,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4610>,[],[],
+102,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A4E50>,"['tv', 'chair', 'couch', 'remote']","['tv', 'chair', 'couch', 'remote']",1
+103,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49EA10>,['chair'],['chair'],1
+104,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E1D0>,['incorrect'],['tv'],0
+105,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4A44D0>,['sink'],['sink'],1
+106,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CA8D0>,['refrigerator'],['refrigerator'],1
+107,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CAA10>,"['bottle', 'bottle', 'bottle', 'bottle', 'cup', 'sink', 'extra', 'dining table', 'bottle', 'bottle', 'bottle', 'bottle', 'extra']","['bottle', 'bottle', 'bottle', 'bottle', 'cup', 'sink', 'sink', 'dining table', 'bottle', 'bottle', 'bottle', 'bottle', 'dining table']",0.8461538462
+108,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4CA350>,[],[],
+109,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B8D90>,"['incorrect', 'teddy bear']","['dining table', 'teddy bear']",0.5
+110,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B8590>,['incorrect'],['airplane'],0
+111,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4B8AD0>,"['chair', 'chair', 'tv', 'cup']","['chair', 'chair', 'tv', 'cup']",1
+112,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49EC10>,"['tv', 'incorrect', 'potted plant']","['tv', 'bed', 'potted plant']",0.6666666667
+113,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49EC90>,"['toilet', 'extra', 'sink']","['toilet', 'toilet', 'sink']",0.6666666667
+114,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA49E5D0>,"['laptop', 'book', 'chair']","['laptop', 'book', 'chair']",1
+115,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498D50>,"['vase', 'vase', 'vase', 'couch', 'extra']","['vase', 'vase', 'vase', 'couch', 'chair']",0.8
+116,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA498CD0>,"['chair', 'chair', 'laptop', 'dining table', 'chair', 'extra', 'extra']","['chair', 'chair', 'laptop', 'dining table', 'chair', 'chair', 'dining table']",0.7142857143
+117,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AA490>,['incorrect'],['sink'],0
+118,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AAE10>,"['bed', 'bed']","['bed', 'bed']",1
+119,<PIL.PngImagePlugin.PngImageFile image mode=RGB size=800x800 at 0x7F83EA4AA990>,[],[],
+,,,,0.7078785542

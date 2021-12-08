@@ -45,6 +45,7 @@
 43,fork,"['move_the_food_to_your_mouth', 'be_in_a_road', 'hold_things']"
 44,fridge,['cool_food']
 45,garbage_bag,[]
+45,garbage_can,[]
 46,hand_towel,[]
 47,hand_towel_holder,[]
 48,house_plant,[]

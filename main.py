@@ -88,7 +88,7 @@ def getTrueLabels(object):
 #get all true labels for all objects from the groundtruthLabels charts 
 def getAllTrueLabels():
     groundTruthLabels = {}
-    df = pd.read_csv('groundtruthLabels.csv')
+    df = pd.read_csv('groundtruthLabelsReceptacle.csv')
     for i,row in df.iterrows():
         object = row['Object Type']
         actions = row['Actionable Properties']
@@ -139,11 +139,11 @@ def getMaxLabelsFromChart():
         toUse = [dfUsed.loc[dfUsed['Object'] == object, verb].iloc[0] for verb in properties]
         capable = [dfCapable.loc[dfCapable['Object'] == object, verb].iloc[0] for verb in properties]
         if all(item == 0 for item in capable):
-            #if all(item == 0 for item in toUse):
-            concepnetLabels[object] = 8
-            continue
-            #else:
-                #capable = toUse
+            if all(item == 0 for item in toUse):
+                concepnetLabels[object] = 8
+                continue
+            else:
+                capable = toUse
         maxLabel = np.argmax(capable)
         concepnetLabels[object] = maxLabel
     return concepnetLabels
@@ -361,7 +361,13 @@ def analyzeResults():
     groundTruthLabels = getAllTrueLabels()
     conceptnetLabels = getLabelsFromChart(.1) #random threshold - need to fill in with the best threshold
     objects = pd.read_csv('detectron_prediction_final.csv')
-    for row in objects.iterrows():
+    overall_accuracy = 0
+    overall_count = 0
+    overall_synonym_accuracy = 0
+    conceptnetLabels = getMaxLabelsFromChart()
+    groundTruthLabels = getAllTrueLabels()
+    for j,row in objects.iterrows():
+        overall_count += 1
         groundTruth = formatToList(row['Ground Truth Objects (actual objects in the image) JUST AI2THOR NOUNS'])
         predicted = formatToList(row['Detectron Predicted Objects'])
         assert(len(groundTruth) == len(predicted))
@@ -370,6 +376,7 @@ def analyzeResults():
         incorrect = 0
         accuracy = 0
         syn_accuracy = 0
+        numSyn = 0
         for i in range(len(groundTruth)):
             gTObj = groundTruth[i]
             predObj = predicted[i]
@@ -377,11 +384,33 @@ def analyzeResults():
                 extra += 1
             elif gTObj == "incorrect":
                 incorrect += 1
+            elif gTObj != predObj:
+                numSyn += 1
+                if groundTruthLabels[gTObj][conceptnetLabels[predObj]]:
+                    syn_accuracy += 1
+                correct += 1
+                if groundTruthLabels[gTObj][conceptnetLabels[gTObj]]:
+                    accuracy += 1
             else:
                 correct += 1
-                accuracy += get_acc([groundTruthLabels[gTObj]],[conceptnetLabels[predObj]])
-                #add synonym accuracy and finish print statements and all info 
-        print("For object ", row, " it found ", correct / (correct + incorrect), " objects correctly, with ", extra, " extras.")
+                if groundTruthLabels[gTObj][conceptnetLabels[gTObj]]:
+                    accuracy += 1
+                    syn_accuracy += 1
+        print("For row ", j, " it found ", 100* correct / (correct + incorrect), "& objects correctly, with ", extra, " extras.")
+        print("Ground Truth: ", groundTruth, " vs. ", predicted)
+        if numSyn > 0:
+            print("Per image accuracy (actual aithor word) is ", 100*accuracy/correct, "%, while using synonyms gives ", 100*syn_accuracy/numSyn, "%")
+        elif correct > 0:
+            print("Per image accuracy (actual aithor word) is ", 100*accuracy/correct, "%")
+        else: 
+            print("Nothing correct to run through conceptnet.")
+        overall_accuracy += accuracy
+        overall_synonym_accuracy += syn_accuracy
+    print("Object detection accuracy: ", 100* correct / overall_count, "%")
+    print("overall direct nlp accuracy: ", 100*overall_accuracy/ overall_count, "%")
+    print("Overall accuracy using synonyms: ", 100*overall_synonym_accuracy/ overall_count, "%")
+    print("overall full accuracy direct: ", 100*correct/ overall_count * overall_accuracy / overall_count, "%")
+    print("overall full accuracy synonyms: ", 100*correct / overall_count * overall_synonym_accuracy / overall_count, "%")
 
 
 
@@ -491,7 +520,7 @@ def main():
     #acc2 = getAccuracy(conceptnetLabels, groundTruthLabels)
     #print(acc1)
     #print(acc2)
-    getMaxAccuracySimple()
+    analyzeResults()
 
 #RECEPTABCLE HEAT AND COLD NEED OT BE ADDED
 

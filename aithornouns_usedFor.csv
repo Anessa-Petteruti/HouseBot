@@ -45,6 +45,7 @@
 43,fork,"['eating_food', 'eat_a_meal', 'eat_dinner', 'picking_up_food', 'eat_food', 'dividing_a_road_in_two', 'lift_food_to_your_mouth', 'providing_a_choice', 'eat', 'eat_meat', 'moving_food_to_the_mouth', 'eating_food_with', 'eating_vegetables', 'eating', 'eat_a_steak', 'piercing_food', 'eating_food_off_a_plate', 'holding_food', 'eat_your_vegetables', 'turning_soil']"
 44,fridge,['refrigeration']
 45,garbage_bag,['containing_garbage']
+45,garbage_can,"['holding_garbage', 'compost', ""storing_trash_until_it's_taken_away"", 'Oscar_the_Grouch_to_live_in', 'children_to_roll_down_a_hill', 'disposing_of_waste', 'hold_trash', 'holding_waste', 'store_garbage', 'stuffing_younger_kids_in', 'dispose_of_waste', 'puke_in', 'keeping_trash_out_of_sight', 'putting_trash_in', 'holding_trash', 'Puting_Garbage_in', 'a_place_to_gather_garbage', 'keeping_garbage_out_of_sight']"
 46,hand_towel,[]
 47,hand_towel_holder,[]
 48,house_plant,[]

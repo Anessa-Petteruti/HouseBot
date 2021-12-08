@@ -55,7 +55,7 @@ basic_url = 'http://api.conceptnet.io'
 relatedness1 = '/relatedness?node1=/c/en/'
 relatedness2 = '&node2=/c/en/'
 query_url1 = 'http://api.conceptnet.io/query?start=/c/en/'
-query_url2 = '&rel=/r/UsedFor&limit=20'
+query_url2 = '&rel=/r/CapableOf&limit=20'
 
 def getRelatedness(word1, word2):
     relatedness = requests.get(basic_url + relatedness1 + word1 + relatedness2 + word2)
@@ -83,15 +83,17 @@ def saveDictOfRelatedness():
     df = pd.DataFrame(data, columns = ['Object1', 'Object2','Relatedness']) 
     df.to_csv('relatedness3.csv')
 
+nouns = ['garbage_can']
+
 def saveDictOfVerbs():
     data = []
-    for word in testNouns:
+    for word in nouns:
         print(word)
         verbs = getConceptnetQuery(word)
         data.append([word,verbs])
     print("Saving...")
     df = pd.DataFrame(data, columns = ['Object', 'RelatedVerbs']) 
-    df.to_csv('testnouns_usedfor.csv')
+    df.to_csv('garbagecan_usedfor.csv')
 
 def formatCorrectly(verbs):
     return [verb.replace(" ","_") for verb in verbs]
@@ -99,7 +101,7 @@ def formatCorrectly(verbs):
 
 
 def getSimilarityForVerbsGraph():
-    df = pd.read_csv('aithornouns_capableof.csv')
+    df = pd.read_csv('aithornouns_usedFor.csv')
     overall = []
     for i,j in df.iterrows():
         if (i in rows):
@@ -122,7 +124,7 @@ def getSimilarityForVerbsGraph():
     "Sliceable","Openable","Pickupable","Moveable"]) 
     df.to_csv('help_capableOf_relatedness.csv')
 
-rows = [42,48,49]
+rows = [46]
 
 def getNounSimilarity():
     overall = []
@@ -148,4 +150,4 @@ def getList(string):
     return str
 
 
-getNounSimilarity()
+getSimilarityForVerbsGraph()

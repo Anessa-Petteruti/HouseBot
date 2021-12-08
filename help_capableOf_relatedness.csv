@@ -1,0 +1,7 @@
+,Object,RelatedVerb,Toggleable,Breakable,Fillable,Dirtyable,UseUpable,Cookable,Sliceable,Openable,Pickupable,Moveable
+0,garbage_can,holding_garbage,0.011,-0.004,-0.026,0.024,0.045,0.007,0.041,0.038,0.114,0.06
+1,garbage_can,compost,-0.059,-0.05,0.107,0.063,0.099,0.044,-0.037,0.048,0.096,0.023
+2,garbage_can,"""storing_trash_until_its_taken_away""",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,garbage_can,Oscar_the_Grouch_to_live_in,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,garbage_can,children_to_roll_down_a_hill,0.048,0.056,-0.068,0.091,0.026,0.057,-0.045,0.108,-0.001,0.033
+5,garbage_can,Average,0.0,0.000399999999999999,0.0025999999999999994,0.0356,0.034,0.0216,-0.008199999999999999,0.0388,0.041800000000000004,0.0232

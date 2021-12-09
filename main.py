@@ -37,7 +37,8 @@ detectronNouns = ["person", "bicycle", "car", "motorcycle", "airplane", "bus", "
 "fire_hydrant", "stop_sign", "parking_meter", "bench", "bird", "cat", "dog", "horse", "sheep", "cow","elephant", "bear", 
 "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports_ball", 
 "kite","baseball_glove", "skateboard", "surfboard", "wine_glass", "banana", "sandwich", "orange", "broccoli", "carrot", 
-"hot_dog", "pizza", "donut", "cake", "couch","potted_plant", "mouse", "keyboard", "oven","clock","scissors", "hair_drier", "tooth_brush"]
+"hot_dog", "pizza", "donut", "cake", "couch","potted_plant", "mouse", "keyboard", "oven","clock","scissors", "hair_drier",
+ "tooth_brush", "refrigerator", "remote", "tv"]
 
 def process_object_labels():
     """
@@ -139,11 +140,11 @@ def getMaxLabelsFromChart():
         toUse = [dfUsed.loc[dfUsed['Object'] == object, verb].iloc[0] for verb in properties]
         capable = [dfCapable.loc[dfCapable['Object'] == object, verb].iloc[0] for verb in properties]
         if all(item == 0 for item in capable):
-            if all(item == 0 for item in toUse):
-                concepnetLabels[object] = 8
-                continue
-            else:
-                capable = toUse
+            #if all(item == 0 for item in toUse):
+            concepnetLabels[object] = 8
+            continue
+            #else:
+                #capable = toUse
         maxLabel = np.argmax(capable)
         concepnetLabels[object] = maxLabel
     return concepnetLabels
@@ -360,16 +361,19 @@ def findOptimalMultiAccuracyModified():
 def analyzeResults():
     groundTruthLabels = getAllTrueLabels()
     conceptnetLabels = getLabelsFromChart(.1) #random threshold - need to fill in with the best threshold
-    objects = pd.read_csv('detectron_prediction_final.csv')
+    objects = pd.read_csv('detectron_predictions_final.csv')
     overall_accuracy = 0
     overall_count = 0
     overall_synonym_accuracy = 0
     conceptnetLabels = getMaxLabelsFromChart()
     groundTruthLabels = getAllTrueLabels()
+    overall_correct = 0
     for j,row in objects.iterrows():
-        overall_count += 1
         groundTruth = formatToList(row['Ground Truth Objects (actual objects in the image) JUST AI2THOR NOUNS'])
         predicted = formatToList(row['Detectron Predicted Objects'])
+        if groundTruth == ['']:
+            continue
+        print("Ground Truth: ", groundTruth, " vs. ", predicted)
         assert(len(groundTruth) == len(predicted))
         extra = 0
         correct = 0
@@ -378,6 +382,7 @@ def analyzeResults():
         syn_accuracy = 0
         numSyn = 0
         for i in range(len(groundTruth)):
+            overall_count += 1
             gTObj = groundTruth[i]
             predObj = predicted[i]
             if gTObj == "extra":
@@ -396,21 +401,21 @@ def analyzeResults():
                 if groundTruthLabels[gTObj][conceptnetLabels[gTObj]]:
                     accuracy += 1
                     syn_accuracy += 1
-        print("For row ", j, " it found ", 100* correct / (correct + incorrect), "& objects correctly, with ", extra, " extras.")
-        print("Ground Truth: ", groundTruth, " vs. ", predicted)
+        print("For row ", j, " it found ", 100* correct / (correct + incorrect), "%, objects correctly, with ", extra, " extras.")
         if numSyn > 0:
-            print("Per image accuracy (actual aithor word) is ", 100*accuracy/correct, "%, while using synonyms gives ", 100*syn_accuracy/numSyn, "%")
+            print("Per image accuracy (actual aithor word) is ", 100*accuracy/correct, "%, while using synonyms gives ", 100*syn_accuracy/correct, "%")
         elif correct > 0:
             print("Per image accuracy (actual aithor word) is ", 100*accuracy/correct, "%")
         else: 
             print("Nothing correct to run through conceptnet.")
         overall_accuracy += accuracy
         overall_synonym_accuracy += syn_accuracy
-    print("Object detection accuracy: ", 100* correct / overall_count, "%")
-    print("overall direct nlp accuracy: ", 100*overall_accuracy/ overall_count, "%")
-    print("Overall accuracy using synonyms: ", 100*overall_synonym_accuracy/ overall_count, "%")
-    print("overall full accuracy direct: ", 100*correct/ overall_count * overall_accuracy / overall_count, "%")
-    print("overall full accuracy synonyms: ", 100*correct / overall_count * overall_synonym_accuracy / overall_count, "%")
+        overall_correct += correct
+    print("Object detection accuracy: ", 100* overall_correct / overall_count, "%")
+    print("overall direct nlp accuracy: ", 100*overall_accuracy/ overall_correct, "%")
+    print("Overall accuracy using synonyms: ", 100*overall_synonym_accuracy/ overall_correct, "%")
+    print("overall full accuracy direct: ", 100*overall_accuracy/overall_count, "%")
+    print("overall full accuracy synonyms: ", 100*overall_synonym_accuracy / overall_count, "%")
 
 
 
@@ -889,3 +894,297 @@ if __name__ == "__main__":
 # j:  9  Threshold:  0.22999999999999984  Accuracy:  0.7771428571428571  Precision:  0.0  Recall:  -1
 # j:  9  Threshold:  0.23999999999999985  Accuracy:  0.7771428571428571  Precision:  0.0  Recall:  -1
 # 0.0799999999999999 0.7771428571428571 -0.1 1.0 0.0799999999999999 0.5
+
+
+
+
+# #Ground Truth:  ['toilet']  vs.  ['toilet']
+# For row  0  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['bottle', 'bowl', 'oven', 'cup', 'fridge', 'bottle']  vs.  ['bottle', 'bowl', 'oven', 'cup', 'refrigerator', 'bottle']
+# For row  1  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  66.66666666666667 %, while using synonyms gives  66.66666666666667 %
+# Ground Truth:  ['alarm_clock', 'chair']  vs.  ['clock', 'chair']
+# For row  2  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  50.0 %, while using synonyms gives  0.0 %
+# Ground Truth:  ['chair']  vs.  ['chair']
+# For row  3  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['extra', 'extra', 'incorrect', 'extra', 'dining_table', 'extra', 'incorrect', 'chair']  vs.  ['frisbee', 'tv', 'cup', 'tv', 'dining_table', 'kite', 'bed', 'chair']
+# For row  4  it found  50.0 %, objects correctly, with  4  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['house_plant', 'vase', 'sofa', 'sofa', 'dining_table', 'extra']  vs.  ['potted_plant', 'vase', 'couch', 'couch', 'dining_table', 'chair']
+# For row  5  it found  100.0 %, objects correctly, with  1  extras.
+# Per image accuracy (actual aithor word) is  20.0 %, while using synonyms gives  20.0 %
+# Ground Truth:  ['house_plant', 'television', 'remote_control', 'vase']  vs.  ['potted_plant', 'tv', 'remote', 'vase']
+# For row  7  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  25.0 %, while using synonyms gives  50.0 %
+# Ground Truth:  ['sink', 'incorrect']  vs.  ['sink', 'sink']
+# For row  9  it found  50.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['laptop', 'house_plant', 'chair', 'vase', 'dining_table', 'vase', 'chair']  vs.  ['laptop', 'potted_plant', 'chair', 'vase', 'dining_table', 'vase', 'chair']
+# For row  10  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  42.857142857142854 %, while using synonyms gives  42.857142857142854 %
+# Ground Truth:  ['sink', 'cup', 'incorrect', 'bottle', 'incorrect', 'extra', 'extra']  vs.  ['sink', 'cup', 'sports_ball', 'bottle', 'sports_ball', 'sink', 'sink']
+# For row  11  it found  60.0 %, objects correctly, with  2  extras.
+# Per image accuracy (actual aithor word) is  66.66666666666667 %
+# Ground Truth:  ['chair', 'dining_table', 'fridge']  vs.  ['chair', 'dining_table', 'refrigerator']
+# For row  12  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %, while using synonyms gives  0.0 %
+# Ground Truth:  ['laptop', 'chair', 'house_plant', 'book', 'vase', 'cup', 'extra', 'cell_phone', 'incorrect', 'extra', 'alarm_clock', 'extra']  vs.  ['laptop', 'chair', 'potted_plant', 'book', 'vase', 'cup', 'chair', 'cell_phone', 'tv', 'chair', 'clock', 'vase']
+# For row  13  it found  88.88888888888889 %, objects correctly, with  3  extras.
+# Per image accuracy (actual aithor word) is  62.5 %, while using synonyms gives  50.0 %
+# Ground Truth:  ['extra', 'sofa', 'remote_control', 'dining_table']  vs.  ['bed', 'couch', 'remote', 'dining_table']
+# For row  16  it found  100.0 %, objects correctly, with  1  extras.
+# Per image accuracy (actual aithor word) is  0.0 %, while using synonyms gives  0.0 %
+# Ground Truth:  ['incorrect']  vs.  ['traffic_light']
+# For row  17  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['fridge']  vs.  ['refrigerator']
+# For row  18  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %, while using synonyms gives  0.0 %
+# Ground Truth:  ['incorrect', 'incorrect']  vs.  ['airplane', 'airplane']
+# For row  19  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['chair']  vs.  ['chair']
+# For row  20  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['television', 'incorrect', 'incorrect']  vs.  ['tv', 'person', 'refrigerator']
+# For row  21  it found  33.333333333333336 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %, while using synonyms gives  100.0 %
+# Ground Truth:  ['incorrect']  vs.  ['mouse']
+# For row  22  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['incorrect', 'laptop', 'television', 'sofa', 'house_plant', 'vase', 'vase', 'incorrect', 'vase', 'laptop']  vs.  ['frisbee', 'laptop', 'tv', 'couch', 'potted_plant', 'vase', 'vase', 'toilet', 'vase', 'keyboard']
+# For row  23  it found  80.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  62.5 %, while using synonyms gives  75.0 %
+# Ground Truth:  ['house_plant', 'television', 'extra', 'vase', 'chair']  vs.  ['potted_plant', 'tv', 'couch', 'vase', 'chair']
+# For row  24  it found  100.0 %, objects correctly, with  1  extras.
+# Per image accuracy (actual aithor word) is  25.0 %, while using synonyms gives  50.0 %
+# Ground Truth:  ['potted_plant', 'oven', 'bowl', 'vase', 'incorrect']  vs.  ['potted_plant', 'oven', 'bowl', 'vase', 'frisbee']
+# For row  25  it found  80.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  50.0 %
+# Ground Truth:  ['toilet', 'extra']  vs.  ['toilet', 'toilet']
+# For row  26  it found  100.0 %, objects correctly, with  1  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['laptop', 'bowl', 'cell_phone', 'book', 'dining_table']  vs.  ['laptop', 'bowl', 'cell_phone', 'book', 'dining_table']
+# For row  27  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  60.0 %
+# Ground Truth:  ['chair', 'chair', 'laptop', 'chair']  vs.  ['chair', 'chair', 'laptop', 'chair']
+# For row  28  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  25.0 %
+# Ground Truth:  ['vase', 'house_plant', 'chair', 'vase', 'sofa', 'remote_control', 'chair']  vs.  ['vase', 'potted_plant', 'chair', 'vase', 'couch', 'remote', 'chair']
+# For row  31  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  28.571428571428573 %, while using synonyms gives  28.571428571428573 %
+# Ground Truth:  ['chair', 'incorrect', 'incorrect']  vs.  ['chair', 'sports_ball', 'toilet']
+# For row  32  it found  33.333333333333336 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['sink']  vs.  ['sink']
+# For row  33  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['chair', 'incorrect', 'chair', 'chair', 'chair', 'chair', 'chair', 'extra']  vs.  ['chair', 'bed', 'chair', 'chair', 'chair', 'chair', 'chair', 'chair']
+# For row  35  it found  85.71428571428571 %, objects correctly, with  1  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['vase', 'house_plant', 'incorrect', 'chair']  vs.  ['vase', 'potted_plant', 'tv', 'chair']
+# For row  36  it found  75.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  33.333333333333336 %, while using synonyms gives  33.333333333333336 %
+# Ground Truth:  ['sink']  vs.  ['sink']
+# For row  37  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['sink', 'bottle']  vs.  ['sink', 'bottle']
+# For row  38  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  50.0 %
+# Ground Truth:  ['incorrect']  vs.  ['tv']
+# For row  39  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['sofa', 'sofa', 'television', 'incorrect', 'remote_control']  vs.  ['couch', 'couch', 'tv', 'tv', 'remote']
+# For row  40  it found  80.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %, while using synonyms gives  25.0 %
+# Ground Truth:  ['oven', 'microwave']  vs.  ['oven', 'microwave']
+# For row  41  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['chair', 'house_plant', 'sofa', 'television', 'vase', 'book']  vs.  ['chair', 'potted_plant', 'couch', 'tv', 'vase', 'book']
+# For row  42  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  16.666666666666668 %, while using synonyms gives  33.333333333333336 %
+# Ground Truth:  ['cup', 'sink', 'microwave', 'bottle']  vs.  ['cup', 'sink', 'microwave', 'bottle']
+# For row  43  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  50.0 %
+# Ground Truth:  ['vase', 'dining_table', 'incorrect', 'extra', 'chair', 'chair', 'incorrect']  vs.  ['vase', 'dining_table', 'frisbee', 'dining_table', 'chair', 'chair', 'frisbee']
+# For row  44  it found  66.66666666666667 %, objects correctly, with  1  extras.
+# Per image accuracy (actual aithor word) is  25.0 %
+# Ground Truth:  ['vase', 'bed', 'alarm_clock']  vs.  ['vase', 'bed', 'clock']
+# For row  45  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  66.66666666666667 %, while using synonyms gives  33.333333333333336 %
+# Ground Truth:  ['television', 'chair', 'chair', 'extra', 'sofa']  vs.  ['tv', 'chair', 'chair', 'chair', 'couch']
+# For row  46  it found  100.0 %, objects correctly, with  1  extras.
+# Per image accuracy (actual aithor word) is  0.0 %, while using synonyms gives  25.0 %
+# Ground Truth:  ['incorrect', 'bottle', 'sink', 'house_plant', 'vase', 'fridge', 'dining_table', 'incorrect', 'cup']  vs.  ['umbrella', 'bottle', 'sink', 'potted_plant', 'vase', 'refrigerator', 'dining_table', 'umbrella', 'cup']
+# For row  47  it found  77.77777777777777 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  42.857142857142854 %, while using synonyms gives  42.857142857142854 %
+# Ground Truth:  ['incorrect']  vs.  ['stop_sign']
+# For row  48  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['sink']  vs.  ['sink']
+# For row  49  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['fridge', 'bowl', 'sink', 'bowl']  vs.  ['refrigerator', 'bowl', 'sink', 'bowl']
+# For row  50  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  50.0 %, while using synonyms gives  50.0 %
+# Ground Truth:  ['sink', 'bottle']  vs.  ['sink', 'bottle']
+# For row  52  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  50.0 %
+# Ground Truth:  ['incorrect', 'bed', 'incorrect']  vs.  ['frisbee', 'bed', 'bench']
+# For row  53  it found  33.333333333333336 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['bottle', 'extra']  vs.  ['bottle', 'bottle']
+# For row  56  it found  100.0 %, objects correctly, with  1  extras.
+# Per image accuracy (actual aithor word) is  100.0 %
+# Ground Truth:  ['laptop', 'chair', 'chair', 'extra']  vs.  ['laptop', 'chair', 'chair', 'couch']
+# For row  57  it found  100.0 %, objects correctly, with  1  extras.
+# Per image accuracy (actual aithor word) is  33.333333333333336 %
+# Ground Truth:  ['chair', 'laptop', 'bowl', 'chair', 'dining_table']  vs.  ['chair', 'laptop', 'bowl', 'chair', 'dining_table']
+# For row  58  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  40.0 %
+# Ground Truth:  ['house_plant', 'vase']  vs.  ['potted_plant', 'vase']
+# For row  59  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  50.0 %, while using synonyms gives  50.0 %
+# Ground Truth:  ['bottle', 'chair', 'incorrect', 'microwave']  vs.  ['bottle', 'chair', 'mouse', 'microwave']
+# For row  60  it found  75.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  33.333333333333336 %
+# Ground Truth:  ['house_plant', 'television', 'incorrect', 'chair', 'extra']  vs.  ['potted_plant', 'tv', 'mouse', 'chair', 'couch']
+# For row  62  it found  75.0 %, objects correctly, with  1  extras.
+# Per image accuracy (actual aithor word) is  0.0 %, while using synonyms gives  33.333333333333336 %
+# Ground Truth:  ['house_plant', 'incorrect', 'chair', 'vase', 'book']  vs.  ['potted_plant', 'person', 'chair', 'vase', 'book']
+# For row  64  it found  80.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  25.0 %, while using synonyms gives  25.0 %
+# Ground Truth:  ['house_plant', 'sink', 'vase']  vs.  ['potted_plant', 'sink', 'vase']
+# For row  65  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  33.333333333333336 %, while using synonyms gives  33.333333333333336 %
+# Ground Truth:  ['house_plant', 'bottle', 'sink', 'bowl', 'cup', 'bottle', 'cup', 'incorrect', 'incorrect', 'bowl', 'bowl']  vs.  ['potted_plant', 'bottle', 'sink', 'bowl', 'wine_glass', 'bottle', 'wine_glass', 'frisbee', 'frisbee', 'bowl', 'bowl']
+# For row  66  it found  81.81818181818181 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  77.77777777777777 %, while using synonyms gives  55.55555555555556 %
+# Ground Truth:  ['toilet', 'incorrect']  vs.  ['toilet', 'toilet']
+# For row  67  it found  50.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['laptop']  vs.  ['laptop']
+# For row  68  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  100.0 %
+# Ground Truth:  ['sink', 'vase', 'sink', 'cup']  vs.  ['sink', 'vase', 'sink', 'cup']
+# For row  69  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  50.0 %
+# Ground Truth:  ['house_plant', 'sofa', 'incorrect', 'vase', 'incorrect', 'vase', 'laptop']  vs.  ['potted_plant', 'couch', 'mouse', 'vase', 'bird', 'vase', 'laptop']
+# For row  70  it found  71.42857142857143 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  60.0 %, while using synonyms gives  60.0 %
+# Ground Truth:  ['incorrect']  vs.  ['stop_sign']
+# For row  71  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['microwave', 'bottle', 'incorrect']  vs.  ['microwave', 'bottle', 'dining_table']
+# For row  73  it found  66.66666666666667 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  50.0 %
+# Ground Truth:  ['incorrect']  vs.  ['dining_table']
+# For row  75  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['incorrect']  vs.  ['refrigerator']
+# For row  78  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['incorrect']  vs.  ['chair']
+# For row  79  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['chair']  vs.  ['chair']
+# For row  80  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['bottle', 'bottle', 'bottle', 'bottle', 'bottle', 'bottle', 'bed', 'remote_control']  vs.  ['bottle', 'bottle', 'bottle', 'bottle', 'bottle', 'bottle', 'bed', 'remote']
+# For row  81  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  75.0 %, while using synonyms gives  75.0 %
+# Ground Truth:  ['incorrect']  vs.  ['chair']
+# For row  82  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['house_plant', 'book', 'alarm_clock', 'vase', 'book']  vs.  ['potted_plant', 'book', 'clock', 'vase', 'book']
+# For row  84  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  40.0 %, while using synonyms gives  20.0 %
+# Ground Truth:  ['sofa', 'incorrect', 'chair', 'sofa', 'extra', 'extra']  vs.  ['couch', 'airplane', 'chair', 'couch', 'chair', 'couch']
+# For row  85  it found  75.0 %, objects correctly, with  2  extras.
+# Per image accuracy (actual aithor word) is  0.0 %, while using synonyms gives  0.0 %
+# Ground Truth:  ['incorrect']  vs.  ['umbrella']
+# For row  86  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['incorrect', 'incorrect', 'laptop']  vs.  ['vase', 'dining_table', 'laptop']
+# For row  89  it found  33.333333333333336 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  100.0 %
+# Ground Truth:  ['fridge']  vs.  ['refrigerator']
+# For row  91  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %, while using synonyms gives  0.0 %
+# Ground Truth:  ['sink', 'bottle']  vs.  ['sink', 'bottle']
+# For row  92  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  50.0 %
+# Ground Truth:  ['sink']  vs.  ['sink']
+# For row  93  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['toilet', 'incorrect', 'sink']  vs.  ['toilet', 'chair', 'sink']
+# For row  94  it found  66.66666666666667 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['cup', 'cup']  vs.  ['cup', 'cup']
+# For row  97  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  100.0 %
+# Ground Truth:  ['chair', 'incorrect']  vs.  ['chair', 'bird']
+# For row  98  it found  50.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['bed', 'alarm_clock']  vs.  ['bed', 'clock']
+# For row  99  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  50.0 %, while using synonyms gives  0.0 %
+# Ground Truth:  ['chair', 'chair', 'chair', 'chair', 'sofa', 'chair', 'chair', 'extra', 'extra']  vs.  ['chair', 'chair', 'chair', 'chair', 'couch', 'chair', 'chair', 'chair', 'chair']
+# For row  100  it found  100.0 %, objects correctly, with  2  extras.
+# Per image accuracy (actual aithor word) is  0.0 %, while using synonyms gives  0.0 %
+# Ground Truth:  ['television', 'chair', 'sofa', 'remote_control']  vs.  ['tv', 'chair', 'couch', 'remote']
+# For row  102  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %, while using synonyms gives  25.0 %
+# Ground Truth:  ['chair']  vs.  ['chair']
+# For row  103  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['incorrect']  vs.  ['tv']
+# For row  104  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['sink']  vs.  ['sink']
+# For row  105  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['fridge']  vs.  ['refrigerator']
+# For row  106  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %, while using synonyms gives  0.0 %
+# Ground Truth:  ['bottle', 'bottle', 'bottle', 'bottle', 'cup', 'sink', 'extra', 'dining_table', 'bottle', 'bottle', 'bottle', 'bottle', 'extra']  vs.  ['bottle', 'bottle', 'bottle', 'bottle', 'cup', 'sink', 'sink', 'dining_table', 'bottle', 'bottle', 'bottle', 'bottle', 'dining_table']
+# For row  107  it found  100.0 %, objects correctly, with  2  extras.
+# Per image accuracy (actual aithor word) is  81.81818181818181 %
+# Ground Truth:  ['incorrect', 'teddy_bear']  vs.  ['dining_table', 'teddy_bear']
+# For row  109  it found  50.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['incorrect']  vs.  ['airplane']
+# For row  110  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['chair', 'chair', 'television', 'cup']  vs.  ['chair', 'chair', 'tv', 'cup']
+# For row  111  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  25.0 %, while using synonyms gives  50.0 %
+# Ground Truth:  ['television', 'incorrect', 'house_plant']  vs.  ['tv', 'bed', 'potted_plant']
+# For row  112  it found  66.66666666666667 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %, while using synonyms gives  50.0 %
+# Ground Truth:  ['toilet', 'extra', 'sink']  vs.  ['toilet', 'toilet', 'sink']
+# For row  113  it found  100.0 %, objects correctly, with  1  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Ground Truth:  ['laptop', 'book', 'chair']  vs.  ['laptop', 'book', 'chair']
+# For row  114  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  33.333333333333336 %
+# Ground Truth:  ['vase', 'vase', 'vase', 'sofa', 'extra']  vs.  ['vase', 'vase', 'vase', 'couch', 'chair']
+# For row  115  it found  100.0 %, objects correctly, with  1  extras.
+# Per image accuracy (actual aithor word) is  75.0 %, while using synonyms gives  75.0 %
+# Ground Truth:  ['chair', 'chair', 'laptop', 'dining_table', 'chair', 'extra', 'extra']  vs.  ['chair', 'chair', 'laptop', 'dining_table', 'chair', 'chair', 'dining_table']
+# For row  116  it found  100.0 %, objects correctly, with  2  extras.
+# Per image accuracy (actual aithor word) is  20.0 %
+# Ground Truth:  ['incorrect']  vs.  ['sink']
+# For row  117  it found  0.0 %, objects correctly, with  0  extras.
+# Nothing correct to run through conceptnet.
+# Ground Truth:  ['bed', 'bed']  vs.  ['bed', 'bed']
+# For row  118  it found  100.0 %, objects correctly, with  0  extras.
+# Per image accuracy (actual aithor word) is  0.0 %
+# Object detection accuracy:  76.0932944606414 %
+# overall direct nlp accuracy:  36.39846743295019 %
+# Overall accuracy using synonyms:  37.93103448275862 %
+# overall full accuracy direct:  27.696793002915452 %
+# overall full accuracy synonyms:  28.862973760932945 %

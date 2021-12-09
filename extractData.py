@@ -83,7 +83,7 @@ def saveDictOfRelatedness():
     df = pd.DataFrame(data, columns = ['Object1', 'Object2','Relatedness']) 
     df.to_csv('relatedness3.csv')
 
-nouns = ['garbage_can']
+nouns = ['refrigerator', 'remote', 'tv']
 
 def saveDictOfVerbs():
     data = []
@@ -93,7 +93,7 @@ def saveDictOfVerbs():
         data.append([word,verbs])
     print("Saving...")
     df = pd.DataFrame(data, columns = ['Object', 'RelatedVerbs']) 
-    df.to_csv('garbagecan_usedfor.csv')
+    df.to_csv('forgotten_capableOf.csv')
 
 def formatCorrectly(verbs):
     return [verb.replace(" ","_") for verb in verbs]
@@ -101,10 +101,10 @@ def formatCorrectly(verbs):
 
 
 def getSimilarityForVerbsGraph():
-    df = pd.read_csv('aithornouns_usedFor.csv')
+    df = pd.read_csv('forgotten_capableOf.csv')
     overall = []
     for i,j in df.iterrows():
-        if (i in rows):
+        if (i == 2):
             object = j['Object']
             verbs = getList(j['RelatedVerbs'])[:5]
             average = [0,0,0,0,0,0,0,0,0,0]
@@ -122,7 +122,7 @@ def getSimilarityForVerbsGraph():
     print("Saving...")
     df = pd.DataFrame(overall, columns = ['Object', 'RelatedVerb','Toggleable','Breakable','Fillable','Dirtyable','UseUpable','Cookable',
     "Sliceable","Openable","Pickupable","Moveable"]) 
-    df.to_csv('help_capableOf_relatedness.csv')
+    df.to_csv('forgotten_capableOf_relatedness2.csv')
 
 rows = [46]
 
